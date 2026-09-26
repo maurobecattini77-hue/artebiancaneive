@@ -26,8 +26,11 @@ ul{list-style:none}
 .centro .riga,.centro .w{margin-left:auto;margin-right:auto}
 
 /* ---------- menu e fascia scura ---------- */
-.menu{position:sticky;top:0;z-index:20;background:#fff;height:max(44px,calc(48 * var(--u)));display:flex;justify-content:flex-end}
-.menu a{display:flex;align-items:center;padding:0 calc(17.5 * var(--u));font-size:max(13px,calc(15 * var(--u)));color:var(--menu);white-space:nowrap;opacity:.7;transition:opacity .2s}
+/* menu centrato sull'asse del logo e dei titoli; la riga sottile lo stacca dal testo quando resta in alto */
+.menu{position:sticky;top:0;z-index:20;background:#fff;height:max(44px,calc(48 * var(--u)));display:flex;justify-content:center;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.menu a{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 calc(21 * var(--u));font-size:max(13px,calc(15 * var(--u)));letter-spacing:.08em;color:var(--menu);white-space:nowrap;opacity:.7;transition:opacity .2s}
+/* copia invisibile in neretto: ogni voce e' gia' larga come quando e' la pagina aperta, cosi' il menu non balla */
+.menu a::after{content:attr(data-t);font-weight:700;height:0;visibility:hidden;overflow:hidden}
 .menu a:hover,.menu a:focus-visible,.menu a.attivo{opacity:1}
 .menu a.attivo{font-weight:700}
 .fascia{background:var(--ink);height:calc(50 * var(--u));display:flex;align-items:center;justify-content:center}
@@ -197,9 +200,10 @@ tbody tr:nth-child(even){background:var(--beige)}
 /* ---------- telefono ---------- */
 @media (max-width: 899px){
   :root{ --u: calc(100vw / 600); --col: calc(100vw - 32px); --fs: 16px; --lh: 25px; }
-  .menu{justify-content:center;overflow-x:auto;scrollbar-width:none}
+  /* le cinque voci si dividono la riga in parti uguali: tutte visibili, facili da toccare, mai tagliate */
+  .menu{justify-content:flex-start;padding:0 10px;overflow-x:auto;scrollbar-width:none}
   .menu::-webkit-scrollbar{display:none}
-  .menu a{padding:0 8px;font-size:12px}
+  .menu a{flex:1 1 auto;padding:0;font-size:clamp(11px,3.2vw,13px);letter-spacing:.02em}
   .fascia{height:44px}
   .fascia img{width:30px}
   .testata{padding:20px 16px 0}
@@ -256,4 +260,10 @@ tbody tr:nth-child(even){background:var(--beige)}
   .piede .social{margin:0;gap:22px}
   .piede .fb{height:17px}.piede .ig{height:19px}
   .torna svg{height:14px}
+}
+
+/* tablet in verticale: stessa versione del telefono, ma il menu resta raccolto al centro */
+@media (min-width: 480px) and (max-width: 899px){
+  .menu{justify-content:center}
+  .menu a{flex:0 0 auto;padding:0 14px}
 }
