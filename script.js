@@ -2,10 +2,13 @@
 
 // I video partono da soli, muti e in ciclo. Si caricano solo quando stanno per entrare
 // nello schermo e si fermano quando escono, cosi' la pagina resta leggera anche col telefono.
+// Se un video ha anche la versione leggera (data-src-telefono), sui telefoni parte quella:
+// si guarda il lato corto dello schermo, cosi' vale anche col telefono girato in orizzontale.
 (function () {
   var video = document.querySelectorAll('video[data-src]');
+  var telefono = Math.min(screen.width, screen.height) < 600;
   function avvia(v) {
-    if (!v.getAttribute('src')) v.src = v.getAttribute('data-src');
+    if (!v.getAttribute('src')) v.src = (telefono && v.getAttribute('data-src-telefono')) || v.getAttribute('data-src');
     var p = v.play();
     if (p && p.catch) p.catch(function () {});
   }
