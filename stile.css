@@ -186,6 +186,15 @@ tbody tr:nth-child(even){background:var(--beige)}
 .piede .ig{height:calc(19 * var(--u))}
 .piede .yt{height:calc(21 * var(--u))}
 
+/* ---------- slideshow rifatti nella pagina (slideshow.js) ---------- */
+.ss{position:relative;width:100%;height:100%;overflow:hidden;background:#e9e6e0}
+.ss-palco{position:absolute;left:0;top:0;transform-origin:0 0}
+.ss-pagina{position:absolute;left:0;top:0;overflow:hidden;display:none;will-change:transform,opacity}
+.ss .ss-palco img{position:absolute;display:block;object-fit:fill;max-width:none}
+.ss-testo{display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Nunito Sans',sans-serif;font-weight:800;line-height:1.2;text-transform:uppercase;text-shadow:.035em .04em .07em rgba(0,0,0,.55)}
+.ss-testo span{position:relative}
+.ss-barra{position:absolute;top:0;height:100%;background:#fff;display:none}
+
 /* ---------- telefono ---------- */
 @media (max-width: 899px){
   :root{ --u: calc(100vw / 600); --col: calc(100vw - 32px); --fs: 16px; --lh: 25px; }
