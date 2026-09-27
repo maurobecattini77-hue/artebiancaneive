@@ -21,9 +21,12 @@
     el.style.width = px(p[2]); el.style.height = px(p[3]);
   }
 
+  // sui telefoni (lato corto dello schermo sotto i 600 px, come per il video del drone) le foto arrivano
+  // dalla cartella slideshow-telefono: stesse foto, piu' strette, pesano circa la meta'
+  var TELEFONO = Math.min(screen.width, screen.height) < 600;
   function immagine(src, rit) {
     var img = document.createElement('img');
-    img.src = src; img.alt = ''; img.decoding = 'async'; img.draggable = false;
+    img.src = TELEFONO ? src.replace('media/slideshow/', 'media/slideshow-telefono/') : src; img.alt = ''; img.decoding = 'async'; img.draggable = false;
     posiziona(img, rit);
     img.style.maxWidth = 'none';
     return img;
@@ -207,11 +210,12 @@
   var vicino = new IntersectionObserver(function (voci) {
     voci.forEach(function (v) { if (v.isIntersecting) { avvia(v.target); vicino.unobserve(v.target); } });
   }, {rootMargin: '600px 0px'});
+  // (quello lontano non si costruisce: al primo giro l'osservatore segnala anche gli slideshow fuori schermo)
   var visibile = new IntersectionObserver(function (voci) {
     voci.forEach(function (v) {
+      if (!v.isIntersecting) { if (v.target.__ss) v.target.__ss.attivo = false; return; }
       var s = avvia(v.target); if (!s) return;
-      if (v.isIntersecting && !s.attivo) { s.attivo = true; ciclo(s); }
-      else if (!v.isIntersecting) s.attivo = false;
+      if (!s.attivo) { s.attivo = true; ciclo(s); }
     });
   }, {threshold: 0.01});
   boxes.forEach(function (b) { vicino.observe(b); visibile.observe(b); });

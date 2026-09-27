@@ -1,13 +1,14 @@
 // Sito Arte Bianca di Neive - comportamenti comuni a tutte le pagine.
 
 // I video partono da soli, muti e in ciclo. Si caricano solo quando stanno per entrare
-// nello schermo e si fermano quando escono, cosi' la pagina resta leggera anche col telefono.
+// nello schermo (anche la copertina, data-poster) e si fermano quando escono, cosi' la pagina resta leggera anche col telefono.
 // Se un video ha anche la versione leggera (data-src-telefono), sui telefoni parte quella:
 // si guarda il lato corto dello schermo, cosi' vale anche col telefono girato in orizzontale.
 (function () {
   var video = document.querySelectorAll('video[data-src]');
   var telefono = Math.min(screen.width, screen.height) < 600;
   function avvia(v) {
+    if (!v.getAttribute('poster') && v.getAttribute('data-poster')) v.poster = v.getAttribute('data-poster');
     if (!v.getAttribute('src')) v.src = (telefono && v.getAttribute('data-src-telefono')) || v.getAttribute('data-src');
     var p = v.play();
     if (p && p.catch) p.catch(function () {});
@@ -50,5 +51,31 @@
     box.copertina = box.innerHTML;
     box.addEventListener('click', function () { apri(box); });
     box.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); apri(box); } });
+  });
+})();
+
+// Comparsa morbida: titoli, righe, testi e foto che stanno sotto il primo schermo salgono di poco
+// e si accendono quando entrano nello schermo; se ne arrivano diversi insieme, uno dopo l'altro.
+// Quello che si vede appena aperta la pagina resta fermo. Chi ha chiesto di ridurre le animazioni vede tutto fermo.
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var SCELTI = '.t-sez,.t-sotto,.t-evento,.riga,.testo,p.w,p.m,.p42-valori,.pannello,.p42-alt,.tabella-scorre,.video-yt,' +
+               '.riquadro,img.m,.macchia,.borghi,.fascia-media,.divisore,.scheda-video,.contatti h2,.contatti .righe,.torna';
+  var arriva = new IntersectionObserver(function (voci) {
+    var n = 0;
+    voci.forEach(function (v) {
+      if (!v.isIntersecting) return;
+      v.target.style.setProperty('--ritardo', Math.min(n++ * 0.09, 0.45) + 's');
+      v.target.classList.add('visto');
+      arriva.unobserve(v.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll(SCELTI).forEach(function (el) {
+    if (el.parentElement.closest(SCELTI)) return;              // si muove gia' il blocco che lo contiene
+    if (el.getBoundingClientRect().top < innerHeight) return;   // gia' in vista all'apertura
+    el.classList.add('rivela');
+    if (el.classList.contains('fascia-media')) el.classList.add('piena');   // foto a tutta larghezza: solo dissolvenza
+    arriva.observe(el);
   });
 })();
