@@ -79,3 +79,53 @@
     arriva.observe(el);
   });
 })();
+
+// Contatore delle visite (15/10/2026): invisibile, non mostra niente a nessuno. Manda al cloud della scuola la pagina,
+// da dove si arriva, schermo e lingua; mentre la pagina resta aperta e in vista, un segnale ogni 30 secondi (serve a
+// sapere quanti stanno guardando il sito in quel momento e quanto ci restano); i clic su «Prenota», sui link esterni e
+// sui video. Un numero a caso nel browser dice se e' la stessa persona che torna (nessun cookie, nessun dato personale).
+// Conta solo sul sito vero. Per non contare un proprio browser: aprire una volta il sito con ?noconta=1 (?noconta=0 annulla).
+(function () {
+  if (!/^(www\.)?artebiancaneive\.org$/.test(location.hostname)) return;
+  var DOVE = 'https://zwuutlrafdmfqexbnohc.supabase.co/functions/v1/sito-conta';
+  var ls = null, ss = null;
+  try { ls = window.localStorage; ss = window.sessionStorage; } catch (e) {}
+  try {
+    if (/[?&]noconta=1/.test(location.search)) ls.setItem('abn_noconta', '1');
+    if (/[?&]noconta=0/.test(location.search)) ls.removeItem('abn_noconta');
+    if (ls && ls.getItem('abn_noconta')) return;
+  } catch (e) {}
+  if (navigator.webdriver) return;
+  function caso() { return (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2); }
+  var chi = null, nuovo = false, giro = null;
+  try { chi = ls.getItem('abn_v'); if (!chi) { chi = caso(); ls.setItem('abn_v', chi); nuovo = true; } } catch (e) {}
+  try { giro = ss.getItem('abn_s'); if (!giro) { giro = caso(); ss.setItem('abn_s', giro); } } catch (e) {}
+  var vista = caso();
+  function manda(o) {
+    o.vista = vista; o.visitatore = chi; o.sessione = giro; o.tocco = navigator.maxTouchPoints || 0;
+    var testo = JSON.stringify(o);
+    try { if (navigator.sendBeacon && navigator.sendBeacon(DOVE, new Blob([testo], { type: 'text/plain' }))) return; } catch (e) {}
+    try { fetch(DOVE, { method: 'POST', body: testo, keepalive: true, mode: 'no-cors' }); } catch (e) {}
+  }
+  var q = new URLSearchParams(location.search);
+  manda({ tipo: 'vista', pagina: location.pathname, provenienza: document.referrer || '', nuovo: nuovo,
+          utm_source: q.get('utm_source'), utm_medium: q.get('utm_medium'), utm_campaign: q.get('utm_campaign'),
+          schermo: screen.width + 'x' + screen.height, lingua: navigator.language || '' });
+  setInterval(function () { if (document.visibilityState === 'visible') manda({ tipo: 'battito' }); }, 30000);
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') manda({ tipo: 'battito' }); });
+  document.addEventListener('click', function (e) {
+    var t = e.target && e.target.closest ? e.target : null;
+    if (!t) return;
+    var video = t.closest('[data-id]');
+    if (video && !video.classList.contains('in-onda')) { manda({ tipo: 'evento', pagina: location.pathname, evento: 'video: ' + (video.getAttribute('aria-label') || video.getAttribute('data-id')) }); return; }
+    var a = t.closest('a[href]');
+    if (!a) return;
+    var u; try { u = new URL(a.href, location.href); } catch (x) { return; }
+    var nome;
+    if (/forms\.gle|docs\.google\.com\/forms/.test(u.href)) nome = 'prenota';
+    else if (u.protocol === 'mailto:') nome = 'mail';
+    else if (u.protocol === 'tel:') nome = 'telefono';
+    else if (u.hostname && u.hostname !== location.hostname) nome = 'link: ' + u.hostname.replace(/^www\./, '');
+    if (nome) manda({ tipo: 'evento', pagina: location.pathname, evento: nome });
+  }, true);
+})();
