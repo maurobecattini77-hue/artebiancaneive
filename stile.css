@@ -295,3 +295,35 @@ tbody tr:nth-child(even){background:var(--beige)}
   @view-transition{navigation:none}
   .riquadro>img{transition:none !important;transform:none !important}
 }
+
+/* ---------- Home: orientamento (date degli eventi, calendario, prenotazione) ---------- */
+.orienta-foto{aspect-ratio:3/4}
+.prenota{display:inline-block;background:var(--menu);color:#fff;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:max(14px,calc(15.5 * var(--u)));line-height:1.2;padding:calc(17 * var(--u)) calc(34 * var(--u));border-radius:3px;transition:background .3s ease}
+.prenota:hover,.prenota:focus-visible{background:var(--sotto)}
+.orienta .note{max-width:calc(600 * var(--u))}
+a.vai{font-weight:700;color:var(--menu)}
+a.vai:hover,a.vai:focus-visible{color:var(--sotto)}
+/* calendario: filo orizzontale con un pallino per appuntamento; pieni quelli di Neive */
+.calendario{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:calc(34 * var(--u));position:relative;padding-top:36px}
+.calendario::before{content:"";position:absolute;left:0;right:0;top:8px;height:1px;background:var(--divisore)}
+.calendario>li{position:relative}
+.calendario>li::before{content:"";position:absolute;left:0;top:-36px;width:17px;height:17px;border-radius:50%;background:#fff;border:2px solid var(--sotto);box-sizing:border-box}
+.calendario>li.qui::before{background:var(--menu);border-color:var(--menu)}
+.cal-gs{font-size:max(12px,calc(13.5 * var(--u)));letter-spacing:.12em;text-transform:uppercase;color:var(--sotto)}
+.cal-n{font-family:var(--serif);font-weight:700;font-size:max(46px,calc(66 * var(--u)));line-height:1.05;color:var(--testo)}
+.calendario>li.qui .cal-n{color:var(--menu)}
+.cal-m{font-size:max(13px,calc(14.5 * var(--u)));letter-spacing:.08em;text-transform:uppercase;color:var(--testo)}
+.calendario h3{font-family:var(--serif);font-weight:700;font-size:max(19px,calc(23 * var(--u)));line-height:1.25;color:var(--testo);margin-top:calc(16 * var(--u))}
+.cal-dove{margin-top:6px;color:var(--sotto)}
+.turni{list-style:none;display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:12px}
+.turni li{background:var(--grigio);padding:5px 12px;border-radius:3px;font-size:max(14px,calc(15.5 * var(--u)));line-height:1.4}
+.turni b{color:var(--menu)}
+.orienta-due{text-align:left}
+@media (max-width: 899px){
+  .prenota{display:block;text-align:center;padding:15px 20px}
+  .orienta .note{max-width:none}
+  .orienta-foto{max-width:420px;width:100%;margin:0 auto}
+  .calendario{grid-template-columns:1fr;gap:30px;padding-top:0;padding-left:34px}
+  .calendario::before{left:8px;right:auto;top:8px;bottom:8px;width:1px;height:auto}
+  .calendario>li::before{left:-34px;top:2px}
+}
