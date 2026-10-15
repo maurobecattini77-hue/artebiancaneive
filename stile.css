@@ -125,7 +125,9 @@ tbody tr:nth-child(even){background:var(--beige)}
 .elenco li::before{content:"";position:absolute;left:0;top:calc(0.5 * var(--lh) - 3px);width:6px;height:6px;border-radius:50%;background:var(--sotto)}
 .tappe{margin-top:calc(26 * var(--u))}
 .tappa{display:grid;grid-template-columns:calc(84 * var(--u)) 1fr;column-gap:calc(24 * var(--u));align-items:center}
-.tappa .n{width:calc(84 * var(--u));height:calc(84 * var(--u));min-width:56px;min-height:56px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:max(30px,calc(44 * var(--u)));line-height:1;color:var(--testo)}
+.tappa .n{width:calc(84 * var(--u));height:calc(84 * var(--u));min-width:56px;min-height:56px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:max(30px,calc(44 * var(--u)));line-height:1;color:var(--testo);font-variant-numeric:lining-nums;padding-bottom:.114em}
+/* numeri moderni (alti come le maiuscole, Playfair li ha all'antica) e alzati di .057em: il centro dell'inchiostro
+   cade sul centro del cerchio (misurato sul carattere: base .4155em sotto il centro, cifre .lf alte .72em) */
 .tappa b{display:block;font-family:var(--serif);font-size:max(19px,calc(24 * var(--u)));line-height:1.25;font-weight:700}
 .tappa small{display:block;font-size:var(--fs);line-height:var(--lh)}
 .tappa-filo{width:1px;height:calc(34 * var(--u));min-height:22px;background:var(--sotto);margin-left:calc(42 * var(--u))}
