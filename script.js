@@ -60,7 +60,7 @@
 (function () {
   if (!('IntersectionObserver' in window)) return;
   if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var SCELTI = '.t-sez,.t-sotto,.t-evento,.riga,.testo,p.w,p.m,.p42-valori,.pannello,.p42-alt,.tabella-scorre,.video-yt,' +
+  var SCELTI = '.t-sez,.t-sotto,.t-evento,.riga,.testo,p.w,p.m,.p42-valori,.pannello,.p42-alt,.tabella-scorre,.scambio,.video-yt,' +
                '.riquadro,img.m,.macchia,.borghi,.fascia-media,.divisore,.scheda-video,.contatti h2,.contatti .righe,.torna';
   var arriva = new IntersectionObserver(function (voci) {
     var n = 0;
@@ -78,6 +78,55 @@
     if (el.classList.contains('fascia-media')) el.classList.add('piena');   // foto a tutta larghezza: solo dissolvenza
     arriva.observe(el);
   });
+})();
+
+// Piano di studi nella Home: il pulsante in alto passa dal percorso di 5 anni al 4+2 e ritorno. Il riquadro cambia altezza
+// piano piano e le righe del nuovo quadro entrano una dopo l'altra. Chi ha chiesto di ridurre le animazioni vede il cambio secco.
+(function () {
+  var scambio = document.querySelector('.scambio');
+  if (!scambio) return;
+  var tasti = scambio.querySelectorAll('button');
+  var palco = document.querySelector('.piani');
+  var piani = palco.querySelectorAll('.piano');
+  var aiuto = document.querySelector('.scambio-aiuto');
+  var FRASI = ['Clicca per vedere il quadro orario del percorso 4+2', 'Clicca per tornare al percorso di 5 anni'];
+  var fermo = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var scelto = 0, attesa = null;
+  piani.forEach(function (p) {
+    p.querySelectorAll('tbody tr').forEach(function (r, i) { r.style.setProperty('--i', i + 1); });
+  });
+  function chiudi() {
+    clearTimeout(attesa);
+    palco.classList.remove('in-cambio');
+    palco.style.height = '';
+    piani.forEach(function (p, i) {
+      p.classList.remove('esce', 'entra');
+      p.hidden = i !== scelto;
+    });
+  }
+  function mostra(n) {
+    if (n === scelto) return;
+    chiudi();
+    var prima = piani[scelto], dopo = piani[n];
+    var da = palco.offsetHeight;
+    scelto = n;
+    scambio.setAttribute('data-scelto', n);
+    tasti.forEach(function (t, i) { t.setAttribute('aria-pressed', i === n ? 'true' : 'false'); });
+    aiuto.textContent = FRASI[n];
+    if (fermo) { chiudi(); return; }
+    prima.hidden = true;
+    dopo.hidden = false;
+    var a = palco.offsetHeight;
+    prima.hidden = false;
+    prima.classList.add('esce');
+    dopo.classList.add('entra');
+    palco.style.height = da + 'px';
+    palco.classList.add('in-cambio');
+    void palco.offsetHeight;   // il browser deve vedere l'altezza di partenza prima di quella d'arrivo
+    palco.style.height = a + 'px';
+    attesa = setTimeout(chiudi, 800);
+  }
+  tasti.forEach(function (t, i) { t.addEventListener('click', function () { mostra(i); }); });
 })();
 
 // Contatore delle visite (15/10/2026): invisibile, non mostra niente a nessuno. Manda al cloud della scuola la pagina,

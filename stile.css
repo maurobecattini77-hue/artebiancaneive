@@ -89,6 +89,25 @@ tbody tr:nth-child(even){background:var(--beige)}
 .maiuscolo td:first-child{text-transform:uppercase}
 .breve{display:none}
 .note{font-size:max(12px,calc(13.3 * var(--u)));line-height:max(18px,calc(21 * var(--u)));text-align:left}
+.tab-piano td small{display:block;font-size:max(11px,calc(11.6 * var(--u)));line-height:1.3;margin:1px 0 2px;color:var(--testo);opacity:.85}
+.tab-piano td small span+span::before{content:" · "}
+
+/* ---------- Home: pulsante fra i due piani di studi (script.js) ---------- */
+.scambio{position:relative;display:grid;grid-template-columns:1fr 1fr;width:calc(520 * var(--u));min-width:min(100%,420px);margin-left:auto;margin-right:auto;padding:4px;background:var(--beige);border-radius:999px}
+.scambio::before{content:"";position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:999px;background:var(--menu);transition:transform .45s cubic-bezier(.2,.65,.25,1)}
+.scambio[data-scelto="1"]::before{transform:translateX(100%)}
+.scambio button{position:relative;border:0;background:none;cursor:pointer;min-height:44px;padding:0 10px;border-radius:999px;font-family:var(--serif);font-style:italic;font-size:max(16px,calc(19 * var(--u)));font-variant-numeric:lining-nums;line-height:1.2;color:var(--menu);transition:color .3s ease}
+.scambio button[aria-pressed="true"]{color:#fff}
+.scambio button[aria-pressed="false"]:hover{color:var(--sotto)}
+.scambio button:focus-visible{outline:2px solid var(--menu);outline-offset:2px}
+.scambio-aiuto{font-size:max(13px,calc(14 * var(--u)));line-height:1.4;color:var(--sotto)}
+/* flow-root: i margini dei testi restano dentro, cosi' l'altezza non salta durante il cambio */
+.piani{position:relative;display:flow-root}
+.piani.in-cambio{overflow:hidden;transition:height .5s cubic-bezier(.2,.65,.25,1)}
+.piano.esce{position:absolute;left:0;right:0;top:0;opacity:0;transition:opacity .22s ease}
+.piano.entra>p{animation:piano-entra .45s ease both}
+.piano.entra tbody tr,.piano.entra thead tr{animation:piano-entra .42s cubic-bezier(.2,.65,.25,1) both;animation-delay:calc(var(--i,0) * 18ms + 70ms)}
+@keyframes piano-entra{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 
 /* ---------- video di YouTube ---------- */
 .video-yt{aspect-ratio:1166/655;position:relative;background:#0f1015 center/cover no-repeat;cursor:pointer;overflow:hidden}
@@ -231,6 +250,10 @@ tbody tr:nth-child(even){background:var(--beige)}
   .tab-piano th:not(:first-child),.tab-piano td:not(:first-child){width:34px}
   .tab-piano .lungo{display:none}
   .tab-piano .breve{display:inline}
+  .tab-piano td small span{display:block}
+  .tab-piano td small span+span::before{content:none}
+  .scambio{width:100%;min-width:0;max-width:440px}
+  .scambio button{font-size:clamp(14px,4.3vw,16px);padding:0 6px}
   .tab-stage{font-size:12px}
   .tab-stage th{font-size:12px}
   .tab-stage th,.tab-stage td{height:auto;padding:8px 4px}
