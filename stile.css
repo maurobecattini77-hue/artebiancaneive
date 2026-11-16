@@ -169,6 +169,8 @@ tbody tr:nth-child(even){background:var(--beige)}
 .foto-estero .sx{display:grid;grid-template-rows:307fr 292fr;gap:calc(6 * var(--u))}
 .foto-estero .sx .riquadro img{position:absolute;inset:0}
 .foto-estero .dx{aspect-ratio:583/604}
+.foto-estero.bassa .sx{grid-template-rows:241fr 292fr}
+.foto-estero.bassa .dx{aspect-ratio:583/539}
 .cifre{font-variant-numeric:lining-nums}
 .tasto circle{fill:rgba(255,255,255,.78)}
 .tasto path{fill:rgba(70,45,45,.75)}
@@ -279,6 +281,8 @@ tbody tr:nth-child(even){background:var(--beige)}
   .foto-estero .sx{grid-template-rows:none}
   .foto-estero .sx .riquadro:nth-child(1){aspect-ratio:578/307}
   .foto-estero .sx .riquadro:nth-child(2){aspect-ratio:578/292}
+  .foto-estero.bassa .sx{grid-template-rows:none}
+  .foto-estero.bassa .sx .riquadro:nth-child(1){aspect-ratio:578/241}
   .contatti .righe{font-size:14px}
   .piede .col{flex-direction:column;gap:12px;padding:16px 0}
   .piede .indirizzo{width:auto;margin:0}
