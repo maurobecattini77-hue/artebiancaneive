@@ -22,112 +22,209 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stile.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css?v=1794962121">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body id="inizio">
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <clipPath id="forma-macchia" clipPathUnits="objectBoundingBox">
-    <path d="M0.9475 0.3481C0.8592 0.1611 0.6811 0.0244 0.4914 0.0044C0.3366 -0.0195 0.2347 0.0561 0.1515 0.1655C0.0683 0.2748 0.0241 0.4142 0.0062 0.5547C-0.0032 0.6290 -0.0051 0.7077 0.0237 0.7757C0.0604 0.8620 0.1404 0.9169 0.2219 0.9510C0.4411 1.0428 0.7101 1.0072 0.8807 0.8314C0.9341 0.7764 0.9778 0.7075 0.9934 0.6293C1.0124 0.5344 0.9883 0.4345 0.9475 0.3481Z"/>
-  </clipPath>
-</svg>
-
-<nav class="menu" aria-label="Menu principale">
-  <a href="/" data-t="HOME">HOME</a>
-  <a href="/stage" data-t="STAGE">STAGE</a>
-  <a href="/concorsi" class="attivo" aria-current="page" data-t="CONCORSI">CONCORSI</a>
-  <a href="/eventi" data-t="EVENTI">EVENTI</a>
-  <a href="/dopo-il-diploma" data-t="DOPO IL DIPLOMA">DOPO IL DIPLOMA</a>
-</nav>
-
-<div class="fascia"><img src="media/logo-scuola.png" alt="Logo Arte Bianca Neive, IISS Piera Cillario Ferrero"></div>
-
-<header class="testata-pag">
-  <p class="kicker">- I nostri fiori all’occhiello -</p>
-  <h1>CONCORSI</h1>
+<header class="testa">
+  <div class="cont">
+    <a class="marchio" href="/" aria-label="Arte Bianca di Neive, pagina iniziale"><img src="media/logo-scuola.png" alt="" width="42" height="42"><span>Arte Bianca <i>di Neive</i></span></a>
+    <nav class="voci" aria-label="Menu principale">
+    <a href="/">Home</a>
+    <a href="/stage">Stage</a>
+    <a href="/concorsi" aria-current="page">Concorsi</a>
+    <a href="/eventi">Eventi</a>
+    <a href="/dopo-il-diploma">Dopo il diploma</a>
+    </nav>
+    <a class="tasto prenota-testa" href="/#orientamento">Orientamento</a>
+    <button class="apri-menu" type="button" aria-expanded="false" aria-controls="menu-pieno">Menu <i></i></button>
+  </div>
 </header>
-
-<div class="fascia-media m" style="--m:8;aspect-ratio:1414/476"><img src="media/concorsi-hero-dolci.jpg" alt="Una fila di monoporzioni di pasticceria su un'alzata di legno" style="object-position:50% 53%" srcset="media/ridotte/concorsi-hero-dolci-480.jpg 480w, media/ridotte/concorsi-hero-dolci-800.jpg 800w, media/ridotte/concorsi-hero-dolci-1200.jpg 1200w, media/ridotte/concorsi-hero-dolci-1600.jpg 1600w, media/ridotte/concorsi-hero-dolci-2000.jpg 2000w, media/concorsi-hero-dolci.jpg 2399w" sizes="100vw"></div>
-
-<section class="col due m" style="--m:41;--a:450;--b:581;--al:start">
-  <div>
-    <h2 class="t-sez" style="--tl:74">Talenti in gara</h2>
-    <div class="riga m" style="--w:188;--m:10"></div>
-    <div class="testo m" style="--m:45">
-      <p>Gli studenti dell’Arte Bianca di Neive partecipano ogni anno a competizioni nazionali e internazionali di pasticceria e panificazione.</p>
-      <p>Queste esperienze permettono di confrontarsi con altri giovani talenti, mettere in pratica le competenze acquisite e conquistare riconoscimenti che attestano la qualità della nostra formazione.</p>
+<div class="menu-pieno" id="menu-pieno" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="chiudi" type="button">Chiudi <i></i></button>
+  <nav aria-label="Menu principale">
+    <a href="/"><small>01</small>Home</a>
+    <a href="/stage"><small>02</small>Stage</a>
+    <a href="/concorsi" aria-current="page"><small>03</small>Concorsi</a>
+    <a href="/eventi"><small>04</small>Eventi</a>
+    <a href="/dopo-il-diploma"><small>05</small>Dopo il diploma</a>
+  </nav>
+  <a class="tasto" href="/#orientamento">Orientamento 2027-28 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <p class="recapiti">Via Rocca 10, Neive · tel. 0173/67168<br>artebiancaneive@cillarioferrero.it</p>
+</div>
+<main>
+<section class="eroe pagina">
+  <div class="cont">
+    <p class="occhiello">I nostri fiori all’occhiello</p>
+    <h1 class="eroe-titolo">Concorsi</h1>
+    <div class="eroe-piede">
+      <nav class="sommario" aria-label="In questa pagina"><a href="#talenti">Talenti in gara</a><a href="#c2026">2026</a><a href="#c2024">2024</a><a href="#c2023">2023</a><a href="#c2022">2022</a></nav>
     </div>
   </div>
-  <img class="macchia m" style="--m:9;aspect-ratio:581/560" src="media/concorsi-talenti.jpg" alt="Due studenti dell'Arte Bianca in divisa da pasticcere" srcset="media/ridotte/concorsi-talenti-480.jpg 480w, media/ridotte/concorsi-talenti-800.jpg 800w, media/ridotte/concorsi-talenti-1200.jpg 1200w, media/ridotte/concorsi-talenti-1600.jpg 1600w, media/ridotte/concorsi-talenti-2000.jpg 2000w, media/concorsi-talenti.jpg 2400w" sizes="(max-width: 899px) 95vw, 45vw">
+  <div class="eroe-media"><img src="media/concorsi-hero-dolci.jpg" alt="Una fila di monoporzioni di pasticceria su un'alzata di legno" style="object-position:50% 53%" srcset="media/ridotte/concorsi-hero-dolci-800.jpg 800w, media/ridotte/concorsi-hero-dolci-1200.jpg 1200w, media/ridotte/concorsi-hero-dolci-1600.jpg 1600w, media/ridotte/concorsi-hero-dolci-2000.jpg 2000w, media/concorsi-hero-dolci.jpg 2399w" sizes="100vw"></div>
 </section>
 
-<div class="col riquadro m" style="--m:49;aspect-ratio:1166/656"><div class="ss" data-ss="concorsi" role="img" aria-label="I concorsi: Campionato nazionale di pasticceria, Cooking Quiz"></div></div>
-
-<div class="fascia-media m" style="--m:49;aspect-ratio:1414/702"><video data-src="media/video-impasto-pirottini.mp4" data-poster="media/copertina-impasto-pirottini.jpg" muted loop playsinline style="object-position:50% 5%" aria-label="Impasto versato nei pirottini"></video></div>
-
-<section class="col due m" style="--m:50;--a:540;--b:495;--al:start">
-  <div>
-    <h2 class="t-sez" style="--tl:55">2022 - Campionato<br>nazionale di pasticceria</h2>
-    <p class="t-sotto m" style="--m:18">L’Arte Bianca classificata al 1° posto</p>
-    <div class="riga m" style="--w:241;--m:19"></div>
-    <div class="testo m" style="--m:46">
-      <p>I migliori giovani talenti della pasticceria italiana si sfidano a colpi di cioccolato, glassa, pan di spagna e caffè per contendersi la palma di miglior pasticcere d’Italia juniores.</p>
-      <p>Ciascuna scuola sarà rappresentata da una squadra formata da due concorrenti, che saranno giudicati da una giuria composta da maestri pasticceri della FIPGC e rappresentanti del MIUR.</p>
-      <p>Il <b>6 maggio 2022</b> è una data da ricordare per l'Arte Bianca di Neive: <b>Silvia Giamello</b> e <b>Mattia Sabatini,</b> con il loro professore <b>Rosario Torre</b>, si sono classificati al <b>primo posto</b> con il loro spettacolare dolce “<b>Dromos</b>” alla cerimonia di premiazione della quarta edizione del Campionato Nazionale di pasticceria dedicato agli istituti alberghieri d’Italia presso l’Istituto IPIA “Galileo Ferraris” di Iglesias (Sardegna).</p>
+<section class="sez" id="talenti">
+  <div class="cont">
+    <div class="griglia-2">
+      <div>
+        <header class="intesta">
+          <h2 class="titolo-sez">Talenti <em>in gara</em></h2>
+        </header>
+        <div class="testo" data-r>
+          <p class="attacco">Gli studenti dell’Arte Bianca di Neive partecipano ogni anno a competizioni nazionali e internazionali di pasticceria e panificazione.</p>
+          <p>Queste esperienze permettono di confrontarsi con altri giovani talenti, mettere in pratica le competenze acquisite e conquistare riconoscimenti che attestano la qualità della nostra formazione.</p>
+        </div>
+      </div>
+      <figure class="cornice verticale" data-parallasse data-r="foto"><img src="media/concorsi-talenti.jpg" alt="Due studenti dell'Arte Bianca in divisa da pasticcere" srcset="media/ridotte/concorsi-talenti-480.jpg 480w, media/ridotte/concorsi-talenti-800.jpg 800w, media/ridotte/concorsi-talenti-1200.jpg 1200w, media/ridotte/concorsi-talenti-1600.jpg 1600w, media/ridotte/concorsi-talenti-2000.jpg 2000w" sizes="(max-width: 899px) 92vw, 45vw" loading="lazy" decoding="async"></figure>
     </div>
   </div>
-  <div class="riquadro" style="aspect-ratio:495/596"><div class="ss" data-ss="campionato-2022" style="--ss-x:50%;--ss-y:45%" role="img" aria-label="Il dolce Dromos del Campionato nazionale 2022"></div></div>
 </section>
 
-<section class="col due inverti m" style="--m:50;--a:546;--b:540">
-  <div>
-    <h2 class="t-sez" style="--tl:55">2023 - Campionato<br>nazionale di pasticceria</h2>
-    <p class="t-sotto m" style="--m:18">L’Arte Bianca ospita la quinta edizione</p>
-    <div class="riga m" style="--w:252;--m:19"></div>
-    <div class="testo m" style="--m:46">
-      <p>L'Istituto vincitore ha avuto l'onore di <b>ospitare l'edizione successiva</b> della manifestazione ed è con grande orgoglio e senza falsa modestia che per 3 giorni (<b>28, 29 e 30 marzo</b>) <b>Neive è stata Capitale Italiana della Pasticceria</b>.</p>
-      <p>La quinta edizione del Campionato Nazionale di pasticceria dedicato agli istituti alberghieri d’Italia, promosso dal Ministero della Pubblica Istruzione e di rilievo nazionale, organizzato dalla <b>Fipgc</b> (Federazione Italiana Pasticceria e Gelateria), ha visto la partecipazione di studenti e docenti di 30 scuole provenienti da tutta Italia ed è stato patrocinato dalla <b>Regione Piemonte</b> e dai <b>Comuni di Alba e Neive</b>.</p>
+<section class="sez scura">
+  <div class="cont">
+    <header class="intesta">
+      <h2 class="titolo-sez">Le gare <em>dell’Arte Bianca</em></h2>
+    </header>
+    <div class="elenco-foto">
+  <ol>
+    <li><span class="mini"><img src="media/slideshow/concorsi/01.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/01.jpg?v=1790497868 1150w, media/slideshow/concorsi/01.jpg?v=1790437235 2000w" sizes="45vw" width="2000" height="1333" alt="" loading="lazy" decoding="async"></span><button type="button" aria-pressed="false">Campionato nazionale di pasticceria</button></li>
+    <li><span class="mini"><img src="media/slideshow/concorsi/02.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/02.jpg?v=1790497868 1150w, media/slideshow/concorsi/02.jpg?v=1790437235 1332w" sizes="45vw" width="1332" height="749" alt="" loading="lazy" decoding="async"></span><button type="button" aria-pressed="false">Sigep Giovani</button></li>
+    <li><span class="mini"><img src="media/slideshow/concorsi/03.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/03.jpg?v=1790497868 1150w, media/slideshow/concorsi/03.jpg?v=1790437235 2000w" sizes="45vw" width="2000" height="1125" alt="" loading="lazy" decoding="async"></span><button type="button" aria-pressed="false">Cioccolato Giovani</button></li>
+    <li><span class="mini"><img src="media/slideshow/concorsi/04.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/04.jpg?v=1790497868 1150w, media/slideshow/concorsi/04.jpg?v=1790437235 1440w" sizes="45vw" width="1440" height="1080" alt="" loading="lazy" decoding="async"></span><button type="button" aria-pressed="false">Cooking Quiz</button></li>
+    <li><span class="mini"><img src="media/slideshow/concorsi/05.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/05.jpg?v=1790497868 640w, media/slideshow/concorsi/05.jpg?v=1790437235 640w" sizes="45vw" width="640" height="480" alt="" loading="lazy" decoding="async"></span><button type="button" aria-pressed="false">Pasticceria Giovani</button></li>
+    <li><span class="mini"><img src="media/slideshow/concorsi/06.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/06.jpg?v=1790497869 1150w, media/slideshow/concorsi/06.jpg?v=1790437235 2000w" sizes="45vw" width="2000" height="1125" alt="" loading="lazy" decoding="async"></span><button type="button" aria-pressed="false">Concorso Ferrero</button></li>
+    <li><span class="mini"><img src="media/slideshow/concorsi/07.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/07.jpg?v=1790497869 1150w, media/slideshow/concorsi/07.jpg?v=1790437235 2000w" sizes="45vw" width="2000" height="1125" alt="" loading="lazy" decoding="async"></span><button type="button" aria-pressed="false">La mia storia di cucina</button></li>
+  </ol>
+  <div class="vetrina" aria-hidden="false">
+    <img src="media/slideshow/concorsi/01.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/01.jpg?v=1790497868 1150w, media/slideshow/concorsi/01.jpg?v=1790437235 2000w" sizes="(max-width: 899px) 1px, 46vw" width="2000" height="1333" alt="I concorsi: Campionato nazionale di pasticceria" loading="lazy" decoding="async">
+    <img src="media/slideshow/concorsi/02.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/02.jpg?v=1790497868 1150w, media/slideshow/concorsi/02.jpg?v=1790437235 1332w" sizes="(max-width: 899px) 1px, 46vw" width="1332" height="749" alt="I concorsi: Sigep Giovani" loading="lazy" decoding="async">
+    <img src="media/slideshow/concorsi/03.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/03.jpg?v=1790497868 1150w, media/slideshow/concorsi/03.jpg?v=1790437235 2000w" sizes="(max-width: 899px) 1px, 46vw" width="2000" height="1125" alt="I concorsi: Cioccolato Giovani" loading="lazy" decoding="async">
+    <img src="media/slideshow/concorsi/04.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/04.jpg?v=1790497868 1150w, media/slideshow/concorsi/04.jpg?v=1790437235 1440w" sizes="(max-width: 899px) 1px, 46vw" width="1440" height="1080" alt="I concorsi: Cooking Quiz" loading="lazy" decoding="async">
+    <img src="media/slideshow/concorsi/05.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/05.jpg?v=1790497868 640w, media/slideshow/concorsi/05.jpg?v=1790437235 640w" sizes="(max-width: 899px) 1px, 46vw" width="640" height="480" alt="I concorsi: Pasticceria Giovani" loading="lazy" decoding="async">
+    <img src="media/slideshow/concorsi/06.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/06.jpg?v=1790497869 1150w, media/slideshow/concorsi/06.jpg?v=1790437235 2000w" sizes="(max-width: 899px) 1px, 46vw" width="2000" height="1125" alt="I concorsi: Concorso Ferrero" loading="lazy" decoding="async">
+    <img src="media/slideshow/concorsi/07.jpg?v=1790437235" srcset="media/slideshow-telefono/concorsi/07.jpg?v=1790497869 1150w, media/slideshow/concorsi/07.jpg?v=1790437235 2000w" sizes="(max-width: 899px) 1px, 46vw" width="2000" height="1125" alt="I concorsi: La mia storia di cucina" loading="lazy" decoding="async">
+  </div>
+</div>
+  </div>
+</section>
+
+<div class="fascia"><video data-src="media/video-impasto-pirottini.mp4" poster="media/copertina-impasto-pirottini.jpg" muted loop playsinline style="object-position:50% 5%" aria-label="Impasto versato nei pirottini"></video></div>
+
+<section class="sez" id="c2026">
+  <div class="cont">
+    <div class="anno-blocco">
+      <div>
+        <span class="anno-gigante" aria-hidden="true">2026</span>
+        <h2><span class="nascosto">2026 - </span>SIGEP Giovani</h2>
+        <p class="medaglia chiara">Rimini, gennaio 2026</p>
+        <div class="testo" data-r>
+          <p class="attacco">Anche quest’anno gli studenti dell’Arte Bianca di Neive hanno partecipato al SIGEP Giovani, uno dei palcoscenici più prestigiosi dedicati ai talenti emergenti della panificazione, pasticceria e arte dolciaria.</p>
+          <p>È il concorso del SIGEP di Rimini riservato agli istituti professionali alberghieri e di pasticceria di tutta Italia: ogni scuola partecipa con una squadra di quattro studenti e un docente tutor.</p>
+          <p>Un’esperienza intensa, fatta di studio, sacrificio, creatività e tanta passione, dove i ragazzi hanno potuto confrontarsi con coetanei provenienti da tutta Italia e respirare l’eccellenza del nostro settore. Vederli all’opera, consapevoli delle proprie competenze e orgogliosi del percorso intrapreso, è la conferma che la tradizione dell’Arte Bianca, quando incontra l’innovazione e la formazione di qualità, costruisce il futuro.</p>
+          <p><b>Neive c’era. E ha lasciato il segno.</b></p>
+        </div>
+      </div>
+      <figure class="cornice sigep" data-parallasse data-r="foto"><img src="media/concorsi-sigep-2026.jpg" alt="La squadra dell’Arte Bianca al SIGEP Giovani 2026 accanto alla torta dello Stregatto" srcset="media/ridotte/concorsi-sigep-2026-480.jpg 480w, media/ridotte/concorsi-sigep-2026-800.jpg 800w, media/ridotte/concorsi-sigep-2026-1200.jpg 1200w, media/ridotte/concorsi-sigep-2026-1600.jpg 1600w, media/concorsi-sigep-2026.jpg 2400w" sizes="(max-width: 899px) 92vw, 46vw" loading="lazy" decoding="async"></figure>
     </div>
   </div>
-  <div class="riquadro" style="aspect-ratio:546/364"><div class="ss" data-ss="campionato-2023" role="img" aria-label="Il Campionato nazionale di pasticceria 2023 a Neive"></div></div>
 </section>
 
-<section class="col due m" style="--m:47;--a:540;--b:515;--al:start">
-  <div>
-    <h2 class="t-sez" style="--tl:55">2024 - Premio cioccolato<br>giovani</h2>
-    <p class="t-sotto m" style="--m:18">L’Arte Bianca classificata al 1° posto</p>
-    <div class="riga m" style="--w:241;--m:19"></div>
-    <div class="testo m" style="--m:46">
-      <p>Il <b>Premio Cioccolato Giovani</b> è un concorso nazionale di Cioccolateria organizzato dall'Associazione Pièce e riservato agli studenti degli ultimi anni delle scuole di settore di tutta Italia (istituti professionali e alberghieri), di età compresa fra i 17 e i 21 anni.</p>
-      <p class="stacco"><b>Vittoria Tibaldi</b> dell'Arte Bianca di Neive ha vinto la quarta edizione del Premio Cioccolato Giovani!</p>
-      <p>Vittoria, oltre al primo premio, si è aggiudicata il premio speciale "<b>Scintilla creativa</b>" in memoria di Emilia Chiriotti.</p>
-      <p>Complimenti al prof. <b>Nicolò Di Gesaro</b>, che ha ricevuto il premio quale miglior formatore intitolato alla memoria del grande pasticcere Capitano Rosso, e complimenti alla sua allieva, davvero un ottimo risultato!!</p>
+<section class="sez scura" id="c2024">
+  <div class="cont">
+    <div class="anno-blocco">
+      <div>
+        <span class="anno-gigante" aria-hidden="true">2024</span>
+        <h2><span class="nascosto">2024 - </span>Premio Cioccolato Giovani</h2>
+        <p class="medaglia"><i>1°</i>L’Arte Bianca classificata al 1° posto</p>
+        <div class="testo" data-r>
+          <p>Il <b>Premio Cioccolato Giovani</b> è un concorso nazionale di Cioccolateria organizzato dall'Associazione Pièce e riservato agli studenti degli ultimi anni delle scuole di settore di tutta Italia (istituti professionali e alberghieri), di età compresa fra i 17 e i 21 anni.</p>
+          <p><b>Vittoria Tibaldi</b> dell'Arte Bianca di Neive ha vinto la quarta edizione del Premio Cioccolato Giovani!</p>
+          <p>Vittoria, oltre al primo premio, si è aggiudicata il premio speciale "<b>Scintilla creativa</b>" in memoria di Emilia Chiriotti.</p>
+          <p>Complimenti al prof. <b>Nicolò Di Gesaro</b>, che ha ricevuto il premio quale miglior formatore intitolato alla memoria del grande pasticcere Capitano Rosso, e complimenti alla sua allieva, davvero un ottimo risultato!!</p>
+        </div>
+      </div>
+      <figure class="cornice verticale premio" data-parallasse data-r="foto"><img src="media/concorsi-premio-cioccolato.jpg" alt="Vittoria Tibaldi con la coppa del Premio Cioccolato Giovani insieme al suo professore" srcset="media/ridotte/concorsi-premio-cioccolato-480.jpg 480w, media/ridotte/concorsi-premio-cioccolato-800.jpg 800w, media/ridotte/concorsi-premio-cioccolato-1200.jpg 1200w, media/concorsi-premio-cioccolato.jpg 1536w" sizes="(max-width: 899px) 92vw, 45vw" loading="lazy" decoding="async"></figure>
     </div>
   </div>
-  <div class="riquadro" style="aspect-ratio:515/666"><img src="media/concorsi-premio-cioccolato.jpg" alt="Vittoria Tibaldi con la coppa del Premio Cioccolato Giovani insieme al suo professore" srcset="media/ridotte/concorsi-premio-cioccolato-480.jpg 480w, media/ridotte/concorsi-premio-cioccolato-800.jpg 800w, media/ridotte/concorsi-premio-cioccolato-1200.jpg 1200w, media/concorsi-premio-cioccolato.jpg 1536w" sizes="(max-width: 899px) 95vw, 40vw" loading="lazy" decoding="async"></div>
 </section>
 
-<a class="torna" href="#inizio">Torna su <svg viewBox="0 0 9 16" aria-hidden="true"><path d="M4.5 15.5V1M1 4.5l3.5-3.5 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
-
-<section class="contatti">
-  <h2>Contatti</h2>
-  <div class="riga"></div>
-  <p class="righe">Sede dell'IISS Piera Cillario Ferrero tel: 0173/441944 / Indirizzo: Via Balbo, 8 - Alba<br>Sede associata di Neive tel: 0173/67168 / Indirizzo: Via Rocca, 10<br>Sito istituzionale <a href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a><br>E-mail: artebiancaneive@cillarioferrero.it</p>
-</section>
-
-<footer class="piede">
-  <div class="col">
-    <p class="indirizzo">Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</p>
-    <div class="social">
-      <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener" aria-label="Facebook"><img class="fb" src="media/icona-facebook.png" alt="" loading="lazy" decoding="async"></a>
-      <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ig" src="media/icona-instagram.png" alt="" loading="lazy" decoding="async"></a>
+<section class="sez" id="c2023">
+  <div class="cont">
+    <div class="anno-blocco">
+      <div>
+        <span class="anno-gigante" aria-hidden="true">2023</span>
+        <h2><span class="nascosto">2023 - </span>Campionato nazionale di pasticceria</h2>
+        <p class="medaglia"><i>5ª</i>L’Arte Bianca ospita la quinta edizione</p>
+      </div>
+      <div class="testo" data-r>
+        <p class="attacco">L'Istituto vincitore ha avuto l'onore di <b>ospitare l'edizione successiva</b> della manifestazione ed è con grande orgoglio e senza falsa modestia che per 3 giorni (<b>28, 29 e 30 marzo</b>) <b>Neive è stata Capitale Italiana della Pasticceria</b>.</p>
+        <p>La quinta edizione del Campionato Nazionale di pasticceria dedicato agli istituti alberghieri d’Italia, promosso dal Ministero della Pubblica Istruzione e di rilievo nazionale, organizzato dalla <b>Fipgc</b> (Federazione Italiana Pasticceria e Gelateria), ha visto la partecipazione di studenti e docenti di 30 scuole provenienti da tutta Italia ed è stato patrocinato dalla <b>Regione Piemonte</b> e dai <b>Comuni di Alba e Neive</b>.</p>
+      </div>
     </div>
+  </div>
+  <div class="galleria galleria-2023" data-r>
+    <div class="binario" tabindex="0" aria-label="Le foto del Campionato nazionale di pasticceria 2023 a Neive: si scorrono di lato">
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/01.jpg?v=1794961356" srcset="media/slideshow-telefono/campionato-2023/01.jpg?v=1794961356 1200w, media/slideshow/campionato-2023/01.jpg?v=1794961356 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/02.jpg?v=1794961356" srcset="media/slideshow-telefono/campionato-2023/02.jpg?v=1794961356 1200w, media/slideshow/campionato-2023/02.jpg?v=1794961356 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/03.jpg?v=1794961356" srcset="media/slideshow-telefono/campionato-2023/03.jpg?v=1794961356 1200w, media/slideshow/campionato-2023/03.jpg?v=1794961356 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/04.jpg?v=1794961356" srcset="media/slideshow-telefono/campionato-2023/04.jpg?v=1794961356 1200w, media/slideshow/campionato-2023/04.jpg?v=1794961356 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/05.jpg?v=1794961356" srcset="media/slideshow-telefono/campionato-2023/05.jpg?v=1794961356 1200w, media/slideshow/campionato-2023/05.jpg?v=1794961356 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/06.jpg?v=1794961356" srcset="media/slideshow-telefono/campionato-2023/06.jpg?v=1794961356 1200w, media/slideshow/campionato-2023/06.jpg?v=1794961356 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/07.jpg?v=1794961357" srcset="media/slideshow-telefono/campionato-2023/07.jpg?v=1794961357 1200w, media/slideshow/campionato-2023/07.jpg?v=1794961357 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/08.jpg?v=1794961357" srcset="media/slideshow-telefono/campionato-2023/08.jpg?v=1794961357 1200w, media/slideshow/campionato-2023/08.jpg?v=1794961357 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/campionato-2023/09.jpg?v=1794961357" srcset="media/slideshow-telefono/campionato-2023/09.jpg?v=1794961357 1200w, media/slideshow/campionato-2023/09.jpg?v=1794961357 1200w" sizes="(max-width: 899px) 90vw, 45vw" width="1200" height="801" alt="Il Campionato nazionale di pasticceria 2023 a Neive" loading="lazy" decoding="async"></div></figure>
+    </div>
+    <div class="cont"><div class="comandi"><button class="prec" type="button" aria-label="Foto precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><span class="conta">1 / 9</span><button class="succ" type="button" aria-label="Foto successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+  </div>
+</section>
+
+<section class="sez scura" id="c2022">
+  <div class="cont">
+    <div class="anno-blocco">
+      <div>
+        <span class="anno-gigante" aria-hidden="true">2022</span>
+        <h2><span class="nascosto">2022 - </span>Campionato nazionale di pasticceria</h2>
+        <p class="medaglia"><i>1°</i>L’Arte Bianca classificata al 1° posto</p>
+        <div class="testo" data-r>
+          <p>I migliori giovani talenti della pasticceria italiana si sfidano a colpi di cioccolato, glassa, pan di spagna e caffè per contendersi la palma di miglior pasticcere d’Italia juniores.</p>
+          <p>Ciascuna scuola sarà rappresentata da una squadra formata da due concorrenti, che saranno giudicati da una giuria composta da maestri pasticceri della FIPGC e rappresentanti del MIUR.</p>
+          <p>Il <b>6 maggio 2022</b> è una data da ricordare per l'Arte Bianca di Neive: <b>Silvia Giamello</b> e <b>Mattia Sabatini,</b> con il loro professore <b>Rosario Torre</b>, si sono classificati al <b>primo posto</b> con il loro spettacolare dolce “<b>Dromos</b>” alla cerimonia di premiazione della quarta edizione del Campionato Nazionale di pasticceria dedicato agli istituti alberghieri d’Italia presso l’Istituto IPIA “Galileo Ferraris” di Iglesias (Sardegna).</p>
+        </div>
+      </div>
+      <div class="galleria-blocco" data-r>
+        <div class="galleria-auto verticale" role="img" aria-label="Il dolce Dromos del Campionato nazionale 2022"><img src="media/slideshow/campionato-2022/01.jpg?v=1790437235" srcset="media/slideshow-telefono/campionato-2022/01.jpg?v=1790497869 1004w, media/slideshow/campionato-2022/01.jpg?v=1790437235 1004w" sizes="(max-width: 899px) 92vw, 50vw" width="1004" height="1506" alt="Il dolce Dromos del Campionato nazionale 2022, foto 1" loading="lazy" decoding="async"><img src="media/slideshow/campionato-2022/02.jpg?v=1790437235" srcset="media/slideshow-telefono/campionato-2022/02.jpg?v=1790497869 1000w, media/slideshow/campionato-2022/02.jpg?v=1790437235 1000w" sizes="(max-width: 899px) 92vw, 50vw" width="1000" height="1500" alt="Il dolce Dromos del Campionato nazionale 2022, foto 2" loading="lazy" decoding="async"><img src="media/slideshow/campionato-2022/03.jpg?v=1790437235" srcset="media/slideshow-telefono/campionato-2022/03.jpg?v=1790497869 1000w, media/slideshow/campionato-2022/03.jpg?v=1790437235 1000w" sizes="(max-width: 899px) 92vw, 50vw" width="1000" height="1500" alt="Il dolce Dromos del Campionato nazionale 2022, foto 3" loading="lazy" decoding="async"><img src="media/slideshow/campionato-2022/04.jpg?v=1790437235" srcset="media/slideshow-telefono/campionato-2022/04.jpg?v=1790497869 1000w, media/slideshow/campionato-2022/04.jpg?v=1790437235 1000w" sizes="(max-width: 899px) 92vw, 50vw" width="1000" height="1500" alt="Il dolce Dromos del Campionato nazionale 2022, foto 4" loading="lazy" decoding="async"><img src="media/slideshow/campionato-2022/05.jpg?v=1790437235" srcset="media/slideshow-telefono/campionato-2022/05.jpg?v=1790497869 1000w, media/slideshow/campionato-2022/05.jpg?v=1790437235 1000w" sizes="(max-width: 899px) 92vw, 50vw" width="1000" height="1500" alt="Il dolce Dromos del Campionato nazionale 2022, foto 5" loading="lazy" decoding="async"><img src="media/slideshow/campionato-2022/06.jpg?v=1790437235" srcset="media/slideshow-telefono/campionato-2022/06.jpg?v=1790497869 1000w, media/slideshow/campionato-2022/06.jpg?v=1790437235 1000w" sizes="(max-width: 899px) 92vw, 50vw" width="1000" height="1500" alt="Il dolce Dromos del Campionato nazionale 2022, foto 6" loading="lazy" decoding="async"><img src="media/slideshow/campionato-2022/07.jpg?v=1790437236" srcset="media/slideshow-telefono/campionato-2022/07.jpg?v=1790497869 1000w, media/slideshow/campionato-2022/07.jpg?v=1790437236 1000w" sizes="(max-width: 899px) 92vw, 50vw" width="1000" height="1500" alt="Il dolce Dromos del Campionato nazionale 2022, foto 7" loading="lazy" decoding="async"><img src="media/slideshow/campionato-2022/08.jpg?v=1790437236" srcset="media/slideshow-telefono/campionato-2022/08.jpg?v=1790497869 670w, media/slideshow/campionato-2022/08.jpg?v=1790437236 670w" sizes="(max-width: 899px) 92vw, 50vw" width="670" height="413" alt="Il dolce Dromos del Campionato nazionale 2022, foto 8" loading="lazy" decoding="async"></div>
+        <div class="punti"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="piede" id="contatti">
+  <div class="cont">
+    <p class="occhiello">Contatti</p>
+    <div class="piede-griglia">
+      <div>
+        <h3>Sede associata di Neive</h3>
+        <p>Via Rocca, 10 - Neive<br>tel. <a class="r" href="tel:+3917367168">0173/67168</a><br>E-mail: <a class="r" href="mailto:artebiancaneive@cillarioferrero.it">artebiancaneive@cillarioferrero.it</a></p>
+      </div>
+      <div>
+        <h3>Sede dell'IISS Piera Cillario Ferrero</h3>
+        <p>Via Balbo, 8 - Alba<br>tel. <a class="r" href="tel:+390173441944">0173/441944</a><br>Sito istituzionale <a class="r" href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a></p>
+      </div>
+      <div>
+        <h3>Seguici</h3>
+        <div class="social">
+          <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg> Facebook</a>
+          <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg> Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="firma" aria-hidden="true">Arte Bianca <em>di Neive</em></p>
+    <div class="piede-fondo"><span>Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</span><a href="#inizio">Torna su ↑</a></div>
   </div>
 </footer>
-
-<script src="slideshow-dati.js"></script>
-<script src="slideshow.js"></script>
-<script src="script.js"></script>
+<script src="sito.js?v=1794962121"></script>
 </body>
 </html>

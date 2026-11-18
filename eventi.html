@@ -22,157 +22,201 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stile.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css?v=1794962121">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body id="inizio">
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <clipPath id="forma-macchia" clipPathUnits="objectBoundingBox">
-    <path d="M0.9475 0.3481C0.8592 0.1611 0.6811 0.0244 0.4914 0.0044C0.3366 -0.0195 0.2347 0.0561 0.1515 0.1655C0.0683 0.2748 0.0241 0.4142 0.0062 0.5547C-0.0032 0.6290 -0.0051 0.7077 0.0237 0.7757C0.0604 0.8620 0.1404 0.9169 0.2219 0.9510C0.4411 1.0428 0.7101 1.0072 0.8807 0.8314C0.9341 0.7764 0.9778 0.7075 0.9934 0.6293C1.0124 0.5344 0.9883 0.4345 0.9475 0.3481Z"/>
-  </clipPath>
-</svg>
-
-<nav class="menu" aria-label="Menu principale">
-  <a href="/" data-t="HOME">HOME</a>
-  <a href="/stage" data-t="STAGE">STAGE</a>
-  <a href="/concorsi" data-t="CONCORSI">CONCORSI</a>
-  <a href="/eventi" class="attivo" aria-current="page" data-t="EVENTI">EVENTI</a>
-  <a href="/dopo-il-diploma" data-t="DOPO IL DIPLOMA">DOPO IL DIPLOMA</a>
-</nav>
-
-<div class="fascia"><img src="media/logo-scuola.png" alt="Logo Arte Bianca Neive, IISS Piera Cillario Ferrero"></div>
-
-<header class="testata-pag">
-  <p class="kicker">- I nostri fiori all’occhiello -</p>
-  <h1>EVENTI</h1>
+<header class="testa">
+  <div class="cont">
+    <a class="marchio" href="/" aria-label="Arte Bianca di Neive, pagina iniziale"><img src="media/logo-scuola.png" alt="" width="42" height="42"><span>Arte Bianca <i>di Neive</i></span></a>
+    <nav class="voci" aria-label="Menu principale">
+    <a href="/">Home</a>
+    <a href="/stage">Stage</a>
+    <a href="/concorsi">Concorsi</a>
+    <a href="/eventi" aria-current="page">Eventi</a>
+    <a href="/dopo-il-diploma">Dopo il diploma</a>
+    </nav>
+    <a class="tasto prenota-testa" href="/#orientamento">Orientamento</a>
+    <button class="apri-menu" type="button" aria-expanded="false" aria-controls="menu-pieno">Menu <i></i></button>
+  </div>
 </header>
-
-<div class="fascia-media eroe"><img src="media/eventi-hero-cheesecake.jpg" alt="Due cheesecake con frutti di bosco su un piano di marmo" srcset="media/ridotte/eventi-hero-cheesecake-480.jpg 480w, media/ridotte/eventi-hero-cheesecake-800.jpg 800w, media/ridotte/eventi-hero-cheesecake-1200.jpg 1200w, media/ridotte/eventi-hero-cheesecake-1600.jpg 1600w, media/ridotte/eventi-hero-cheesecake-2000.jpg 2000w, media/eventi-hero-cheesecake.jpg 2399w" sizes="100vw"></div>
-
-<section class="col centro m" style="--m:30">
-  <h2 class="t-sez" style="--tl:74">Manifestazioni</h2>
-  <div class="riga m" style="--w:188;--m:10"></div>
-  <p class="w m" style="--w:720;--m:18">I nostri studenti mettono in pratica la professionalità acquisita in laboratorio curando buffet e accoglienza, e partecipando con le loro competenze a eventi sportivi, culturali e sociali, uscite, settimane bianche, teatro, certificazioni, visite aziendali e concorsi.</p>
+<div class="menu-pieno" id="menu-pieno" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="chiudi" type="button">Chiudi <i></i></button>
+  <nav aria-label="Menu principale">
+    <a href="/"><small>01</small>Home</a>
+    <a href="/stage"><small>02</small>Stage</a>
+    <a href="/concorsi"><small>03</small>Concorsi</a>
+    <a href="/eventi" aria-current="page"><small>04</small>Eventi</a>
+    <a href="/dopo-il-diploma"><small>05</small>Dopo il diploma</a>
+  </nav>
+  <a class="tasto" href="/#orientamento">Orientamento 2027-28 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <p class="recapiti">Via Rocca 10, Neive · tel. 0173/67168<br>artebiancaneive@cillarioferrero.it</p>
+</div>
+<main>
+<section class="eroe pagina">
+  <div class="cont">
+    <p class="occhiello">I nostri fiori all’occhiello</p>
+    <h1 class="eroe-titolo">Eventi</h1>
+    <div class="eroe-piede">
+      <nav class="sommario" aria-label="In questa pagina"><a href="#manifestazioni">Manifestazioni</a><a href="#sport">Sport</a><a href="#trekking">Trekking</a><a href="#masterclass">Masterclass</a><a href="#proposte">Altre proposte formative</a></nav>
+    </div>
+  </div>
+  <div class="eroe-media"><img src="media/eventi-hero-cheesecake.jpg" alt="Due cheesecake con frutti di bosco su un piano di marmo" srcset="media/ridotte/eventi-hero-cheesecake-800.jpg 800w, media/ridotte/eventi-hero-cheesecake-1200.jpg 1200w, media/ridotte/eventi-hero-cheesecake-1600.jpg 1600w, media/ridotte/eventi-hero-cheesecake-2000.jpg 2000w, media/eventi-hero-cheesecake.jpg 2399w" sizes="100vw"></div>
 </section>
 
-<section class="col m" style="--m:23">
-  <div class="evento">
-    <div>
-      <h3 class="t-evento">Albaromatica</h3>
-      <div class="testo"><p>Albaromatica è la rassegna che anima il centro storico di Alba con i profumi di erbe e spezie durante la Fiera del Tartufo. Gli studenti partecipano preparando prodotti da forno aromatizzati, portando la creatività dell’Arte Bianca nel cuore della manifestazione.</p></div>
-    </div>
-    <div class="riquadro" style="aspect-ratio:640/360"><div class="ss" data-ss="albaromatica" role="img" aria-label="Albaromatica"></div></div>
-  </div>
-  <div class="evento">
-    <div>
-      <h3 class="t-evento">Cerimonia di accensione del<br>fiammifero</h3>
-      <div class="testo"><p>La cerimonia che apre ufficialmente la stagione della distillazione presso la storica <b>Distilleria Levi di Neive</b>. Un rito suggestivo che celebra le radici del territorio e la continuità delle tradizioni, trasformando l’avvio della produzione in un momento di incontro, cultura e comunità. Gli studenti dell’Arte Bianca partecipano attivamente, portando il loro entusiasmo e la loro professionalità in un contesto che unisce memoria, lavoro artigianale e spirito di festa.</p></div>
-    </div>
-    <div class="riquadro" style="aspect-ratio:1/1"><div class="ss" data-ss="fiammifero" role="img" aria-label="La cerimonia di accensione del fiammifero alla Distilleria Levi"></div></div>
-  </div>
-  <div class="evento">
-    <div>
-      <h3 class="t-evento">Cucina Dolce Giovani</h3>
-      <div class="testo"><p>Un progetto nazionale dedicato alla pasticceria da ristorazione, promosso da Associazione Pièce. L’iniziativa offre agli studenti un’esperienza intensiva di laboratori e dimostrazioni, valorizzando tecnica e creatività nella realizzazione di dessert al piatto e servizi completi di pasticceria. Un’occasione unica di confronto, crescita e formazione professionale.</p></div>
-    </div>
-    <div class="riquadro" style="aspect-ratio:640/667"><img src="media/eventi-cucina-dolce-giovani.jpg" alt="La locandina di Cucina Dolce Giovani" srcset="media/ridotte/eventi-cucina-dolce-giovani-480.jpg 480w, media/ridotte/eventi-cucina-dolce-giovani-800.jpg 800w, media/ridotte/eventi-cucina-dolce-giovani-1200.jpg 1200w, media/ridotte/eventi-cucina-dolce-giovani-1600.jpg 1600w, media/ridotte/eventi-cucina-dolce-giovani-2000.jpg 2000w, media/eventi-cucina-dolce-giovani.jpg 2273w" sizes="(max-width: 899px) 95vw, 50vw" loading="lazy" decoding="async"></div>
-  </div>
-  <div class="evento">
-    <div>
-      <h3 class="t-evento">Caffetteria work in<br>progress</h3>
-      <div class="testo"><p>Il progetto si svolge all’interno del <b>bar didattico</b> della scuola e rappresenta un laboratorio <b>inclusivo</b> che permette agli studenti di sviluppare competenze professionali nella gestione del servizio di caffetteria.</p><p>L’attività potenzia abilità tecniche e relazionali, promuove autonomia e spirito di collaborazione e prepara concretamente all’inserimento nel mondo del lavoro.</p></div>
-    </div>
-    <div class="riquadro" style="aspect-ratio:640/427"><div class="ss" data-ss="caffetteria" role="img" aria-label="La caffetteria del bar didattico"></div></div>
-  </div>
-  <div class="evento">
-    <div>
-      <h3 class="t-evento">Cioccolatò</h3>
-      <div class="testo"><p>CioccolaTò è la grande kermesse torinese dedicata al cioccolato, che ogni anno richiama maestri, aziende e appassionati da tutta Italia. In collaborazione con l’Associazione Pièce, gli studenti dell’Arte Bianca partecipano portando le proprie creazioni e mettendo in campo competenze e passione in uno degli eventi più prestigiosi del settore.</p></div>
-    </div>
-    <div class="riquadro" style="aspect-ratio:640/427"><div class="ss" data-ss="cioccolato" role="img" aria-label="Gli studenti a CioccolaTò"></div></div>
-  </div>
-  <div class="evento">
-    <div>
-      <h3 class="t-evento">Festa della Barbera</h3>
-      <div class="testo" style="max-width:calc(384 * var(--u))"><p>A Castagnole delle Lanze, la Festa della Barbera è un appuntamento che unisce tradizione, vino e pasticceria. Per tre giorni gli studenti dell’Arte Bianca si alternano con entusiasmo, proponendo creazioni dolci che raccontano la qualità della formazione e la creatività delle nuove generazioni. Un evento che celebra le eccellenze locali e che ogni anno conquista il pubblico con passione e professionalità.</p></div>
-    </div>
-    <div class="riquadro" style="aspect-ratio:640/480"><img src="media/eventi-festa-barbera.jpg" alt="Lo stand dell'Arte Bianca alla Festa della Barbera" srcset="media/ridotte/eventi-festa-barbera-480.jpg 480w, media/ridotte/eventi-festa-barbera-800.jpg 800w, media/ridotte/eventi-festa-barbera-1200.jpg 1200w, media/eventi-festa-barbera.jpg 1440w" sizes="(max-width: 899px) 95vw, 50vw" loading="lazy" decoding="async"></div>
-  </div>
-</section>
-
-<div class="fascia-media m" style="--m:25;aspect-ratio:1414/694"><video data-src="media/video-corsa.mp4" data-poster="media/copertina-corsa.jpg" muted loop playsinline style="object-position:50% 78%" aria-label="Ragazze che corrono su un sentiero di campagna"></video></div>
-
-<section class="col centro m" style="--m:40">
-  <h2 class="t-sez" style="--tl:74">Sport</h2>
-  <p class="t-sotto m" style="--m:8">Corse campestri e gare di atletica</p>
-  <div class="riga m" style="--w:188;--m:19"></div>
-  <div class="riquadro m" style="--m:49;aspect-ratio:1167/778"><div class="ss" data-ss="sport" role="img" aria-label="Corse campestri e gare di atletica"></div></div>
-</section>
-
-<section class="col centro m" style="--m:40">
-  <h2 class="t-sez" style="--tl:74">Trekking</h2>
-  <div class="riga m" style="--w:188;--m:10"></div>
-  <p class="w m" style="--w:720;--m:18">A settembre, nell’ambito del progetto accoglienza, le classi prime partecipano a una giornata di trekking tra i sentieri di Neive, occasione per ammirare i paesaggi e socializzare con i nuovi compagni.</p>
-  <div class="riquadro m" style="--m:46;aspect-ratio:1166/777"><div class="ss" data-ss="trekking" role="img" aria-label="La giornata di trekking delle classi prime"></div></div>
-</section>
-
-<section class="col m" style="--m:38">
-  <div class="centro">
-    <h2 class="t-sez" style="--tl:74">Masterclass</h2>
-    <div class="riga m" style="--w:188;--m:10"></div>
-    <p class="w m" style="--w:720;--m:18">Momenti formativi d’eccellenza con maestri pasticceri, panificatori e cioccolatieri di fama. Occasioni che uniscono teoria e pratica, offrendo agli studenti l’opportunità di sperimentare nuove tecniche e accrescere competenze e passione nell’arte dolciaria.</p>
-  </div>
-  <div class="master m" style="--m:46">
-    <div class="riquadro foto"><img src="media/eventi-master-novelli.jpg" alt="Giacomo Novelli con gli studenti in laboratorio" style="object-position:50% 50%" srcset="media/ridotte/eventi-master-novelli-480.jpg 480w, media/ridotte/eventi-master-novelli-800.jpg 800w, media/ridotte/eventi-master-novelli-1200.jpg 1200w, media/ridotte/eventi-master-novelli-1600.jpg 1600w, media/eventi-master-novelli.jpg 1800w" sizes="(max-width: 899px) 85vw, 35vw" loading="lazy" decoding="async"></div>
-    <div>
-      <div class="intesta-m"><h3 class="t-evento">Giacomo Novelli</h3><span class="data">26/03/2025</span></div>
-      <div class="testo"><p>L’Arte Bianca ha ospitato Giacomo Novelli, ex studente dell’istituto e oggi pasticcere e cioccolatiere, titolare della “Pasticceria Moretta”.</p><p>La Masterclass dedicata al cioccolato ha unito spiegazioni teoriche e prove pratiche: gli studenti si sono cimentati nella realizzazione di uova ripiene, praline e gianduiotti, sperimentando tecniche di temperaggio e nuove preparazioni.</p><p>Un’esperienza preziosa di crescita e passione, resa possibile grazie al contributo del Maestro e all’impegno di docenti, personale e ragazzi.</p></div>
-    </div>
-  </div>
-  <div class="master m" style="--m:47">
-    <div class="riquadro foto"><img src="media/eventi-master-aimar.jpg" alt="Ritratto di Alessio Aimar" style="object-position:50% 50%" srcset="media/ridotte/eventi-master-aimar-480.jpg 480w, media/ridotte/eventi-master-aimar-800.jpg 800w, media/eventi-master-aimar.jpg 1056w" sizes="(max-width: 899px) 85vw, 35vw" loading="lazy" decoding="async"></div>
-    <div>
-      <div class="intesta-m"><h3 class="t-evento">Alessio Aimar</h3><span class="data">08/04/2025</span></div>
-      <div class="testo"><p>L’Arte Bianca ha avuto il piacere di ospitare Alessio Aimar, campione europeo di panificazione e titolare del “Panificio Aimar” di Carmagnola. La Masterclass, interamente dedicata ai lievitati, ha unito spiegazioni tecniche e prove pratiche: gli studenti si sono cimentati nella preparazione di focaccia genovese, padellino pugliese, grissini rustici e pane “ciabatta”. Un’occasione speciale di confronto e crescita, che ha permesso ai ragazzi di acquisire nuove competenze e condividere la passione del Maestro per l’arte della panificazione.</p></div>
-    </div>
-  </div>
-  <div class="master m" style="--m:47">
-    <div class="riquadro foto"><img src="media/eventi-master-morandin.jpg" alt="Mauro Morandin con gli studenti in laboratorio" style="object-position:50% 50%" srcset="media/ridotte/eventi-master-morandin-480.jpg 480w, media/ridotte/eventi-master-morandin-800.jpg 800w, media/ridotte/eventi-master-morandin-1200.jpg 1200w, media/ridotte/eventi-master-morandin-1600.jpg 1600w, media/eventi-master-morandin.jpg 1799w" sizes="(max-width: 899px) 85vw, 35vw" loading="lazy" decoding="async"></div>
-    <div>
-      <div class="intesta-m"><h3 class="t-evento">Mauro Morandin</h3><span class="data">10/05/2025</span></div>
-      <div class="testo"><p>Abbiamo avuto il piacere di ospitare Mauro Morandin, maestro pasticcere e confettiere di fama internazionale, per una Masterclass dedicata all’arte della confetteria. L’incontro ha alternato spiegazioni teoriche e dimostrazioni pratiche, permettendo agli studenti di cimentarsi con diverse preparazioni: dalle gelatine all’aspic di frutta, fino a panna cotta e creme caramel. Un’occasione preziosa di confronto e crescita, che ha offerto ai ragazzi la possibilità di apprendere nuove tecniche e rafforzare la propria passione grazie all’esperienza di un grande maestro.</p></div>
+<section class="sez" id="manifestazioni">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <h2 class="titolo-sez">Manifestazioni</h2>
+      <p class="attacco">I nostri studenti mettono in pratica la professionalità acquisita in laboratorio curando buffet e accoglienza, e partecipando con le loro competenze a eventi sportivi, culturali e sociali, uscite, settimane bianche, teatro, certificazioni, visite aziendali e concorsi.</p>
+    </header>
+    <div class="pila">
+      <article class="scheda">
+        <div><span class="num-s">01 / 06</span><h3>Albaromatica</h3><div class="testo"><p>Albaromatica è la rassegna che anima il centro storico di Alba con i profumi di erbe e spezie durante la Fiera del Tartufo. Gli studenti partecipano preparando prodotti da forno aromatizzati, portando la creatività dell’Arte Bianca nel cuore della manifestazione.</p></div></div>
+        <div><div class="galleria-auto larga" role="img" aria-label="Albaromatica"><img src="media/slideshow/albaromatica/01.jpg?v=1790437236" srcset="media/slideshow-telefono/albaromatica/01.jpg?v=1790497869 1153w, media/slideshow/albaromatica/01.jpg?v=1790437236 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 1" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/02.jpg?v=1790437236" srcset="media/slideshow-telefono/albaromatica/02.jpg?v=1790497869 1153w, media/slideshow/albaromatica/02.jpg?v=1790437236 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 2" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/03.jpg?v=1790437236" srcset="media/slideshow-telefono/albaromatica/03.jpg?v=1790497869 1153w, media/slideshow/albaromatica/03.jpg?v=1790437236 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 3" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/04.jpg?v=1790437236" srcset="media/slideshow-telefono/albaromatica/04.jpg?v=1790497869 1153w, media/slideshow/albaromatica/04.jpg?v=1790437236 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 4" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/05.jpg?v=1790437236" srcset="media/slideshow-telefono/albaromatica/05.jpg?v=1790497869 1153w, media/slideshow/albaromatica/05.jpg?v=1790437236 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 5" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/06.jpg?v=1790437236" srcset="media/slideshow-telefono/albaromatica/06.jpg?v=1790497869 1153w, media/slideshow/albaromatica/06.jpg?v=1790437236 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 6" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/07.jpg?v=1790437237" srcset="media/slideshow-telefono/albaromatica/07.jpg?v=1790497869 1153w, media/slideshow/albaromatica/07.jpg?v=1790437237 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 7" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/08.jpg?v=1790437237" srcset="media/slideshow-telefono/albaromatica/08.jpg?v=1790497869 1153w, media/slideshow/albaromatica/08.jpg?v=1790437237 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 8" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/09.jpg?v=1790437237" srcset="media/slideshow-telefono/albaromatica/09.jpg?v=1790497869 1153w, media/slideshow/albaromatica/09.jpg?v=1790437237 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 9" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/10.jpg?v=1790437237" srcset="media/slideshow-telefono/albaromatica/10.jpg?v=1790497869 1153w, media/slideshow/albaromatica/10.jpg?v=1790437237 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 10" loading="lazy" decoding="async"><img src="media/slideshow/albaromatica/11.jpg?v=1790437237" srcset="media/slideshow-telefono/albaromatica/11.jpg?v=1790497869 1153w, media/slideshow/albaromatica/11.jpg?v=1790437237 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="731" alt="Albaromatica, foto 11" loading="lazy" decoding="async"></div><div class="punti"></div></div>
+      </article>
+      <article class="scheda">
+        <div><span class="num-s">02 / 06</span><h3>Cerimonia di accensione del fiammifero</h3><div class="testo"><p>La cerimonia che apre ufficialmente la stagione della distillazione presso la storica <b>Distilleria Levi di Neive</b>. Un rito suggestivo che celebra le radici del territorio e la continuità delle tradizioni, trasformando l’avvio della produzione in un momento di incontro, cultura e comunità. Gli studenti dell’Arte Bianca partecipano attivamente, portando il loro entusiasmo e la loro professionalità in un contesto che unisce memoria, lavoro artigianale e spirito di festa.</p></div></div>
+        <div><div class="galleria-auto quadra" role="img" aria-label="La cerimonia di accensione del fiammifero alla Distilleria Levi"><img src="media/slideshow/fiammifero/01.jpg?v=1790437237" srcset="media/slideshow-telefono/fiammifero/01.jpg?v=1790497869 1200w, media/slideshow/fiammifero/01.jpg?v=1790437237 1200w" sizes="(max-width: 899px) 92vw, 50vw" width="1200" height="1200" alt="La cerimonia di accensione del fiammifero, foto 1" loading="lazy" decoding="async"><img src="media/slideshow/fiammifero/02.jpg?v=1790437237" srcset="media/slideshow-telefono/fiammifero/02.jpg?v=1790497869 1256w, media/slideshow/fiammifero/02.jpg?v=1790437237 1418w" sizes="(max-width: 899px) 92vw, 50vw" width="1418" height="1299" alt="La cerimonia di accensione del fiammifero, foto 2" loading="lazy" decoding="async"><img src="media/slideshow/fiammifero/03.jpg?v=1790437237" srcset="media/slideshow-telefono/fiammifero/03.jpg?v=1790497870 1534w, media/slideshow/fiammifero/03.jpg?v=1790437237 1733w" sizes="(max-width: 899px) 92vw, 50vw" width="1733" height="1300" alt="La cerimonia di accensione del fiammifero, foto 3" loading="lazy" decoding="async"><img src="media/slideshow/fiammifero/04.jpg?v=1790437237" srcset="media/slideshow-telefono/fiammifero/04.jpg?v=1790497870 1600w, media/slideshow/fiammifero/04.jpg?v=1790437237 1600w" sizes="(max-width: 899px) 92vw, 50vw" width="1600" height="1200" alt="La cerimonia di accensione del fiammifero, foto 4" loading="lazy" decoding="async"></div><div class="punti"></div></div>
+      </article>
+      <article class="scheda">
+        <div><span class="num-s">03 / 06</span><h3>Cucina Dolce Giovani</h3><div class="testo"><p>Un progetto nazionale dedicato alla pasticceria da ristorazione, promosso da Associazione Pièce. L’iniziativa offre agli studenti un’esperienza intensiva di laboratori e dimostrazioni, valorizzando tecnica e creatività nella realizzazione di dessert al piatto e servizi completi di pasticceria. Un’occasione unica di confronto, crescita e formazione professionale.</p></div></div>
+        <div><div class="cornice locandina"><img src="media/eventi-cucina-dolce-giovani.jpg" alt="La locandina di Cucina Dolce Giovani" srcset="media/ridotte/eventi-cucina-dolce-giovani-480.jpg 480w, media/ridotte/eventi-cucina-dolce-giovani-800.jpg 800w, media/ridotte/eventi-cucina-dolce-giovani-1200.jpg 1200w, media/ridotte/eventi-cucina-dolce-giovani-1600.jpg 1600w" sizes="(max-width: 899px) 92vw, 40vw" loading="lazy" decoding="async"></div></div>
+      </article>
+      <article class="scheda">
+        <div><span class="num-s">04 / 06</span><h3>Caffetteria work in progress</h3><div class="testo"><p>Il progetto si svolge all’interno del <b>bar didattico</b> della scuola e rappresenta un laboratorio <b>inclusivo</b> che permette agli studenti di sviluppare competenze professionali nella gestione del servizio di caffetteria.</p><p>L’attività potenzia abilità tecniche e relazionali, promuove autonomia e spirito di collaborazione e prepara concretamente all’inserimento nel mondo del lavoro.</p></div></div>
+        <div><div class="galleria-auto" role="img" aria-label="La caffetteria del bar didattico"><img src="media/slideshow/caffetteria/01.jpg?v=1790437237" srcset="media/slideshow-telefono/caffetteria/01.jpg?v=1790497870 1150w, media/slideshow/caffetteria/01.jpg?v=1790437237 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 1" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/02.jpg?v=1790437237" srcset="media/slideshow-telefono/caffetteria/02.jpg?v=1790497870 1150w, media/slideshow/caffetteria/02.jpg?v=1790437237 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 2" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/03.jpg?v=1790437237" srcset="media/slideshow-telefono/caffetteria/03.jpg?v=1790497870 1150w, media/slideshow/caffetteria/03.jpg?v=1790437237 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 3" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/04.jpg?v=1790437237" srcset="media/slideshow-telefono/caffetteria/04.jpg?v=1790497870 1150w, media/slideshow/caffetteria/04.jpg?v=1790437237 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 4" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/05.jpg?v=1790437238" srcset="media/slideshow-telefono/caffetteria/05.jpg?v=1790497870 1150w, media/slideshow/caffetteria/05.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 5" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/06.jpg?v=1790437238" srcset="media/slideshow-telefono/caffetteria/06.jpg?v=1790497870 1150w, media/slideshow/caffetteria/06.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="866" alt="La caffetteria del bar didattico, foto 6" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/07.jpg?v=1790437238" srcset="media/slideshow-telefono/caffetteria/07.jpg?v=1790497870 1150w, media/slideshow/caffetteria/07.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 7" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/08.jpg?v=1790437238" srcset="media/slideshow-telefono/caffetteria/08.jpg?v=1790497870 1150w, media/slideshow/caffetteria/08.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 8" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/09.jpg?v=1790437238" srcset="media/slideshow-telefono/caffetteria/09.jpg?v=1790497870 1150w, media/slideshow/caffetteria/09.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 9" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/10.jpg?v=1790437238" srcset="media/slideshow-telefono/caffetteria/10.jpg?v=1790497870 1150w, media/slideshow/caffetteria/10.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 10" loading="lazy" decoding="async"><img src="media/slideshow/caffetteria/11.jpg?v=1790437238" srcset="media/slideshow-telefono/caffetteria/11.jpg?v=1790497870 1150w, media/slideshow/caffetteria/11.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="867" alt="La caffetteria del bar didattico, foto 11" loading="lazy" decoding="async"></div><div class="punti"></div></div>
+      </article>
+      <article class="scheda">
+        <div><span class="num-s">05 / 06</span><h3>Cioccolatò</h3><div class="testo"><p>CioccolaTò è la grande kermesse torinese dedicata al cioccolato, che ogni anno richiama maestri, aziende e appassionati da tutta Italia. In collaborazione con l’Associazione Pièce, gli studenti dell’Arte Bianca partecipano portando le proprie creazioni e mettendo in campo competenze e passione in uno degli eventi più prestigiosi del settore.</p></div></div>
+        <div><div class="galleria-auto" role="img" aria-label="Gli studenti a CioccolaTò"><img src="media/slideshow/cioccolato/01.jpg?v=1790437238" srcset="media/slideshow-telefono/cioccolato/01.jpg?v=1790497870 1200w, media/slideshow/cioccolato/01.jpg?v=1790437238 1200w" sizes="(max-width: 899px) 92vw, 50vw" width="1200" height="800" alt="Gli studenti a CioccolaTò, foto 1" loading="lazy" decoding="async"><img src="media/slideshow/cioccolato/02.jpg?v=1790437238" srcset="media/slideshow-telefono/cioccolato/02.jpg?v=1790497870 1150w, media/slideshow/cioccolato/02.jpg?v=1790437238 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="975" alt="Gli studenti a CioccolaTò, foto 2" loading="lazy" decoding="async"><img src="media/slideshow/cioccolato/03.jpg?v=1790437238" srcset="media/slideshow-telefono/cioccolato/03.jpg?v=1790497870 1200w, media/slideshow/cioccolato/03.jpg?v=1790437238 1200w" sizes="(max-width: 899px) 92vw, 50vw" width="1200" height="758" alt="Gli studenti a CioccolaTò, foto 3" loading="lazy" decoding="async"><img src="media/slideshow/cioccolato/04.jpg?v=1790437238" srcset="media/slideshow-telefono/cioccolato/04.jpg?v=1790497870 1153w, media/slideshow/cioccolato/04.jpg?v=1790437238 1302w" sizes="(max-width: 899px) 92vw, 50vw" width="1302" height="1275" alt="Gli studenti a CioccolaTò, foto 4" loading="lazy" decoding="async"><img src="media/slideshow/cioccolato/05.jpg?v=1790437238" srcset="media/slideshow-telefono/cioccolato/05.jpg?v=1790497870 1363w, media/slideshow/cioccolato/05.jpg?v=1790437238 1540w" sizes="(max-width: 899px) 92vw, 50vw" width="1540" height="866" alt="Gli studenti a CioccolaTò, foto 5" loading="lazy" decoding="async"><img src="media/slideshow/cioccolato/06.jpg?v=1790437239" srcset="media/slideshow-telefono/cioccolato/06.jpg?v=1790497871 1150w, media/slideshow/cioccolato/06.jpg?v=1790437239 1300w" sizes="(max-width: 899px) 92vw, 50vw" width="1300" height="975" alt="Gli studenti a CioccolaTò, foto 6" loading="lazy" decoding="async"><img src="media/slideshow/cioccolato/07.jpg?v=1790437239" srcset="media/slideshow-telefono/cioccolato/07.jpg?v=1790497871 1024w, media/slideshow/cioccolato/07.jpg?v=1790437239 1024w" sizes="(max-width: 899px) 92vw, 50vw" width="1024" height="768" alt="Gli studenti a CioccolaTò, foto 7" loading="lazy" decoding="async"><img src="media/slideshow/cioccolato/08.jpg?v=1790437239" srcset="media/slideshow-telefono/cioccolato/08.jpg?v=1790497871 1363w, media/slideshow/cioccolato/08.jpg?v=1790437239 1540w" sizes="(max-width: 899px) 92vw, 50vw" width="1540" height="866" alt="Gli studenti a CioccolaTò, foto 8" loading="lazy" decoding="async"></div><div class="punti"></div></div>
+      </article>
+      <article class="scheda">
+        <div><span class="num-s">06 / 06</span><h3>Festa della Barbera</h3><div class="testo"><p>A Castagnole delle Lanze, la Festa della Barbera è un appuntamento che unisce tradizione, vino e pasticceria. Per tre giorni gli studenti dell’Arte Bianca si alternano con entusiasmo, proponendo creazioni dolci che raccontano la qualità della formazione e la creatività delle nuove generazioni. Un evento che celebra le eccellenze locali e che ogni anno conquista il pubblico con passione e professionalità.</p></div></div>
+        <div><div class="cornice barbera"><img src="media/eventi-festa-barbera.jpg" alt="Lo stand dell'Arte Bianca alla Festa della Barbera" srcset="media/ridotte/eventi-festa-barbera-480.jpg 480w, media/ridotte/eventi-festa-barbera-800.jpg 800w, media/ridotte/eventi-festa-barbera-1200.jpg 1200w, media/eventi-festa-barbera.jpg 1440w" sizes="(max-width: 899px) 92vw, 50vw" loading="lazy" decoding="async"></div></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="col centro m" style="--m:49">
-  <h2 class="t-sez" style="--tl:55">Altre proposte formative</h2>
-  <p class="t-sotto m" style="--m:18">Imparare, scoprire, divertirsi</p>
-  <div class="riga m" style="--w:188;--m:19"></div>
-  <div class="riquadro m" style="--m:49;aspect-ratio:1164/655"><div class="ss" data-ss="proposte-formative" role="img" aria-label="Altre proposte formative: settimane bianche, certificazioni informatiche e altro"></div></div>
-</section>
+<div class="fascia"><video data-src="media/video-corsa.mp4" poster="media/copertina-corsa.jpg" muted loop playsinline style="object-position:50% 78%" aria-label="Ragazze che corrono su un sentiero di campagna"></video></div>
 
-<a class="torna" href="#inizio">Torna su <svg viewBox="0 0 9 16" aria-hidden="true"><path d="M4.5 15.5V1M1 4.5l3.5-3.5 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
-
-<section class="contatti">
-  <h2>Contatti</h2>
-  <div class="riga"></div>
-  <p class="righe">Sede dell'IISS Piera Cillario Ferrero tel: 0173/441944 / Indirizzo: Via Balbo, 8 - Alba<br>Sede associata di Neive tel: 0173/67168 / Indirizzo: Via Rocca, 10<br>Sito istituzionale <a href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a><br>E-mail: artebiancaneive@cillarioferrero.it</p>
-</section>
-
-<footer class="piede">
-  <div class="col">
-    <p class="indirizzo">Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</p>
-    <div class="social">
-      <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener" aria-label="Facebook"><img class="fb" src="media/icona-facebook.png" alt="" loading="lazy" decoding="async"></a>
-      <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ig" src="media/icona-instagram.png" alt="" loading="lazy" decoding="async"></a>
+<section class="sez scura" id="sport">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <h2 class="titolo-sez">Sport</h2>
+      <p class="sottotitolo">Corse campestri e gare di atletica</p>
+    </header>
+  </div>
+  <div class="galleria" data-r>
+    <div class="binario" tabindex="0" aria-label="Le foto delle corse campestri e delle gare di atletica: si scorrono di lato">
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/01.jpg?v=1790437239" srcset="media/slideshow-telefono/sport/01.jpg?v=1790497871 1150w, media/slideshow/sport/01.jpg?v=1790437239 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/02.jpg?v=1790437239" srcset="media/slideshow-telefono/sport/02.jpg?v=1790497871 1150w, media/slideshow/sport/02.jpg?v=1790437239 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/03.jpg?v=1790437239" srcset="media/slideshow-telefono/sport/03.jpg?v=1790497871 1150w, media/slideshow/sport/03.jpg?v=1790437239 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/04.jpg?v=1790437239" srcset="media/slideshow-telefono/sport/04.jpg?v=1790497871 1150w, media/slideshow/sport/04.jpg?v=1790437239 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1500" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/05.jpg?v=1790437240" srcset="media/slideshow-telefono/sport/05.jpg?v=1790497871 1150w, media/slideshow/sport/05.jpg?v=1790437240 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1500" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/06.jpg?v=1790437240" srcset="media/slideshow-telefono/sport/06.jpg?v=1790497871 1150w, media/slideshow/sport/06.jpg?v=1790437240 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/07.jpg?v=1790437240" srcset="media/slideshow-telefono/sport/07.jpg?v=1790497871 1150w, media/slideshow/sport/07.jpg?v=1790437240 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/08.jpg?v=1790437240" srcset="media/slideshow-telefono/sport/08.jpg?v=1790497872 1150w, media/slideshow/sport/08.jpg?v=1790437240 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/09.jpg?v=1790437240" srcset="media/slideshow-telefono/sport/09.jpg?v=1790497872 1150w, media/slideshow/sport/09.jpg?v=1790437240 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/sport/10.jpg?v=1790437241" srcset="media/slideshow-telefono/sport/10.jpg?v=1790497872 1150w, media/slideshow/sport/10.jpg?v=1790437241 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="Corse campestri e gare di atletica" loading="lazy" decoding="async"></div></figure>
     </div>
+    <div class="cont"><div class="comandi"><button class="prec" type="button" aria-label="Foto precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><span class="conta">1 / 10</span><button class="succ" type="button" aria-label="Foto successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+  </div>
+</section>
+
+<section class="sez" id="trekking">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <h2 class="titolo-sez">Trekking</h2>
+      <p class="attacco">A settembre, nell’ambito del progetto accoglienza, le classi prime partecipano a una giornata di trekking tra i sentieri di Neive, occasione per ammirare i paesaggi e socializzare con i nuovi compagni.</p>
+    </header>
+  </div>
+  <div class="galleria" data-r>
+    <div class="binario" tabindex="0" aria-label="Le foto della giornata di trekking delle classi prime: si scorrono di lato">
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/01.jpg?v=1790437241" srcset="media/slideshow-telefono/trekking/01.jpg?v=1790497872 1150w, media/slideshow/trekking/01.jpg?v=1790437241 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1501" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/02.jpg?v=1790437241" srcset="media/slideshow-telefono/trekking/02.jpg?v=1790497872 1150w, media/slideshow/trekking/02.jpg?v=1790437241 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/03.jpg?v=1790437241" srcset="media/slideshow-telefono/trekking/03.jpg?v=1790497872 1150w, media/slideshow/trekking/03.jpg?v=1790437241 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/04.jpg?v=1790437241" srcset="media/slideshow-telefono/trekking/04.jpg?v=1790497872 1367w, media/slideshow/trekking/04.jpg?v=1790437241 2375w" sizes="(max-width: 899px) 90vw, 45vw" width="2375" height="1333" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/05.jpg?v=1790437241" srcset="media/slideshow-telefono/trekking/05.jpg?v=1790497872 1150w, media/slideshow/trekking/05.jpg?v=1790437241 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1501" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/06.jpg?v=1790437242" srcset="media/slideshow-telefono/trekking/06.jpg?v=1790497872 1150w, media/slideshow/trekking/06.jpg?v=1790437242 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1501" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/07.jpg?v=1790437242" srcset="media/slideshow-telefono/trekking/07.jpg?v=1790497872 1150w, media/slideshow/trekking/07.jpg?v=1790437242 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/08.jpg?v=1790437242" srcset="media/slideshow-telefono/trekking/08.jpg?v=1790497872 1150w, media/slideshow/trekking/08.jpg?v=1790437242 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1501" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/09.jpg?v=1790437242" srcset="media/slideshow-telefono/trekking/09.jpg?v=1790497872 1153w, media/slideshow/trekking/09.jpg?v=1790437242 2003w" sizes="(max-width: 899px) 90vw, 45vw" width="2003" height="1335" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/10.jpg?v=1790437242" srcset="media/slideshow-telefono/trekking/10.jpg?v=1790497873 1150w, media/slideshow/trekking/10.jpg?v=1790437242 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1501" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/trekking/11.jpg?v=1790437242" srcset="media/slideshow-telefono/trekking/11.jpg?v=1790497873 1150w, media/slideshow/trekking/11.jpg?v=1790437242 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="La giornata di trekking delle classi prime" loading="lazy" decoding="async"></div></figure>
+    </div>
+    <div class="cont"><div class="comandi"><button class="prec" type="button" aria-label="Foto precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><span class="conta">1 / 11</span><button class="succ" type="button" aria-label="Foto successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+  </div>
+</section>
+
+<section class="sez scura" id="masterclass">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <h2 class="titolo-sez">Masterclass</h2>
+      <p class="attacco">Momenti formativi d’eccellenza con maestri pasticceri, panificatori e cioccolatieri di fama. Occasioni che uniscono teoria e pratica, offrendo agli studenti l’opportunità di sperimentare nuove tecniche e accrescere competenze e passione nell’arte dolciaria.</p>
+    </header>
+    <div class="master">
+      <article class="maestro" data-r>
+        <figure class="cornice"><img src="media/eventi-master-novelli.jpg" alt="Giacomo Novelli con gli studenti in laboratorio" srcset="media/ridotte/eventi-master-novelli-480.jpg 480w, media/ridotte/eventi-master-novelli-800.jpg 800w, media/ridotte/eventi-master-novelli-1200.jpg 1200w" sizes="(max-width: 999px) 92vw, 30vw" loading="lazy" decoding="async"></figure>
+        <div class="dentro"><span class="data-m">26/03/2025</span><h3>Giacomo Novelli</h3><p>L’Arte Bianca ha ospitato Giacomo Novelli, ex studente dell’istituto e oggi pasticcere e cioccolatiere, titolare della “Pasticceria Moretta”.</p><p>La Masterclass dedicata al cioccolato ha unito spiegazioni teoriche e prove pratiche: gli studenti si sono cimentati nella realizzazione di uova ripiene, praline e gianduiotti, sperimentando tecniche di temperaggio e nuove preparazioni.</p><p>Un’esperienza preziosa di crescita e passione, resa possibile grazie al contributo del Maestro e all’impegno di docenti, personale e ragazzi.</p></div>
+      </article>
+      <article class="maestro" data-r>
+        <figure class="cornice"><img src="media/eventi-master-aimar.jpg" alt="Ritratto di Alessio Aimar" style="object-position:50% 30%" srcset="media/ridotte/eventi-master-aimar-480.jpg 480w, media/ridotte/eventi-master-aimar-800.jpg 800w, media/eventi-master-aimar.jpg 1056w" sizes="(max-width: 999px) 92vw, 30vw" loading="lazy" decoding="async"></figure>
+        <div class="dentro"><span class="data-m">08/04/2025</span><h3>Alessio Aimar</h3><p>L’Arte Bianca ha avuto il piacere di ospitare Alessio Aimar, campione europeo di panificazione e titolare del “Panificio Aimar” di Carmagnola. La Masterclass, interamente dedicata ai lievitati, ha unito spiegazioni tecniche e prove pratiche: gli studenti si sono cimentati nella preparazione di focaccia genovese, padellino pugliese, grissini rustici e pane “ciabatta”. Un’occasione speciale di confronto e crescita, che ha permesso ai ragazzi di acquisire nuove competenze e condividere la passione del Maestro per l’arte della panificazione.</p></div>
+      </article>
+      <article class="maestro" data-r>
+        <figure class="cornice"><img src="media/eventi-master-morandin.jpg" alt="Mauro Morandin con gli studenti in laboratorio" srcset="media/ridotte/eventi-master-morandin-480.jpg 480w, media/ridotte/eventi-master-morandin-800.jpg 800w, media/ridotte/eventi-master-morandin-1200.jpg 1200w" sizes="(max-width: 999px) 92vw, 30vw" loading="lazy" decoding="async"></figure>
+        <div class="dentro"><span class="data-m">10/05/2025</span><h3>Mauro Morandin</h3><p>Abbiamo avuto il piacere di ospitare Mauro Morandin, maestro pasticcere e confettiere di fama internazionale, per una Masterclass dedicata all’arte della confetteria. L’incontro ha alternato spiegazioni teoriche e dimostrazioni pratiche, permettendo agli studenti di cimentarsi con diverse preparazioni: dalle gelatine all’aspic di frutta, fino a panna cotta e creme caramel. Un’occasione preziosa di confronto e crescita, che ha offerto ai ragazzi la possibilità di apprendere nuove tecniche e rafforzare la propria passione grazie all’esperienza di un grande maestro.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sez" id="proposte">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <h2 class="titolo-sez">Altre proposte <em>formative</em></h2>
+      <p class="sottotitolo">Imparare, scoprire, divertirsi</p>
+    </header>
+    <div class="tessere">
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/01.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/01.jpg?v=1790497873 1150w, media/slideshow/proposte-formative/01.jpg?v=1790437243 2000w" sizes="(max-width: 899px) 46vw, 23vw" width="2000" height="1485" alt="Altre proposte formative: Gite scolastiche" loading="lazy" decoding="async"></div><figcaption>Gite scolastiche</figcaption></figure>
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/02.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/02.jpg?v=1790497873 1150w, media/slideshow/proposte-formative/02.jpg?v=1790437243 2000w" sizes="(max-width: 899px) 46vw, 23vw" width="2000" height="1337" alt="Altre proposte formative: Settimane bianche" loading="lazy" decoding="async"></div><figcaption>Settimane bianche</figcaption></figure>
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/03.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/03.jpg?v=1790497873 1150w, media/slideshow/proposte-formative/03.jpg?v=1790437243 1430w" sizes="(max-width: 899px) 46vw, 23vw" width="1430" height="953" alt="Altre proposte formative: Promemoria Auschwitz" loading="lazy" decoding="async"></div><figcaption>Promemoria Auschwitz</figcaption></figure>
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/04.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/04.jpg?v=1790497873 1236w, media/slideshow/proposte-formative/04.jpg?v=1790437243 2048w" sizes="(max-width: 899px) 46vw, 23vw" width="2048" height="1075" alt="Altre proposte formative: Visite aziendali" loading="lazy" decoding="async"></div><figcaption>Visite aziendali</figcaption></figure>
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/05.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/05.jpg?v=1790497873 1150w, media/slideshow/proposte-formative/05.jpg?v=1790437243 2000w" sizes="(max-width: 899px) 46vw, 23vw" width="2000" height="1333" alt="Altre proposte formative: Certificazioni informatiche" loading="lazy" decoding="async"></div><figcaption>Certificazioni informatiche</figcaption></figure>
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/06.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/06.jpg?v=1790497873 1150w, media/slideshow/proposte-formative/06.jpg?v=1790437243 2000w" sizes="(max-width: 899px) 46vw, 23vw" width="2000" height="2000" alt="Altre proposte formative: Certificazioni linguistiche" loading="lazy" decoding="async"></div><figcaption>Certificazioni linguistiche</figcaption></figure>
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/07.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/07.jpg?v=1790497873 1080w, media/slideshow/proposte-formative/07.jpg?v=1790437243 1080w" sizes="(max-width: 899px) 46vw, 23vw" width="1080" height="672" alt="Altre proposte formative: Corsi di fotografia" loading="lazy" decoding="async"></div><figcaption>Corsi di fotografia</figcaption></figure>
+  <figure class="tessera" data-r><div class="cornice"><img src="media/slideshow/proposte-formative/08.jpg?v=1790437243" srcset="media/slideshow-telefono/proposte-formative/08.jpg?v=1790497873 1150w, media/slideshow/proposte-formative/08.jpg?v=1790437243 2000w" sizes="(max-width: 899px) 46vw, 23vw" width="2000" height="1334" alt="Altre proposte formative: Corsi di teatro" loading="lazy" decoding="async"></div><figcaption>Corsi di teatro</figcaption></figure>
+</div>
+  </div>
+</section>
+</main>
+<footer class="piede" id="contatti">
+  <div class="cont">
+    <p class="occhiello">Contatti</p>
+    <div class="piede-griglia">
+      <div>
+        <h3>Sede associata di Neive</h3>
+        <p>Via Rocca, 10 - Neive<br>tel. <a class="r" href="tel:+3917367168">0173/67168</a><br>E-mail: <a class="r" href="mailto:artebiancaneive@cillarioferrero.it">artebiancaneive@cillarioferrero.it</a></p>
+      </div>
+      <div>
+        <h3>Sede dell'IISS Piera Cillario Ferrero</h3>
+        <p>Via Balbo, 8 - Alba<br>tel. <a class="r" href="tel:+390173441944">0173/441944</a><br>Sito istituzionale <a class="r" href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a></p>
+      </div>
+      <div>
+        <h3>Seguici</h3>
+        <div class="social">
+          <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg> Facebook</a>
+          <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg> Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="firma" aria-hidden="true">Arte Bianca <em>di Neive</em></p>
+    <div class="piede-fondo"><span>Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</span><a href="#inizio">Torna su ↑</a></div>
   </div>
 </footer>
-
-<script src="slideshow-dati.js"></script>
-<script src="slideshow.js"></script>
-<script src="script.js"></script>
+<script src="sito.js?v=1794962121"></script>
 </body>
 </html>

@@ -23,341 +23,520 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stile.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css?v=1794962121">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body id="inizio">
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <clipPath id="forma-macchia" clipPathUnits="objectBoundingBox">
-    <path d="M0.9475 0.3481C0.8592 0.1611 0.6811 0.0244 0.4914 0.0044C0.3366 -0.0195 0.2347 0.0561 0.1515 0.1655C0.0683 0.2748 0.0241 0.4142 0.0062 0.5547C-0.0032 0.6290 -0.0051 0.7077 0.0237 0.7757C0.0604 0.8620 0.1404 0.9169 0.2219 0.9510C0.4411 1.0428 0.7101 1.0072 0.8807 0.8314C0.9341 0.7764 0.9778 0.7075 0.9934 0.6293C1.0124 0.5344 0.9883 0.4345 0.9475 0.3481Z"/>
-  </clipPath>
-</svg>
-
-<nav class="menu" aria-label="Menu principale">
-  <a href="/" class="attivo" aria-current="page" data-t="HOME">HOME</a>
-  <a href="/stage" data-t="STAGE">STAGE</a>
-  <a href="/concorsi" data-t="CONCORSI">CONCORSI</a>
-  <a href="/eventi" data-t="EVENTI">EVENTI</a>
-  <a href="/dopo-il-diploma" data-t="DOPO IL DIPLOMA">DOPO IL DIPLOMA</a>
-</nav>
-
-<div class="fascia"><img src="media/logo-scuola.png" alt="Logo Arte Bianca Neive, IISS Piera Cillario Ferrero"></div>
-
-<header class="testata">
-  <p class="kicker">- Istituto professionale statale -</p>
-  <div class="titolo">
-    <h1>ARTE BIANCA</h1>
-    <div class="di-neive"><span class="di">di</span><span class="neive">Neive</span></div>
+<header class="testa">
+  <div class="cont">
+    <a class="marchio" href="/" aria-label="Arte Bianca di Neive, pagina iniziale"><img src="media/logo-scuola.png" alt="" width="42" height="42"><span>Arte Bianca <i>di Neive</i></span></a>
+    <nav class="voci" aria-label="Menu principale">
+    <a href="/" aria-current="page">Home</a>
+    <a href="/stage">Stage</a>
+    <a href="/concorsi">Concorsi</a>
+    <a href="/eventi">Eventi</a>
+    <a href="/dopo-il-diploma">Dopo il diploma</a>
+    </nav>
+    <a class="tasto prenota-testa" href="/#orientamento">Orientamento</a>
+    <button class="apri-menu" type="button" aria-expanded="false" aria-controls="menu-pieno">Menu <i></i></button>
   </div>
 </header>
-
-<div class="fascia-media eroe m" style="--m:18"><img src="media/hero-cioccolato.jpg" alt="Tortine al cioccolato con lamponi su un tagliere di legno" srcset="media/ridotte/hero-cioccolato-480.jpg 480w, media/ridotte/hero-cioccolato-800.jpg 800w, media/ridotte/hero-cioccolato-1200.jpg 1200w, media/ridotte/hero-cioccolato-1600.jpg 1600w, media/ridotte/hero-cioccolato-2000.jpg 2000w, media/hero-cioccolato.jpg 2399w" sizes="100vw"></div>
-
-<section class="col centro m" style="--m:50" id="orientamento" aria-label="Orientamento">
-  <h2 class="t-sez cifre">Orientamento 2027-28</h2>
-  <p class="t-sotto m" style="--m:14">Le date degli eventi</p>
-  <div class="riga m" style="--w:158;--m:18"></div>
-</section>
-
-<section class="col due orienta m" style="--m:45;--a:420;--b:640;--al:center">
-  <div class="riquadro orienta-foto"><img src="media/orientamento-bivio.jpg" alt="Una ragazza con lo zaino seduta davanti a un bivio" loading="lazy" decoding="async"></div>
-  <div>
-    <h3 class="t-evento">Vieni a conoscerci</h3>
-    <div class="testo m" style="--m:18">
-      <p>Il modo migliore per scegliere la scuola è vederla da vicino: entrare nei laboratori, conoscere docenti e studenti, fare tutte le domande. Quest’anno l’Arte Bianca di Neive apre le porte in due giornate di Open Day e Lab Day e partecipa agli appuntamenti di orientamento dell’Istituto.</p>
-      <p class="stacco">Per partecipare è obbligatoria la prenotazione: basta compilare il modulo una volta sola, indicando tutti gli appuntamenti a cui si desidera partecipare.</p>
-    </div>
-    <a class="prenota m" style="--m:30" href="https://forms.gle/bNLRnkgHHmoUJhoE6" target="_blank" rel="noopener">Clicca qui per prenotare</a>
-    <p class="note m" style="--m:14">In alternativa, è possibile prenotare telefonando allo 0173 67168 o scrivendo a artebiancaneive@cillarioferrero.it</p>
-  </div>
-</section>
-
-<section class="col m" style="--m:65" aria-label="Il calendario degli appuntamenti">
-  <ol class="calendario">
-    <li>
-      <p class="cal-gs">Giovedì</p>
-      <p class="cal-n cifre">12</p>
-      <p class="cal-m">novembre 2026</p>
-      <h3>Serata informativa di istituto</h3>
-      <p class="cal-dove">ore 18:00<br>Aula Magna della sede di Alba, via Balbo 8</p>
-    </li>
-    <li class="qui">
-      <p class="cal-gs">Sabato</p>
-      <p class="cal-n cifre">21</p>
-      <p class="cal-m">novembre 2026</p>
-      <h3>Open Day e Lab Day</h3>
-      <p class="cal-dove">a Neive, solo mattino</p>
-      <ul class="turni"><li><b>9:00</b> con laboratorio</li><li><b>11:00</b> senza laboratorio</li></ul>
-    </li>
-    <li>
-      <p class="cal-gs">Sabato</p>
-      <p class="cal-n cifre">28</p>
-      <p class="cal-m">novembre 2026</p>
-      <h3>Salone dell’Orientamento</h3>
-      <p class="cal-dove">dalle 8:30 alle 18:30<br>Palazzo Mostre e Congressi di Alba<br>ingresso libero, senza&nbsp;prenotazione</p>
-    </li>
-    <li class="qui">
-      <p class="cal-gs">Sabato</p>
-      <p class="cal-n cifre">12</p>
-      <p class="cal-m">dicembre 2026</p>
-      <h3>Open Day e Lab Day</h3>
-      <p class="cal-dove">a Neive, mattino e pomeriggio</p>
-      <ul class="turni"><li><b>9:00</b> con laboratorio</li><li><b>11:00</b> senza laboratorio</li><li><b>14:00</b> senza laboratorio</li></ul>
-    </li>
-  </ol>
-</section>
-
-<section class="col centro m" style="--m:70" aria-label="Come si svolge l’Open Day">
-  <h3 class="t-evento">Come si svolge l’Open Day</h3>
-  <div class="p42-due orienta-due m" style="--m:30">
-    <div class="pannello">
-      <h3>Con laboratorio</h3>
-      <p class="t-sotto m" style="--m:6">ore 9:00 · 21 novembre e 12 dicembre</p>
-      <div class="tappe">
-        <div class="tappa"><span class="n">1</span><div><b>Presentazione</b><small>in Aula Magna, per ragazzi e genitori</small></div></div>
-        <div class="tappa-filo"></div>
-        <div class="tappa"><span class="n">2</span><div><b>Due laboratori</b><small>i ragazzi lavorano in pasticceria e in sala-bar con docenti e studenti, fino alle 12:30</small></div></div>
-        <div class="tappa-filo"></div>
-        <div class="tappa"><span class="n">3</span><div><b>La scuola</b><small>intanto i genitori seguono la presentazione della scuola</small></div></div>
-      </div>
-    </div>
-    <div class="pannello">
-      <h3>Senza laboratorio</h3>
-      <p class="t-sotto m" style="--m:6">ore 11:00 · ore 14:00 solo il 12 dicembre</p>
-      <div class="tappe">
-        <div class="tappa"><span class="n">1</span><div><b>Presentazione</b><small>in Aula Magna, per ragazzi e genitori</small></div></div>
-        <div class="tappa-filo"></div>
-        <div class="tappa"><span class="n">2</span><div><b>Visita della scuola</b><small>laboratori e aule, alunni e genitori insieme, fino alle 13:00 o alle 16:00</small></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="col centro m" style="--m:65" aria-label="Iscrizioni alle classi prime">
-  <h3 class="t-evento">Iscrizioni alle classi prime</h3>
-  <p class="m" style="--m:16">Le iscrizioni per l’a.s. 2027/28 si fanno online sul <a class="vai" href="https://unica.istruzione.gov.it/portale/it/orientamento/iscrizioni" target="_blank" rel="noopener">portale Unica</a> del Ministero, nelle date che il Ministero fisserà.<br>Per eventuali difficoltà nella compilazione della domanda, i nostri uffici restano a disposizione.</p>
-</section>
-
-<section class="col centro m" style="--m:70">
-  <h2 class="t-sez" style="--tl:55">Un presente sereno,<br>un futuro sicuro</h2>
-  <p class="t-sotto m" style="--m:16;line-height:var(--lh)">Entra nei laboratori, vivi la nostra scuola</p>
-  <div class="riga m" style="--w:166;--m:16"></div>
-  <div class="video-yt m" style="--m:50;background-image:url('https://i.ytimg.com/vi/y8LiDVSYxBA/maxresdefault.jpg')" data-id="y8LiDVSYxBA" role="button" tabindex="0" aria-label="Arte Bianca di Neive">
-    <div class="barra"><img src="media/logo-scuola.png" alt="" loading="lazy" decoding="async"><div><b>Arte Bianca di Neive</b><small>IISS ARTE BIANCA DI NEIVE</small></div></div>
-    <span class="play" aria-hidden="true"><svg viewBox="0 0 68 48"><path class="fondo" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"/><path d="M45 24 27 14v20" fill="#fff"/></svg></span>
-  </div>
-</section>
-
-<div class="fascia-media m" style="--m:50;aspect-ratio:1414/818"><video data-src="media/video-neive-drone.mp4" data-src-telefono="media/video-neive-drone-telefono.mp4" data-poster="media/copertina-neive-drone.jpg" muted loop playsinline aria-label="Neive vista dall'alto con il drone"></video></div>
-
-<section class="col due m" style="--m:50;--a:558;--b:557">
-  <div>
-    <div class="intesta con-logo">
-      <h2 class="t-sez">Neive</h2>
-      <img class="borghi" src="media/borghi-piu-belli.jpg" alt="I Borghi più belli d'Italia" srcset="media/ridotte/borghi-piu-belli-480.jpg 480w, media/ridotte/borghi-piu-belli-800.jpg 800w, media/ridotte/borghi-piu-belli-1200.jpg 1200w, media/borghi-piu-belli.jpg 1500w" sizes="(max-width: 899px) 25vw, 10vw" loading="lazy" decoding="async">
-      <p class="t-sotto m" style="--m:14">I Borghi più belli d’Italia</p>
-      <div class="riga m" style="--w:158;--m:18"></div>
-    </div>
-    <div class="testo m" style="--m:45">
-      <p>L’Arte Bianca è una delle tre sedi dell’Istituto di Istruzione Secondaria Superiore “Piera Cillario Ferrero” e sorge nel cuore dello splendido borgo di Neive, situato nelle Langhe Occidentali fra Barbaresco e Castagnole delle Lanze, a poco più di 10 km da <a href="https://langhe.net/town/alba-piemonte/" target="_blank" rel="noopener">Alba.</a></p>
-      <p class="stacco">Il piccolo borgo ha mantenuto l’antico impianto medievale con caratteristiche stradine in pietra e i palazzi color del cotto che, con i tetti rossi, richiamano i colori delle vigne d’autunno, quando le morbide colline delle Langhe si apprestano a secernere il loro frutto più prezioso.</p>
-      <p>Oggi Neive è inserita nel club dei Borghi più belli d’Italia.</p>
-    </div>
-  </div>
-  <div class="collage">
-    <div class="riquadro a"><img src="media/neive-dall-alto.jpg" alt="Il borgo di Neive visto dall'alto" style="object-position:47% 0" srcset="media/ridotte/neive-dall-alto-480.jpg 480w, media/ridotte/neive-dall-alto-800.jpg 800w, media/ridotte/neive-dall-alto-1200.jpg 1200w, media/ridotte/neive-dall-alto-1600.jpg 1600w, media/neive-dall-alto.jpg 2048w" sizes="(max-width: 899px) 60vw, 30vw" loading="lazy" decoding="async"></div>
-    <div class="riquadro b"><img src="media/neive-portone-edera.jpg" alt="Un portone di Neive coperto di vite americana rossa" style="object-position:100% 50%" loading="lazy" decoding="async"></div>
-    <div class="riquadro c"><img src="media/langhe-alpi.jpg" alt="Le colline delle Langhe con le Alpi innevate sullo sfondo" style="object-position:99% 34%" srcset="media/ridotte/langhe-alpi-480.jpg 480w, media/ridotte/langhe-alpi-800.jpg 800w, media/ridotte/langhe-alpi-1200.jpg 1200w, media/ridotte/langhe-alpi-1600.jpg 1600w, media/ridotte/langhe-alpi-2000.jpg 2000w, media/langhe-alpi.jpg 2400w" sizes="(max-width: 899px) 95vw, 40vw" loading="lazy" decoding="async"></div>
-  </div>
-</section>
-
-<section class="col due inverti m" style="--m:50;--a:558;--b:558">
-  <div>
-    <h2 class="t-sez">Un po’ di storia</h2>
-    <p class="t-sotto m" style="--m:14">Una storia lunga più di 30 anni</p>
-    <div class="riga m" style="--w:158;--m:18"></div>
-    <div class="testo m" style="--m:45">
-      <p>L’Arte Bianca di Neive è un Istituto Professionale Statale del settore “Servizi per l’enogastronomia e l’ospitalità alberghiera - Pasticceria e Arte Bianca”. Nasce nel settembre 1988 come distaccamento dell'Arte Bianca di Torino (“J.B. Beccari”) grazie all’intuizione di don Giuseppe Cogno, parroco di Neive. L’Istituto, dall’a.s. 2000/2001, è sede associata dell’I.I.S.S. “Piera Cillario Ferrero” di Alba.</p>
-      <p>L’Arte Bianca ha recentemente festeggiato 30 anni di storia, insieme alla festa per i 50 anni dell’Istituto P. Cillario Ferrero.</p>
-      <p class="stacco">La scuola ha mantenuto negli anni la sua specificità e ha sviluppato nel tempo rilevanti competenze nella formazione degli addetti alla lavorazione nel settore dolciario, sia artigianale (pasticcerie, panetterie, ristoranti, alberghi, villaggi turistici…) sia industriale (in particolare l’azienda Ferrero).</p>
-    </div>
-  </div>
-  <div class="foto-pila">
-    <div class="riquadro"><img src="media/storia-convegno.jpg" alt="Il convegno per i 30 anni dell'Arte Bianca" srcset="media/ridotte/storia-convegno-480.jpg 480w, media/ridotte/storia-convegno-800.jpg 800w, media/ridotte/storia-convegno-1200.jpg 1200w, media/ridotte/storia-convegno-1600.jpg 1600w, media/ridotte/storia-convegno-2000.jpg 2000w, media/storia-convegno.jpg 2400w" sizes="(max-width: 899px) 95vw, 40vw" loading="lazy" decoding="async"></div>
-    <div class="riquadro"><img src="media/storia-torta-30-anni.jpg" alt="La torta del trentesimo anniversario con il logo della scuola" srcset="media/ridotte/storia-torta-30-anni-480.jpg 480w, media/ridotte/storia-torta-30-anni-800.jpg 800w, media/ridotte/storia-torta-30-anni-1200.jpg 1200w, media/ridotte/storia-torta-30-anni-1600.jpg 1600w, media/ridotte/storia-torta-30-anni-2000.jpg 2000w, media/storia-torta-30-anni.jpg 2400w" sizes="(max-width: 899px) 95vw, 40vw" loading="lazy" decoding="async"></div>
-  </div>
-</section>
-
-<div class="fascia-media m" style="--m:49;aspect-ratio:1414/621"><video data-src="media/video-tartufi.mp4" data-poster="media/copertina-tartufi.jpg" muted loop playsinline style="object-position:50% 91%" aria-label="Tartufi di cioccolato spolverati di cacao"></video></div>
-
-<section class="col centro m" style="--m:45">
-  <h2 class="t-sez">Piano di studi</h2>
-  <p class="t-sotto m" style="--m:14">Indirizzo «Enogastronomia e ospitalità alberghiera»<br>Arte Bianca e pasticceria</p>
-  <div class="riga m" style="--w:132;--m:18"></div>
-  <div class="scambio cifre m" style="--m:30" data-scelto="0" role="group" aria-label="Scegli il percorso">
-    <button type="button" aria-pressed="true">Percorso di 5 anni</button>
-    <button type="button" aria-pressed="false">Percorso 4+2</button>
-  </div>
-  <p class="scambio-aiuto m" style="--m:9" aria-live="polite">Clicca per vedere il quadro orario del percorso 4+2</p>
-  <div class="piani">
-  <div class="piano">
-  <p class="m" style="--m:22">Al termine del terzo anno: <b>QUALIFICA REGIONALE</b> in<br>Operatore delle produzioni alimentari - lavorazione e produzione di pasticceria, pasta e prodotti da forno<br>Al termine del quinto anno: <b>DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE</b></p>
-  <div class="tabella-scorre m" style="--m:46">
-    <table class="tab-piano">
-      <thead><tr><th>MATERIE</th><th><span class="lungo">anno </span>1<span class="breve">°</span></th><th><span class="lungo">anno </span>2<span class="breve">°</span></th><th><span class="lungo">anno </span>3<span class="breve">°</span></th><th><span class="lungo">anno </span>4<span class="breve">°</span></th><th><span class="lungo">anno </span>5<span class="breve">°</span></th></tr></thead>
-      <tbody>
-        <tr><td>LINGUA E LETTERATURA ITALIANA</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr>
-        <tr><td>LINGUA INGLESE</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr>
-        <tr><td>STORIA e GEOGRAFIA</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
-        <tr><td>MATEMATICA</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td></tr>
-        <tr><td>DIRITTO ED ECONOMIA</td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>TIC</td><td>2*</td><td>2*</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>SCIENZE MOTORIE E SPORTIVE</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
-        <tr><td>R.C. O ATTIVITÀ ALTERNATIVE</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-        <tr><td>SCIENZE INTEGRATE (CHIMICA)</td><td>2*</td><td>2*</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>SCIENZA DEGLI ALIMENTI</td><td>2*</td><td>2*</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>SECONDA LINGUA STR. FRANCESE</td><td>2</td><td>2</td><td>3</td><td>3</td><td>3</td></tr>
-        <tr><td>LAB. DI SERVIZI ENOGASTRONOMICI - PASTICCERIA</td><td>4**</td><td>4**</td><td>7</td><td>5</td><td>5</td></tr>
-        <tr><td>LAB. DI SERVIZI ENOGASTRONOMICI - SALA E VENDITE</td><td>4**</td><td>4**</td><td>2*</td><td>2</td><td>2</td></tr>
-        <tr><td>LAB. DI SERVIZI DI ACCOGLIENZA TURISTICA</td><td>2</td><td>2</td><td></td><td></td><td></td></tr>
-        <tr><td>SCIENZA E CULTURA DELL’ALIMENTAZIONE</td><td>-</td><td>-</td><td>3</td><td>3*</td><td>3</td></tr>
-        <tr><td>DIRITTO E TECNICHE AMMINISTRATIVE</td><td>-</td><td>-</td><td>3</td><td>2</td><td>2</td></tr>
-        <tr><td>ANALISI E CONTROLLI CHIMICI</td><td>-</td><td>-</td><td>1</td><td>2*</td><td>2</td></tr>
-        <tr><td>TOTALE</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="note m" style="--m:17">*compresenze con docenti di laboratorio<br>**la classe viene divisa in due squadre</p>
-  </div>
-  <div class="piano" hidden>
-  <p class="m" style="--m:22">Al termine del quarto anno: <b>DIPLOMA DI ISTRUZIONE SECONDARIA SUPERIORE</b><br>con lo stesso valore legale del diploma di cinque anni</p>
-  <div class="tabella-scorre m" style="--m:46">
-    <table class="tab-piano tab-42">
-      <thead><tr><th>MATERIE</th><th><span class="lungo">anno </span>1<span class="breve">°</span></th><th><span class="lungo">anno </span>2<span class="breve">°</span></th><th><span class="lungo">anno </span>3<span class="breve">°</span></th><th><span class="lungo">anno </span>4<span class="breve">°</span></th></tr></thead>
-      <tbody>
-        <tr><td>LINGUA E LETTERATURA ITALIANA<small>1° e 2° anno: 1 ora con Diritto</small></td><td>6*</td><td>6*</td><td>4</td><td>4</td></tr>
-        <tr><td>LINGUA INGLESE<small>1° anno: 1 ora con Accoglienza turistica</small></td><td>4*</td><td>3</td><td>4</td><td>4</td></tr>
-        <tr><td>STORIA<small><span>1° anno: 2 ore con Geografia</span><span>2° anno: 1 ora con Diritto</span></small></td><td>2*</td><td>2*</td><td>2</td><td>2</td></tr>
-        <tr><td>MATEMATICA<small>4° anno: 1 ora con Diritto e tecniche amministrative</small></td><td>5</td><td>5</td><td>3</td><td>4*</td></tr>
-        <tr><td>DIRITTO ED ECONOMIA</td><td>1</td><td>-</td><td>-</td><td>-</td></tr>
-        <tr><td>TIC<small>2 ore con il laboratorio di informatica</small></td><td>2*</td><td>2*</td><td>-</td><td>-</td></tr>
-        <tr><td>SCIENZE MOTORIE E SPORTIVE</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
-        <tr><td>R.C. O ATTIVITÀ ALTERNATIVE</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-        <tr><td>SCIENZE INTEGRATE (CHIMICA)<small>2 ore con il laboratorio di chimica</small></td><td>2*</td><td>2*</td><td>-</td><td>-</td></tr>
-        <tr><td>SCIENZA DEGLI ALIMENTI<small>2° anno: 1 ora con Analisi e controlli chimici</small></td><td>2</td><td>3*</td><td>-</td><td>-</td></tr>
-        <tr><td>SECONDA LINGUA STR. FRANCESE<small><span>2° anno: 1 ora con Accoglienza turistica</span><span>3° anno: 1 ora con Sala e vendita</span></small></td><td>2</td><td>3*</td><td>4*</td><td>4</td></tr>
-        <tr><td>LAB. DI SERVIZI ENOGASTRONOMICI - PASTICCERIA<small>4 ore con Sala bar e 1 ora con Accoglienza turistica</small></td><td>5*</td><td>5*</td><td>-</td><td>-</td></tr>
-        <tr><td>LAB. DI TECNICA DOLCIARIA E PASTICCERIA<small><span>3° anno: 2 ore con Analisi e controlli chimici e 2 con il laboratorio di chimica</span><span>4° anno: 2 ore con Sala e vendita</span></small></td><td>-</td><td>-</td><td>6*</td><td>6*</td></tr>
-        <tr><td>SCIENZA E CULTURA DELL’ALIMENTAZIONE<small><span>3° anno: 1 ora con Tecnica dolciaria e pasticceria</span><span>4° anno: 2 ore con Analisi e controlli chimici</span></small></td><td>-</td><td>-</td><td>4*</td><td>4*</td></tr>
-        <tr><td>DIRITTO E TECNICHE AMMINISTRATIVE<small><span>3° anno: 1 ora con Sala e vendita</span><span>4° anno: in più l’ora con Matematica</span></small></td><td>-</td><td>-</td><td>3*</td><td>3*</td></tr>
-        <tr><td>ANALISI E CONTROLLI CHIMICI</td><td>-</td><td>-</td><td>1</td><td>-</td></tr>
-        <tr><td>TOTALE UNITÀ ORARIE</td><td>34</td><td>34</td><td>34</td><td>34</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="note m" style="--m:17">*ore in compresenza, con due docenti in classe: sotto il nome della materia trovi con chi</p>
-  </div>
-  </div>
-</section>
-
-<section class="col centro m" style="--m:70" aria-label="Percorso 4+2">
-  <h2 class="t-sez cifre">Percorso 4+2</h2>
-  <p class="t-sotto m" style="--m:14">La nuova filiera tecnologico-professionale</p>
-  <div class="riga m" style="--w:132;--m:18"></div>
-  <p class="p42-valori m" style="--m:30">Tradizione <i></i> Innovazione <i></i> Artigianalità</p>
-  <div class="p42-due m" style="--m:40">
-    <div class="pannello">
-      <h3>Cos'è?</h3>
-      <div class="testo"><p>È la rimodulazione del programma quinquennale in <b>4 anni</b>.<br>Un percorso progettato per l'inserimento rapido ed efficace nel mondo del lavoro.</p></div>
-      <ul class="elenco">
-        <li>Didattica con <b>esperti</b></li>
-        <li>Insegnanti percorso ITS</li>
-        <li>Più <b>attività laboratoriali</b></li>
-        <li>Piccoli gruppi</li>
+<div class="menu-pieno" id="menu-pieno" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="chiudi" type="button">Chiudi <i></i></button>
+  <nav aria-label="Menu principale">
+    <a href="/" aria-current="page"><small>01</small>Home</a>
+    <a href="/stage"><small>02</small>Stage</a>
+    <a href="/concorsi"><small>03</small>Concorsi</a>
+    <a href="/eventi"><small>04</small>Eventi</a>
+    <a href="/dopo-il-diploma"><small>05</small>Dopo il diploma</a>
+  </nav>
+  <a class="tasto" href="/#orientamento">Orientamento 2027-28 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <p class="recapiti">Via Rocca 10, Neive · tel. 0173/67168<br>artebiancaneive@cillarioferrero.it</p>
+</div>
+<main>
+<section class="eroe">
+  <div class="cont">
+    <p class="eroe-scuola">Istituto professionale statale</p>
+    <h1 class="eroe-titolo"><span class="r1">Arte Bianca</span> <em class="r2">di Neive</em></h1>
+    <div class="eroe-piede">
+      <ul class="eroe-dati">
+        <li><span>Percorso di</span><b>5 anni o 4+2</b></li>
+        <li><span>Sede associata dell’I.I.S.S.</span><b>“Piera Cillario Ferrero”</b></li>
       </ul>
+      <a class="tasto chiaro" href="#orientamento">Orientamento 2027-28 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
     </div>
-    <div class="pannello">
-      <h3>Il Percorso</h3>
-      <div class="tappe cifre">
-        <div class="tappa"><span class="n">4</span><div><b>Anni Superiori</b><small>Diploma di II grado<br>(stesso valore legale)</small></div></div>
-        <div class="tappa-filo"></div>
-        <div class="tappa"><span class="n">2</span><div><b>Anni ITS Academy</b><small>Alta specializzazione<br>tecnica post-diploma</small></div></div>
+  </div>
+  <div class="eroe-media"><video data-src="media/video-tartufi.mp4" data-src-telefono="media/video-tartufi-telefono.mp4" poster="media/copertina-tartufi.jpg" muted loop playsinline aria-label="Tartufi di cioccolato spolverati di cacao"></video></div>
+</section>
+
+<section class="sez" id="orientamento" aria-label="Orientamento">
+  <div class="cont">
+    <header class="intesta">
+      <h2 class="titolo-sez">Orientamento <em class="cifre">2027-28</em></h2>
+      <p class="sottotitolo">Le date degli eventi</p>
+    </header>
+    <div class="vieni">
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/orientamento-bivio.jpg" alt="Una ragazza con lo zaino seduta davanti a un bivio" loading="lazy" decoding="async"></figure>
+      <div data-r>
+        <h3>Vieni a conoscerci</h3>
+        <div class="testo">
+          <p class="attacco">Il modo migliore per scegliere la scuola è vederla da vicino: entrare nei laboratori, conoscere docenti e studenti, fare tutte le domande.</p>
+          <p>Quest’anno l’Arte Bianca di Neive apre le porte in due giornate di Open Day e Lab Day e partecipa agli appuntamenti di orientamento dell’Istituto.</p>
+          <p>Per partecipare è obbligatoria la prenotazione: basta compilare il modulo una volta sola, indicando tutti gli appuntamenti a cui si desidera partecipare.</p>
+        </div>
+        <a class="tasto" href="https://forms.gle/bNLRnkgHHmoUJhoE6" target="_blank" rel="noopener">Clicca qui per prenotare <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="nota">In alternativa, è possibile prenotare telefonando allo <a class="collegamento" href="tel:+3917367168">0173 67168</a> o scrivendo a <a class="collegamento" href="mailto:artebiancaneive@cillarioferrero.it">artebiancaneive@cillarioferrero.it</a></p>
+      </div>
+    </div>
+
+    <ol class="date" aria-label="Il calendario degli appuntamenti">
+      <li class="data" data-r>
+        <div class="quando"><span class="n cifre">12</span><span class="gm"><b>Giovedì</b>novembre 2026</span></div>
+        <h3>Serata informativa di istituto</h3>
+        <p class="dove">ore 18:00<br>Aula Magna della sede di Alba, via Balbo 8</p>
+      </li>
+      <li class="data neive" data-r>
+        <div class="quando"><span class="n cifre">21</span><span class="gm"><b>Sabato</b>novembre 2026</span></div>
+        <h3>Open Day e Lab Day</h3>
+        <p class="dove">a Neive, solo mattino</p>
+        <ul class="turni"><li><b>9:00</b> con laboratorio</li><li><b>11:00</b> senza laboratorio</li></ul>
+      </li>
+      <li class="data" data-r>
+        <div class="quando"><span class="n cifre">28</span><span class="gm"><b>Sabato</b>novembre 2026</span></div>
+        <h3>Salone dell’Orientamento</h3>
+        <p class="dove">dalle 8:30 alle 18:30<br>Palazzo Mostre e Congressi di Alba<br>ingresso libero, senza prenotazione</p>
+      </li>
+      <li class="data neive" data-r>
+        <div class="quando"><span class="n cifre">12</span><span class="gm"><b>Sabato</b>dicembre 2026</span></div>
+        <h3>Open Day e Lab Day</h3>
+        <p class="dove">a Neive, mattino e pomeriggio</p>
+        <ul class="turni"><li><b>9:00</b> con laboratorio</li><li><b>11:00</b> senza laboratorio</li><li><b>14:00</b> senza laboratorio</li></ul>
+      </li>
+    </ol>
+
+    <h3 class="titolo-medio" data-r>Come si svolge l’Open Day</h3>
+    <div class="due-percorsi">
+      <div class="percorso" data-r>
+        <h3>Con laboratorio</h3>
+        <p class="quando-p">ore 9:00 · 21 novembre e 12 dicembre</p>
+        <ol class="fermate">
+          <li><span class="num">1</span><b>Presentazione</b><span class="d">in Aula Magna, per ragazzi e genitori</span></li>
+          <li><span class="num">2</span><b>Due laboratori</b><span class="d">i ragazzi lavorano in pasticceria e in sala-bar con docenti e studenti, fino alle 12:30</span></li>
+          <li><span class="num">3</span><b>La scuola</b><span class="d">intanto i genitori seguono la presentazione della scuola</span></li>
+        </ol>
+      </div>
+      <div class="percorso" data-r>
+        <h3>Senza laboratorio</h3>
+        <p class="quando-p">ore 11:00 · ore 14:00 solo il 12 dicembre</p>
+        <ol class="fermate">
+          <li><span class="num">1</span><b>Presentazione</b><span class="d">in Aula Magna, per ragazzi e genitori</span></li>
+          <li><span class="num">2</span><b>Visita della scuola</b><span class="d">laboratori e aule, alunni e genitori insieme, fino alle 13:00 o alle 16:00</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="iscrizioni" data-r>
+      <h3>Iscrizioni alle classi prime</h3>
+      <div class="testo"><p>Le iscrizioni per l’a.s. 2027/28 si fanno online sul <a href="https://unica.istruzione.gov.it/portale/it/orientamento/iscrizioni" target="_blank" rel="noopener">portale Unica</a> del Ministero, nelle date che il Ministero fisserà.</p><p>Per eventuali difficoltà nella compilazione della domanda, i nostri uffici restano a disposizione.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sez scura" id="scuola">
+  <div class="cont">
+    <header class="intesta centro">
+      <h2 class="titolo-sez">Un presente sereno,<br><em>un futuro sicuro</em></h2>
+      <p class="sottotitolo">Entra nei laboratori, vivi la nostra scuola</p>
+    </header>
+    <div class="video-presenta" data-r>
+      <div class="yt" data-id="y8LiDVSYxBA" role="button" tabindex="0" aria-label="Guarda il video di presentazione dell’Arte Bianca di Neive"><img class="cop" src="https://i.ytimg.com/vi/y8LiDVSYxBA/maxresdefault.jpg" alt="" loading="lazy" decoding="async"><span class="gioca" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z"/></svg></span></div>
+      <p class="yt-nome"><span>Il video di presentazione della scuola</span></p>
+    </div>
+
+    <div class="porte">
+      <a class="porta a" href="/stage" data-r>
+        <span class="foto"><img src="media/stage-chef.jpg" alt="" srcset="media/ridotte/stage-chef-800.jpg 800w, media/ridotte/stage-chef-1200.jpg 1200w, media/ridotte/stage-chef-1600.jpg 1600w, media/stage-chef.jpg 1920w" sizes="(max-width: 899px) 95vw, 55vw" loading="lazy" decoding="async"></span>
+        <span class="dentro"><span class="grande cifre">300<sup>+</sup></span><span class="cosa">realtà convenzionate per gli stage: laboratori artigianali, caffetterie, ristoranti, resort, alberghi e aziende dolciarie</span><span class="vai">Gli stage <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="porta b" href="/stage#estero" data-r>
+        <span class="foto"><img src="media/stage-estero-parigi-ducasse.jpg" alt="" srcset="media/ridotte/stage-estero-parigi-ducasse-800.jpg 800w, media/ridotte/stage-estero-parigi-ducasse-1200.jpg 1200w, media/stage-estero-parigi-ducasse.jpg 1350w" sizes="(max-width: 899px) 95vw, 40vw" loading="lazy" decoding="async"></span>
+        <span class="dentro"><span class="grande cifre">132</span><span class="cosa">mobilità all’estero degli studenti dell’Istituto nell’a.s. 2025/26, fra tirocini, corsi e scambi</span><span class="vai">Mobilità all’estero <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="porta c" href="/concorsi" data-r>
+        <span class="foto"><img src="media/slideshow-telefono/concorsi/01.jpg" alt="" loading="lazy" decoding="async"></span>
+        <span class="dentro"><span class="grande cifre">1°</span><span class="cosa">posto al Campionato nazionale di pasticceria 2022, con il dolce “Dromos”</span><span class="vai">I concorsi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="porta d" href="#spazi" data-r>
+        <span class="foto"><img src="media/slideshow-telefono/i-nostri-spazi/02.jpg" alt="" loading="lazy" decoding="async"></span>
+        <span class="dentro"><span class="grande cifre">3</span><span class="cosa">laboratori di pasticceria, più un laboratorio chimico-biologico</span><span class="vai">I nostri spazi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="porta e" href="/dopo-il-diploma" data-r>
+        <span class="foto"><img src="media/dopo-lavoro.jpg" alt="" srcset="media/ridotte/dopo-lavoro-800.jpg 800w, media/ridotte/dopo-lavoro-1200.jpg 1200w" sizes="(max-width: 899px) 95vw, 32vw" loading="lazy" decoding="async"></span>
+        <span class="dentro"><span class="grande parole">Università, ITS, lavoro</span><span class="cosa">il diploma apre tutte le strade</span><span class="vai">Dopo il diploma <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sez" id="neive">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <h2 class="titolo-sez">Neive</h2>
+      <p class="borghi"><img src="media/borghi-piu-belli.jpg" alt="Il marchio dei Borghi più belli d’Italia" srcset="media/ridotte/borghi-piu-belli-480.jpg 480w, media/borghi-piu-belli.jpg 1500w" sizes="90px" loading="lazy" decoding="async">I Borghi più belli d’Italia</p>
+    </header>
+  </div>
+  <div class="fascia neive-video"><video data-src="media/video-neive-drone.mp4" data-src-telefono="media/video-neive-drone-telefono.mp4" poster="media/copertina-neive-drone.jpg" muted loop playsinline aria-label="Neive vista dall'alto con il drone"></video></div>
+  <div class="cont">
+    <div class="griglia-2 alto neive-corpo">
+      <div class="testo" data-r>
+        <p class="attacco">L’Arte Bianca è una delle tre sedi dell’Istituto di Istruzione Secondaria Superiore “Piera Cillario Ferrero” e sorge nel cuore dello splendido borgo di Neive, situato nelle Langhe Occidentali fra Barbaresco e Castagnole delle Lanze, a poco più di 10 km da <a href="https://langhe.net/town/alba-piemonte/" target="_blank" rel="noopener">Alba</a>.</p>
+        <p>Il piccolo borgo ha mantenuto l’antico impianto medievale con caratteristiche stradine in pietra e i palazzi color del cotto che, con i tetti rossi, richiamano i colori delle vigne d’autunno, quando le morbide colline delle Langhe si apprestano a secernere il loro frutto più prezioso.</p>
+        <p>Oggi Neive è inserita nel club dei Borghi più belli d’Italia.</p>
+      </div>
+      <div class="neive-foto">
+        <figure class="cornice" data-parallasse data-r="foto"><img src="media/neive-dall-alto.jpg" alt="Il borgo di Neive visto dall'alto" style="object-position:47% 0" srcset="media/ridotte/neive-dall-alto-480.jpg 480w, media/ridotte/neive-dall-alto-800.jpg 800w, media/ridotte/neive-dall-alto-1200.jpg 1200w, media/ridotte/neive-dall-alto-1600.jpg 1600w, media/neive-dall-alto.jpg 2048w" sizes="(max-width: 899px) 92vw, 28vw" loading="lazy" decoding="async"></figure>
+        <figure class="cornice" data-parallasse data-r="foto"><img src="media/neive-portone-edera.jpg" alt="Un portone di Neive coperto di vite americana rossa" style="object-position:100% 50%" loading="lazy" decoding="async"></figure>
+        <figure class="cornice" data-parallasse data-r="foto"><img src="media/langhe-alpi.jpg" alt="Le colline delle Langhe con le Alpi innevate sullo sfondo" style="object-position:99% 34%" srcset="media/ridotte/langhe-alpi-480.jpg 480w, media/ridotte/langhe-alpi-800.jpg 800w, media/ridotte/langhe-alpi-1200.jpg 1200w" sizes="(max-width: 899px) 46vw, 18vw" loading="lazy" decoding="async"></figure>
       </div>
     </div>
   </div>
-  <div class="p42-alt">
-    <h3>Le Alternative</h3>
-    <p class="testo">Al termine del percorso quadriennale hai la <b>massima libertà</b> di scelta:</p>
-    <div class="scelte"><span>ITS Academy (2 anni)</span><span>Università</span><span>Mondo del Lavoro</span></div>
-  </div>
 </section>
 
-<section class="col centro m" style="--m:70">
-  <h2 class="t-sez">Orario delle lezioni</h2>
-  <p class="m" style="--m:11;color:var(--sotto)">da lunedì a venerdì<br>08:10 - 13:30<br>UN RIENTRO POMERIDIANO OGNI SETTIMANA FINO ALLE 16:00</p>
-  <div class="riga m" style="--w:132;--m:15"></div>
-</section>
-
-<div class="fascia-media m" style="--m:50;aspect-ratio:1414/480"><img src="media/trasporti-pulmino.jpg" alt="Un pulmino giallo giocattolo con le valigie sul tetto" style="object-position:50% 74%" srcset="media/ridotte/trasporti-pulmino-480.jpg 480w, media/ridotte/trasporti-pulmino-800.jpg 800w, media/ridotte/trasporti-pulmino-1200.jpg 1200w, media/ridotte/trasporti-pulmino-1600.jpg 1600w, media/ridotte/trasporti-pulmino-2000.jpg 2000w, media/trasporti-pulmino.jpg 2400w" sizes="100vw" loading="lazy" decoding="async"></div>
-
-<section class="col m" style="--m:46">
-  <h2 class="t-sez">Trasporti</h2>
-  <div class="riga m" style="--w:149;--m:14"></div>
-  <div class="testo m" style="--m:46">
-    <p><a href="https://moeves.it/files/orari/CN45FS.pdf" target="_blank" rel="noopener"><b>- LINEA FS45 ALBA - ASTI</b></a></p>
-    <p>Clicca <a href="https://moeves.it/files/orari/CN45FS.pdf" target="_blank" rel="noopener"><b>qui</b></a> per visualizzare gli orari della linea FS45</p>
-    <p class="stacco">- Da Alba: treno delle ore 7:48 (+ servizio navetta dalla stazione dei treni di Neive alla scuola), anche per chi arriva al terminal dei bus di Alba dalle varie tratte (linea 120, linea 172, linea 108…). Per il ritorno, treno delle ore 13:40.</p>
-    <p class="stacco">- Da Alba: bus delle 8:03 con fermata a Neive Rondò in partenza dalla stazione dei treni, per chi utilizza il servizio ferroviario Cavallermaggiore - Bra e per chi arriva al terminal dei bus di Alba con la linea 14 GTT. Per il ritorno, treno delle ore 13:40.</p>
-    <p class="stacco">- Da Asti: bus delle 7:25 con fermata a Neive Rondò. Per il ritorno, bus delle 13:26 da Neive Rondò.</p>
-    <p class="stacco">- Pullman (Giachino) Villanova - San Damiano - Baraccone (Via Priocca e Via Statale). Alle ore 7.55 Pullman per Neive Rondò.</p>
-    <p class="stacco">- Pullman (Geloso) Canelli - Boglietto - Neive Rondò.</p>
-    <p class="stacco">- Pullman (Geloso) S. Stefano - Boglietto - Neive Rondò.</p>
-    <p class="stacco">- Novità per rientro pomeridiano: Pullman (Geloso) Castagnole - Boglietto - S. Stefano B. - Canelli - Calamandrana - Nizza M.to.</p>
-    <p class="stacco">- Pullman (Fogliati) Castiglione Tinella - Neive Rondò.</p>
-  </div>
-</section>
-
-<div class="fascia-media m" style="--m:47;aspect-ratio:1414/645"><img src="media/spazi-inaugurazione.jpg" alt="Il taglio del nastro all'inaugurazione del nuovo edificio" style="object-position:50% 64%" srcset="media/ridotte/spazi-inaugurazione-480.jpg 480w, media/ridotte/spazi-inaugurazione-800.jpg 800w, media/ridotte/spazi-inaugurazione-1200.jpg 1200w, media/ridotte/spazi-inaugurazione-1600.jpg 1600w, media/ridotte/spazi-inaugurazione-2000.jpg 2000w, media/spazi-inaugurazione.jpg 2400w" sizes="100vw" loading="lazy" decoding="async"></div>
-
-<section class="col due m" style="--m:45;--a:612;--b:470">
-  <div>
-    <h2 class="t-sez">I nostri spazi</h2>
-    <div class="riga m" style="--w:208;--m:16"></div>
-    <div class="testo m" style="--m:45">
-      <p>L'Arte Bianca è dotata di 3 laboratori di pasticceria e 1 laboratorio chimico-biologico.</p>
-      <p>Nel 2018 è stato inaugurato il nuovo laboratorio di pasticceria 3, in occasione dell'inaugurazione dell'edificio del distaccamento e nel 2024 è stato completamente ristrutturato il laboratorio 1.</p>
-      <p>Il 7 giugno 2023 è stato inaugurato il bar didattico "Social corner".</p>
-      <p>Il cortile panoramico gode di una vista unica sul paesaggio delle Langhe ed è lo spazio ideale per apericena a tema didattico organizzati dagli insegnanti e dagli allievi della scuola.</p>
-      <p>L'Aula Magna è il luogo di incontro privilegiato per riunioni e seminari formativi.</p>
-      <p class="stacco">Il palazzo Mostre e Congressi di Alba ospita ogni anno il nostro spazio per presentare la scuola durante il Salone dell'Orientamento. La Sala Ordet di Alba è teatro delle tradizionali feste di Natale e di fine anno scolastico mentre il Centro Sportivo R. Ceretto di Castagnole delle Lanze accoglie i tradizionali tornei sportivi a classi con cui si celebra l'inizio delle vacanze estive.</p>
+<section class="sez bianca" id="storia">
+  <div class="cont">
+    <div class="storia">
+      <div>
+        <header class="intesta">
+          <h2 class="titolo-sez">Un po’ <em>di storia</em></h2>
+          <p class="sottotitolo">Una storia lunga più di 30 anni</p>
+        </header>
+        <div class="testo" data-r>
+          <p class="attacco">L’Arte Bianca di Neive è un Istituto Professionale Statale del settore “Servizi per l’enogastronomia e l’ospitalità alberghiera - Pasticceria e Arte Bianca”.</p>
+          <p>Nasce nel settembre 1988 come distaccamento dell'Arte Bianca di Torino (“J.B. Beccari”) grazie all’intuizione di don Giuseppe Cogno, parroco di Neive. L’Istituto, dall’a.s. 2000/2001, è sede associata dell’I.I.S.S. “Piera Cillario Ferrero” di Alba.</p>
+          <p>L’Arte Bianca ha recentemente festeggiato 30 anni di storia, insieme alla festa per i 50 anni dell’Istituto P. Cillario Ferrero.</p>
+          <p>La scuola ha mantenuto negli anni la sua specificità e ha sviluppato nel tempo rilevanti competenze nella formazione degli addetti alla lavorazione nel settore dolciario, sia artigianale (pasticcerie, panetterie, ristoranti, alberghi, villaggi turistici…) sia industriale (in particolare l’azienda Ferrero).</p>
+        </div>
+      </div>
+      <div>
+        <ol class="tempo" aria-label="Le tappe">
+          <li data-r><span class="anno">1988</span><span class="cosa"><b>Settembre</b>nasce come distaccamento dell'Arte Bianca di Torino (“J.B. Beccari”)</span></li>
+          <li data-r><span class="anno">2000</span><span class="cosa"><b>a.s. 2000/2001</b>diventa sede associata dell’I.I.S.S. “Piera Cillario Ferrero” di Alba</span></li>
+          <li data-r><span class="anno">2018</span><span class="cosa"><b>Edificio del distaccamento</b>inaugurato insieme al nuovo laboratorio di pasticceria 3</span></li>
+          <li data-r><span class="anno">2023</span><span class="cosa"><b>7 giugno</b>inaugurato il bar didattico “Social corner”</span></li>
+          <li data-r><span class="anno">2024</span><span class="cosa"><b>Laboratorio 1</b>completamente ristrutturato</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="storia-foto">
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/storia-convegno.jpg" alt="Il convegno per i 30 anni dell'Arte Bianca" srcset="media/ridotte/storia-convegno-480.jpg 480w, media/ridotte/storia-convegno-800.jpg 800w, media/ridotte/storia-convegno-1200.jpg 1200w, media/ridotte/storia-convegno-1600.jpg 1600w" sizes="(max-width: 899px) 46vw, 45vw" loading="lazy" decoding="async"></figure>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/storia-torta-30-anni.jpg" alt="La torta del trentesimo anniversario con il logo della scuola" srcset="media/ridotte/storia-torta-30-anni-480.jpg 480w, media/ridotte/storia-torta-30-anni-800.jpg 800w, media/ridotte/storia-torta-30-anni-1200.jpg 1200w, media/ridotte/storia-torta-30-anni-1600.jpg 1600w" sizes="(max-width: 899px) 46vw, 45vw" loading="lazy" decoding="async"></figure>
     </div>
   </div>
-  <img class="macchia" src="media/spazi-dolce.jpg" alt="Un dolce al cioccolato con fragole e una colata di cioccolato" srcset="media/ridotte/spazi-dolce-480.jpg 480w, media/spazi-dolce.jpg 816w" sizes="(max-width: 899px) 95vw, 35vw" loading="lazy" decoding="async">
 </section>
 
-<div class="col riquadro m" style="--m:45;aspect-ratio:1167/635"><div class="ss" data-ss="i-nostri-spazi" style="--ss-x:50%;--ss-y:18%" role="img" aria-label="I nostri spazi: la scuola, il Laboratorio 1, l'Aula magna, il campo sportivo"></div></div>
+<div class="fascia"><img src="media/hero-cioccolato.jpg" alt="Tortine al cioccolato con lamponi su un tagliere di legno" srcset="media/ridotte/hero-cioccolato-800.jpg 800w, media/ridotte/hero-cioccolato-1200.jpg 1200w, media/ridotte/hero-cioccolato-1600.jpg 1600w, media/ridotte/hero-cioccolato-2000.jpg 2000w, media/hero-cioccolato.jpg 2399w" sizes="100vw" loading="lazy" decoding="async"></div>
 
-<a class="torna" href="#inizio">Torna su <svg viewBox="0 0 9 16" aria-hidden="true"><path d="M4.5 15.5V1M1 4.5l3.5-3.5 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
-
-<section class="contatti">
-  <h2>Contatti</h2>
-  <div class="riga"></div>
-  <p class="righe">Sede dell'IISS Piera Cillario Ferrero tel: 0173/441944 / Indirizzo: Via Balbo, 8 - Alba<br>Sede associata di Neive tel: 0173/67168 / Indirizzo: Via Rocca, 10<br>Sito istituzionale <a href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a><br>E-mail: artebiancaneive@cillarioferrero.it</p>
-</section>
-
-<footer class="piede">
-  <div class="col">
-    <p class="indirizzo">Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</p>
-    <div class="social">
-      <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener" aria-label="Facebook"><img class="fb" src="media/icona-facebook.png" alt="" loading="lazy" decoding="async"></a>
-      <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ig" src="media/icona-instagram.png" alt="" loading="lazy" decoding="async"></a>
+<section class="sez" id="piano">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <div>
+        <h2 class="titolo-sez">Piano <em>di studi</em></h2>
+      </div>
+      <div>
+        <p class="sottotitolo">Indirizzo «Enogastronomia e ospitalità alberghiera», Arte Bianca e pasticceria</p>
+        <div class="scambio cifre" data-scelto="0" role="group" aria-label="Scegli il percorso">
+          <button type="button" aria-pressed="true">Percorso di 5 anni</button>
+          <button type="button" aria-pressed="false">Percorso 4+2</button>
+        </div>
+      </div>
+    </header>
+    <div class="piani">
+      <div class="piano">
+        <div class="titoli-piano">
+          <p class="titolo-piano"><small>Al termine del terzo anno</small><b>Qualifica regionale</b> in Operatore delle produzioni alimentari - lavorazione e produzione di pasticceria, pasta e prodotti da forno</p>
+          <p class="titolo-piano"><small>Al termine del quinto anno</small><b>Diploma di istruzione secondaria superiore</b></p>
+        </div>
+        <div class="quadro">
+          <table>
+            <thead><tr><th>Materie</th><th><span class="lungo">anno </span>1<span class="breve">°</span></th><th><span class="lungo">anno </span>2<span class="breve">°</span></th><th><span class="lungo">anno </span>3<span class="breve">°</span></th><th><span class="lungo">anno </span>4<span class="breve">°</span></th><th><span class="lungo">anno </span>5<span class="breve">°</span></th></tr></thead>
+            <tbody>
+              <tr><td>Lingua e letteratura italiana</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr>
+              <tr><td>Lingua inglese</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr>
+              <tr><td>Storia e geografia</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+              <tr><td>Matematica</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td></tr>
+              <tr><td>Diritto ed economia</td><td>2</td><td>2</td><td class="vuota">-</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>TIC</td><td>2*</td><td>2*</td><td class="vuota">-</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>Scienze motorie e sportive</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+              <tr><td>R.C. o attività alternative</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>Scienze integrate (chimica)</td><td>2*</td><td>2*</td><td class="vuota">-</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>Scienza degli alimenti</td><td>2*</td><td>2*</td><td class="vuota">-</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>Seconda lingua straniera: francese</td><td>2</td><td>2</td><td>3</td><td>3</td><td>3</td></tr>
+              <tr><td>Lab. di servizi enogastronomici - pasticceria</td><td>4**</td><td>4**</td><td>7</td><td>5</td><td>5</td></tr>
+              <tr><td>Lab. di servizi enogastronomici - sala e vendite</td><td>4**</td><td>4**</td><td>2*</td><td>2</td><td>2</td></tr>
+              <tr><td>Lab. di servizi di accoglienza turistica</td><td>2</td><td>2</td><td class="vuota"></td><td class="vuota"></td><td class="vuota"></td></tr>
+              <tr><td>Scienza e cultura dell’alimentazione</td><td class="vuota">-</td><td class="vuota">-</td><td>3</td><td>3*</td><td>3</td></tr>
+              <tr><td>Diritto e tecniche amministrative</td><td class="vuota">-</td><td class="vuota">-</td><td>3</td><td>2</td><td>2</td></tr>
+              <tr><td>Analisi e controlli chimici</td><td class="vuota">-</td><td class="vuota">-</td><td>1</td><td>2*</td><td>2</td></tr>
+              <tr class="totale"><td>Totale</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="nota" style="margin-top:14px">*compresenze con docenti di laboratorio<br>**la classe viene divisa in due squadre</p>
+      </div>
+      <div class="piano" hidden>
+        <div class="titoli-piano">
+          <p class="titolo-piano"><small>Al termine del quarto anno</small><b>Diploma di istruzione secondaria superiore</b>, con lo stesso valore legale del diploma di cinque anni</p>
+        </div>
+        <div class="quadro">
+          <table>
+            <thead><tr><th>Materie</th><th><span class="lungo">anno </span>1<span class="breve">°</span></th><th><span class="lungo">anno </span>2<span class="breve">°</span></th><th><span class="lungo">anno </span>3<span class="breve">°</span></th><th><span class="lungo">anno </span>4<span class="breve">°</span></th></tr></thead>
+            <tbody>
+              <tr><td>Lingua e letteratura italiana<small>1° e 2° anno: 1 ora con Diritto</small></td><td>6*</td><td>6*</td><td>4</td><td>4</td></tr>
+              <tr><td>Lingua inglese<small>1° anno: 1 ora con Accoglienza turistica</small></td><td>4*</td><td>3</td><td>4</td><td>4</td></tr>
+              <tr><td>Storia<small><span>1° anno: 2 ore con Geografia</span><span>2° anno: 1 ora con Diritto</span></small></td><td>2*</td><td>2*</td><td>2</td><td>2</td></tr>
+              <tr><td>Matematica<small>4° anno: 1 ora con Diritto e tecniche amministrative</small></td><td>5</td><td>5</td><td>3</td><td>4*</td></tr>
+              <tr><td>Diritto ed economia</td><td>1</td><td class="vuota">-</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>TIC<small>2 ore con il laboratorio di informatica</small></td><td>2*</td><td>2*</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>Scienze motorie e sportive</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+              <tr><td>R.C. o attività alternative</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+              <tr><td>Scienze integrate (chimica)<small>2 ore con il laboratorio di chimica</small></td><td>2*</td><td>2*</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>Scienza degli alimenti<small>2° anno: 1 ora con Analisi e controlli chimici</small></td><td>2</td><td>3*</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>Seconda lingua straniera: francese<small><span>2° anno: 1 ora con Accoglienza turistica</span><span>3° anno: 1 ora con Sala e vendita</span></small></td><td>2</td><td>3*</td><td>4*</td><td>4</td></tr>
+              <tr><td>Lab. di servizi enogastronomici - pasticceria<small>4 ore con Sala bar e 1 ora con Accoglienza turistica</small></td><td>5*</td><td>5*</td><td class="vuota">-</td><td class="vuota">-</td></tr>
+              <tr><td>Lab. di tecnica dolciaria e pasticceria<small><span>3° anno: 2 ore con Analisi e controlli chimici e 2 con il laboratorio di chimica</span><span>4° anno: 2 ore con Sala e vendita</span></small></td><td class="vuota">-</td><td class="vuota">-</td><td>6*</td><td>6*</td></tr>
+              <tr><td>Scienza e cultura dell’alimentazione<small><span>3° anno: 1 ora con Tecnica dolciaria e pasticceria</span><span>4° anno: 2 ore con Analisi e controlli chimici</span></small></td><td class="vuota">-</td><td class="vuota">-</td><td>4*</td><td>4*</td></tr>
+              <tr><td>Diritto e tecniche amministrative<small><span>3° anno: 1 ora con Sala e vendita</span><span>4° anno: in più l’ora con Matematica</span></small></td><td class="vuota">-</td><td class="vuota">-</td><td>3*</td><td>3*</td></tr>
+              <tr><td>Analisi e controlli chimici</td><td class="vuota">-</td><td class="vuota">-</td><td>1</td><td class="vuota">-</td></tr>
+              <tr class="totale"><td>Totale unità orarie</td><td>34</td><td>34</td><td>34</td><td>34</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="nota" style="margin-top:14px">*ore in compresenza, con due docenti in classe: sotto il nome della materia trovi con chi</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="sez scura" id="quattro-due">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <div>
+        <h2 class="titolo-sez">Percorso <em class="cifre">4+2</em></h2>
+        <p class="sottotitolo">La nuova filiera tecnologico-professionale</p>
+      </div>
+      <p class="valori">Tradizione <i></i> Innovazione <i></i> Artigianalità</p>
+    </header>
+    <div class="quattro-due">
+      <div class="riquadro-scuro" data-r>
+        <h3>Cos’è?</h3>
+        <p class="attacco">È la rimodulazione del programma quinquennale in <b>4 anni</b>.</p>
+        <p>Un percorso progettato per l’inserimento rapido ed efficace nel mondo del lavoro.</p>
+        <ul class="spunte">
+          <li>Didattica con <b>esperti</b></li>
+          <li>Insegnanti percorso ITS</li>
+          <li>Più <b>attività laboratoriali</b></li>
+          <li>Piccoli gruppi</li>
+        </ul>
+      </div>
+      <div class="riquadro-scuro" data-r>
+        <h3>Il percorso</h3>
+        <ol class="fermate grandi">
+          <li><span class="num">4</span><b>Anni superiori</b><span class="d">Diploma di II grado (stesso valore legale)</span></li>
+          <li><span class="num">2</span><b>Anni ITS Academy</b><span class="d">Alta specializzazione tecnica post-diploma</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="alternative">
+      <h3 class="titolo-medio" data-r>Le alternative</h3>
+      <p class="attacco" data-r>Al termine del percorso quadriennale hai la <b>massima libertà</b> di scelta:</p>
+      <div class="bivio">
+        <svg class="solo-largo" viewBox="0 0 1200 320" role="img" aria-label="Dopo il diploma in 4 anni: ITS Academy (2 anni), università o mondo del lavoro">
+          <path class="ramo disegna" style="stroke:var(--oro);stroke-width:6" d="M200 160 C 420 160, 460 56, 680 56 H 776"/>
+          <path class="ramo disegna" style="stroke:var(--oro);stroke-width:6;--ritardo:.15s" d="M200 160 H 776"/>
+          <path class="ramo disegna" style="stroke:var(--oro);stroke-width:6;--ritardo:.3s" d="M200 160 C 420 160, 460 264, 680 264 H 776"/>
+          <circle cx="116" cy="160" r="86" fill="var(--cotto)"/>
+          <text class="t-grande" x="116" y="160" text-anchor="middle" font-size="32" fill="#fff">Diploma</text>
+          <text x="116" y="188" text-anchor="middle" font-size="16" font-weight="500" fill="#ffe3d6">in 4 anni</text>
+          <g class="accendi" style="--ritardo:1.1s"><circle cx="790" cy="56" r="13" fill="var(--cacao)" stroke="var(--oro)" stroke-width="6"/><text class="t-grande" x="824" y="68" font-size="36" fill="var(--su-scuro)">ITS Academy <tspan fill="var(--su-scuro-2)" font-size="26">(2 anni)</tspan></text></g>
+          <g class="accendi" style="--ritardo:1.25s"><circle cx="790" cy="160" r="13" fill="var(--cacao)" stroke="var(--oro)" stroke-width="6"/><text class="t-grande" x="824" y="172" font-size="36" fill="var(--su-scuro)">Università</text></g>
+          <g class="accendi" style="--ritardo:1.4s"><circle cx="790" cy="264" r="13" fill="var(--cacao)" stroke="var(--oro)" stroke-width="6"/><text class="t-grande" x="824" y="276" font-size="36" fill="var(--su-scuro)">Mondo del lavoro</text></g>
+        </svg>
+        <svg class="solo-telefono" viewBox="0 0 360 450" role="img" aria-label="Dopo il diploma in 4 anni: ITS Academy (2 anni), università o mondo del lavoro">
+          <path class="ramo disegna" style="stroke:var(--oro);stroke-width:5" d="M180 140 C 180 230, 60 236, 60 310 V 352"/>
+          <path class="ramo disegna" style="stroke:var(--oro);stroke-width:5;--ritardo:.15s" d="M180 140 V 352"/>
+          <path class="ramo disegna" style="stroke:var(--oro);stroke-width:5;--ritardo:.3s" d="M180 140 C 180 230, 300 236, 300 310 V 352"/>
+          <circle cx="180" cy="78" r="66" fill="var(--cotto)"/>
+          <text class="t-grande" x="180" y="80" text-anchor="middle" font-size="26" fill="#fff">Diploma</text>
+          <text x="180" y="104" text-anchor="middle" font-size="14" font-weight="500" fill="#ffe3d6">in 4 anni</text>
+          <g class="accendi" style="--ritardo:1.1s"><circle cx="60" cy="364" r="11" fill="var(--cacao)" stroke="var(--oro)" stroke-width="5"/><text class="t-grande" x="56" y="406" text-anchor="middle" font-size="18" fill="var(--su-scuro)">ITS Academy</text><text x="56" y="428" text-anchor="middle" font-size="14" fill="var(--su-scuro-2)">(2 anni)</text></g>
+          <g class="accendi" style="--ritardo:1.25s"><circle cx="180" cy="364" r="11" fill="var(--cacao)" stroke="var(--oro)" stroke-width="5"/><text class="t-grande" x="180" y="406" text-anchor="middle" font-size="18" fill="var(--su-scuro)">Università</text></g>
+          <g class="accendi" style="--ritardo:1.4s"><circle cx="300" cy="364" r="11" fill="var(--cacao)" stroke="var(--oro)" stroke-width="5"/><text class="t-grande" x="304" y="406" text-anchor="middle" font-size="18" fill="var(--su-scuro)">Mondo del</text><text class="t-grande" x="304" y="428" text-anchor="middle" font-size="18" fill="var(--su-scuro)">lavoro</text></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sez cotto-fondo stretta" id="orario">
+  <div class="cont">
+    <h2 class="titolo-medio orario-titolo">Orario delle lezioni</h2>
+    <div class="orario">
+      <p class="ore" aria-label="dalle 8:10 alle 13:30">08:10<span class="fra"></span>13:30</p>
+      <p class="dettagli">da lunedì a venerdì<br><b>un rientro pomeridiano ogni settimana fino alle 16:00</b></p>
+    </div>
+  </div>
+</section>
+
+<div class="fascia bassa"><img src="media/trasporti-pulmino.jpg" alt="Un pulmino giallo giocattolo con le valigie sul tetto" style="object-position:50% 74%" srcset="media/ridotte/trasporti-pulmino-800.jpg 800w, media/ridotte/trasporti-pulmino-1200.jpg 1200w, media/ridotte/trasporti-pulmino-1600.jpg 1600w, media/ridotte/trasporti-pulmino-2000.jpg 2000w, media/trasporti-pulmino.jpg 2400w" sizes="100vw" loading="lazy" decoding="async"></div>
+
+<section class="sez" id="trasporti">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <h2 class="titolo-sez">Trasporti</h2>
+      <p class="sottotitolo">Passa sopra una linea o toccala, sulla mappa o nelle schede qui sotto, per vederla da sola.</p>
+    </header>
+    <div class="metro">
+      <div class="mappa" data-r>
+        <div class="mappa-scorre">
+        <svg viewBox="0 0 1220 640" role="img" aria-label="Schema delle linee di treni e pullman che portano a Neive, non in scala">
+          <path class="piedi" d="M560 305 V 366"/>
+          <path class="navetta" d="M560 454 V 520"/>
+          <path class="tratta" data-linea="treno" style="stroke:#2f62b3" d="M120 530 H 640 L 944 226 V 96"/>
+          <path class="tratta" data-linea="alba" style="stroke:#e07b1f" d="M120 510 H 392 L 462 440 H 548"/>
+          <path class="tratta" data-linea="giachino" style="stroke:#2f8a4e" d="M120 90 L 320 290 V 380 H 548"/>
+          <path class="tratta" data-linea="asti" style="stroke:#7b4ca6" d="M924 96 V 206 L 750 380 H 572"/>
+          <path class="bordo" d="M748 400 H 792 M728 420 H 772 M708 440 H 752"/>
+          <path class="tratta" data-linea="canelli" style="stroke:#d23a3a" d="M572 400 H 940 L 1060 520 V 548"/>
+          <path class="tratta" data-linea="stefano" style="stroke:#c9a01e" d="M572 420 H 900 V 560"/>
+          <path class="tratta" data-linea="fogliati" style="stroke:#138a8f" d="M572 440 H 820"/>
+          <path class="tratta" data-linea="rientro" style="stroke:#d0559a" d="M920 330 V 576 H 1100 L 1150 526 V 330"/>
+          <!-- fermate -->
+          <rect class="capolinea" x="108" y="498" width="24" height="44" rx="12"/>
+          <circle class="capolinea" cx="120" cy="90" r="10"/>
+          <circle class="fermata" cx="250" cy="220" r="9"/>
+          <circle class="fermata" cx="320" cy="330" r="9"/>
+          <rect class="capolinea" x="912" y="84" width="44" height="24" rx="12"/>
+          <rect class="snodo" x="548" y="366" width="24" height="88" rx="12"/>
+          <circle class="fermata" cx="560" cy="530" r="10"/>
+          <circle class="scuola" cx="560" cy="290" r="15"/>
+          <circle class="capolinea" cx="920" cy="330" r="10"/>
+          <rect class="snodo" x="888" y="388" width="44" height="44" rx="14"/>
+          <circle class="capolinea" cx="820" cy="440" r="10"/>
+          <rect class="capolinea" x="888" y="546" width="44" height="42" rx="14"/>
+          <rect class="capolinea" x="1048" y="536" width="24" height="52" rx="12"/>
+          <circle class="fermata" cx="1150" cy="400" r="9"/>
+          <circle class="capolinea" cx="1150" cy="330" r="10"/>
+          <!-- nomi -->
+          <text x="94" y="527" text-anchor="end">Alba</text>
+          <text x="120" y="66" text-anchor="middle">Villanova</text>
+          <text x="268" y="214">San Damiano</text>
+          <text x="304" y="336" text-anchor="end">Baraccone</text>
+          <text x="968" y="103">Asti</text>
+          <text class="scuola-t" x="538" y="290" text-anchor="end">Arte Bianca</text>
+          <text class="p" x="538" y="309" text-anchor="end">via Rocca 10</text>
+          <text class="p" x="574" y="342">a piedi</text>
+          <text x="538" y="360" text-anchor="end">Neive Rondò</text>
+          <text class="p" x="574" y="492">navetta</text>
+          <text x="578" y="564">Stazione di Neive</text>
+          <text x="940" y="336">Castagnole</text>
+          <text x="944" y="380">Boglietto</text>
+          <text x="812" y="472" text-anchor="middle">Castiglione</text>
+          <text x="812" y="496" text-anchor="middle">Tinella</text>
+          <text x="910" y="614" text-anchor="middle">S. Stefano Belbo</text>
+          <text x="1060" y="614" text-anchor="middle">Canelli</text>
+          <text x="1134" y="406" text-anchor="end">Calamandrana</text>
+          <text x="1150" y="308" text-anchor="middle">Nizza M.to</text>
+          <text class="p" x="110" y="630">schema delle linee, non in scala</text>
+        </svg>
+        </div>
+        <p class="mappa-nota solo-telefono-testo">Scorri la mappa di lato per vederla tutta.</p>
+      </div>
+      <ul class="linee">
+          <li class="linea" data-linea="treno" style="--c:#2f62b3" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l1.5-4M15 21l-1.5-4"/><circle cx="9" cy="14" r=".6" fill="currentColor"/><circle cx="15" cy="14" r=".6" fill="currentColor"/></svg></span><div><h3>Treno, linea FS45 Alba - Asti</h3><p>Da Alba: treno delle ore 7:48 (+ servizio navetta dalla stazione dei treni di Neive alla scuola), anche per chi arriva al terminal dei bus di Alba dalle varie tratte (linea 120, linea 172, linea 108…). Per il ritorno, treno delle ore 13:40.</p><div class="orari"><span>andata 7:48</span><span>ritorno 13:40</span></div></div></li>
+          <li class="linea" data-linea="alba" style="--c:#e07b1f" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/></svg></span><div><h3>Bus da Alba</h3><p>Bus delle 8:03 con fermata a Neive Rondò in partenza dalla stazione dei treni, per chi utilizza il servizio ferroviario Cavallermaggiore - Bra e per chi arriva al terminal dei bus di Alba con la linea 14 GTT. Per il ritorno, treno delle ore 13:40.</p><div class="orari"><span>andata 8:03</span><span>ritorno 13:40</span></div></div></li>
+          <li class="linea" data-linea="asti" style="--c:#7b4ca6" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/></svg></span><div><h3>Bus da Asti</h3><p>Bus delle 7:25 con fermata a Neive Rondò. Per il ritorno, bus delle 13:26 da Neive Rondò.</p><div class="orari"><span>andata 7:25</span><span>ritorno 13:26</span></div></div></li>
+          <li class="linea" data-linea="giachino" style="--c:#2f8a4e" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/></svg></span><div><h3>Pullman (Giachino)</h3><p>Villanova - San Damiano - Baraccone (Via Priocca e Via Statale). Alle ore 7.55 Pullman per Neive Rondò.</p><div class="orari"><span>7:55 per Neive Rondò</span></div></div></li>
+          <li class="linea" data-linea="canelli" style="--c:#d23a3a" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/></svg></span><div><h3>Pullman (Geloso)</h3><p>Canelli - Boglietto - Neive Rondò.</p></div></li>
+          <li class="linea" data-linea="stefano" style="--c:#c9a01e" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/></svg></span><div><h3>Pullman (Geloso)</h3><p>S. Stefano - Boglietto - Neive Rondò.</p></div></li>
+          <li class="linea" data-linea="rientro" style="--c:#d0559a" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/></svg></span><div><h3>Novità per rientro pomeridiano</h3><p>Pullman (Geloso) Castagnole - Boglietto - S. Stefano B. - Canelli - Calamandrana - Nizza M.to.</p></div></li>
+          <li class="linea" data-linea="fogliati" style="--c:#138a8f" tabindex="0"><span class="seg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M7 18v3M17 18v3"/><circle cx="8" cy="14.5" r=".6" fill="currentColor"/><circle cx="16" cy="14.5" r=".6" fill="currentColor"/></svg></span><div><h3>Pullman (Fogliati)</h3><p>Castiglione Tinella - Neive Rondò.</p></div></li>
+        </ul>
+      <div class="metro-fondo">
+        <a class="tasto vuoto" href="https://moeves.it/files/orari/CN45FS.pdf" target="_blank" rel="noopener">Orari della linea FS45 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="fascia"><img src="media/spazi-inaugurazione.jpg" alt="Il taglio del nastro all'inaugurazione del nuovo edificio" style="object-position:50% 64%" srcset="media/ridotte/spazi-inaugurazione-800.jpg 800w, media/ridotte/spazi-inaugurazione-1200.jpg 1200w, media/ridotte/spazi-inaugurazione-1600.jpg 1600w, media/ridotte/spazi-inaugurazione-2000.jpg 2000w, media/spazi-inaugurazione.jpg 2400w" sizes="100vw" loading="lazy" decoding="async"></div>
+
+<section class="sez scura" id="spazi">
+  <div class="cont">
+    <header class="intesta">
+      <h2 class="titolo-sez">I nostri <em>spazi</em></h2>
+    </header>
+    <div class="spazi-testo">
+      <div>
+        <div class="lab" data-r>
+          <div><span class="gr cifre">3</span><span class="pi">laboratori di pasticceria</span></div>
+          <div><span class="gr cifre">1</span><span class="pi">laboratorio chimico-biologico</span></div>
+        </div>
+        <div class="testo" data-r>
+          <p>Nel 2018 è stato inaugurato il nuovo laboratorio di pasticceria 3, in occasione dell'inaugurazione dell'edificio del distaccamento e nel 2024 è stato completamente ristrutturato il laboratorio 1.</p>
+          <p>Il 7 giugno 2023 è stato inaugurato il bar didattico "Social corner".</p>
+          <p>Il cortile panoramico gode di una vista unica sul paesaggio delle Langhe ed è lo spazio ideale per apericena a tema didattico organizzati dagli insegnanti e dagli allievi della scuola.</p>
+          <p>L'Aula Magna è il luogo di incontro privilegiato per riunioni e seminari formativi.</p>
+          <p>Il palazzo Mostre e Congressi di Alba ospita ogni anno il nostro spazio per presentare la scuola durante il Salone dell'Orientamento. La Sala Ordet di Alba è teatro delle tradizionali feste di Natale e di fine anno scolastico mentre il Centro Sportivo R. Ceretto di Castagnole delle Lanze accoglie i tradizionali tornei sportivi a classi con cui si celebra l'inizio delle vacanze estive.</p>
+        </div>
+      </div>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/spazi-dolce.jpg" alt="Un dolce al cioccolato con fragole e una colata di cioccolato" srcset="media/ridotte/spazi-dolce-480.jpg 480w, media/spazi-dolce.jpg 816w" sizes="(max-width: 899px) 92vw, 36vw" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+  <div class="galleria spazi-galleria" data-r>
+    <div class="binario" tabindex="0" aria-label="Le foto dei nostri spazi: si scorrono di lato">
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/01.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/01.jpg?v=1790497867 1152w, media/slideshow/i-nostri-spazi/01.jpg?v=1790437234 1405w" sizes="(max-width: 899px) 90vw, 45vw" width="1405" height="790" alt="I nostri spazi: La nostra scuola" loading="lazy" decoding="async"></div><figcaption>La nostra scuola</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/02.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/02.jpg?v=1790497868 1159w, media/slideshow/i-nostri-spazi/02.jpg?v=1790437234 1436w" sizes="(max-width: 899px) 90vw, 45vw" width="1436" height="802" alt="I nostri spazi: Laboratorio 1" loading="lazy" decoding="async"></div><figcaption>Laboratorio 1</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/03.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/03.jpg?v=1790497868 1152w, media/slideshow/i-nostri-spazi/03.jpg?v=1790437234 2002w" sizes="(max-width: 899px) 90vw, 45vw" width="2002" height="1126" alt="I nostri spazi: Laboratorio 2" loading="lazy" decoding="async"></div><figcaption>Laboratorio 2</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/04.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/04.jpg?v=1790497868 1152w, media/slideshow/i-nostri-spazi/04.jpg?v=1790437234 1600w" sizes="(max-width: 899px) 90vw, 45vw" width="1600" height="900" alt="I nostri spazi: Laboratorio 3" loading="lazy" decoding="async"></div><figcaption>Laboratorio 3</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/05.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/05.jpg?v=1790497868 1150w, media/slideshow/i-nostri-spazi/05.jpg?v=1790437234 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="I nostri spazi: Laboratorio di chimica" loading="lazy" decoding="async"></div><figcaption>Laboratorio di chimica</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/06.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/06.jpg?v=1790497868 1150w, media/slideshow/i-nostri-spazi/06.jpg?v=1790437234 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="I nostri spazi: Bar didattico" loading="lazy" decoding="async"></div><figcaption>Bar didattico</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/07.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/07.jpg?v=1790497868 1150w, media/slideshow/i-nostri-spazi/07.jpg?v=1790437234 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="I nostri spazi: Aula Magna" loading="lazy" decoding="async"></div><figcaption>Aula Magna</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/08.jpg?v=1790437234" srcset="media/slideshow-telefono/i-nostri-spazi/08.jpg?v=1790497868 1151w, media/slideshow/i-nostri-spazi/08.jpg?v=1790437234 2001w" sizes="(max-width: 899px) 90vw, 45vw" width="2001" height="1126" alt="I nostri spazi: Cortile panoramico" loading="lazy" decoding="async"></div><figcaption>Cortile panoramico</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/09.jpg?v=1790437235" srcset="media/slideshow-telefono/i-nostri-spazi/09.jpg?v=1790497868 1150w, media/slideshow/i-nostri-spazi/09.jpg?v=1790437235 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="I nostri spazi: Distaccamento" loading="lazy" decoding="async"></div><figcaption>Distaccamento</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/10.jpg?v=1790437235" srcset="media/slideshow-telefono/i-nostri-spazi/10.jpg?v=1790497868 1152w, media/slideshow/i-nostri-spazi/10.jpg?v=1790437235 2002w" sizes="(max-width: 899px) 90vw, 45vw" width="2002" height="1126" alt="I nostri spazi: Sala Ordet" loading="lazy" decoding="async"></div><figcaption>Sala Ordet</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/11.jpg?v=1790437235" srcset="media/slideshow-telefono/i-nostri-spazi/11.jpg?v=1790497868 960w, media/slideshow/i-nostri-spazi/11.jpg?v=1790437235 960w" sizes="(max-width: 899px) 90vw, 45vw" width="960" height="540" alt="I nostri spazi: Campo sportivo" loading="lazy" decoding="async"></div><figcaption>Campo sportivo</figcaption></figure>
+      <figure class="voce"><div class="cornice"><img src="media/slideshow/i-nostri-spazi/12.jpg?v=1790437235" srcset="media/slideshow-telefono/i-nostri-spazi/12.jpg?v=1790497868 1150w, media/slideshow/i-nostri-spazi/12.jpg?v=1790437235 2000w" sizes="(max-width: 899px) 90vw, 45vw" width="2000" height="1333" alt="I nostri spazi: Salone dell’Orientamento" loading="lazy" decoding="async"></div><figcaption>Salone dell’Orientamento</figcaption></figure>
+    </div>
+    <div class="cont"><div class="comandi"><button class="prec" type="button" aria-label="Foto precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><span class="conta">1 / 12</span><button class="succ" type="button" aria-label="Foto successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+  </div>
+</section>
+</main>
+<footer class="piede" id="contatti">
+  <div class="cont">
+    <p class="occhiello">Contatti</p>
+    <div class="piede-griglia">
+      <div>
+        <h3>Sede associata di Neive</h3>
+        <p>Via Rocca, 10 - Neive<br>tel. <a class="r" href="tel:+3917367168">0173/67168</a><br>E-mail: <a class="r" href="mailto:artebiancaneive@cillarioferrero.it">artebiancaneive@cillarioferrero.it</a></p>
+      </div>
+      <div>
+        <h3>Sede dell'IISS Piera Cillario Ferrero</h3>
+        <p>Via Balbo, 8 - Alba<br>tel. <a class="r" href="tel:+390173441944">0173/441944</a><br>Sito istituzionale <a class="r" href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a></p>
+      </div>
+      <div>
+        <h3>Seguici</h3>
+        <div class="social">
+          <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg> Facebook</a>
+          <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg> Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="firma" aria-hidden="true">Arte Bianca <em>di Neive</em></p>
+    <div class="piede-fondo"><span>Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</span><a href="#inizio">Torna su ↑</a></div>
   </div>
 </footer>
-
-<script src="slideshow-dati.js"></script>
-<script src="slideshow.js"></script>
-<script src="script.js"></script>
+<script src="sito.js?v=1794962121"></script>
 </body>
 </html>

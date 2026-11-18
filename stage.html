@@ -22,192 +22,247 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stile.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css?v=1794962121">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body id="inizio">
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <clipPath id="forma-macchia" clipPathUnits="objectBoundingBox">
-    <path d="M0.9475 0.3481C0.8592 0.1611 0.6811 0.0244 0.4914 0.0044C0.3366 -0.0195 0.2347 0.0561 0.1515 0.1655C0.0683 0.2748 0.0241 0.4142 0.0062 0.5547C-0.0032 0.6290 -0.0051 0.7077 0.0237 0.7757C0.0604 0.8620 0.1404 0.9169 0.2219 0.9510C0.4411 1.0428 0.7101 1.0072 0.8807 0.8314C0.9341 0.7764 0.9778 0.7075 0.9934 0.6293C1.0124 0.5344 0.9883 0.4345 0.9475 0.3481Z"/>
-  </clipPath>
-</svg>
-
-<nav class="menu" aria-label="Menu principale">
-  <a href="/" data-t="HOME">HOME</a>
-  <a href="/stage" class="attivo" aria-current="page" data-t="STAGE">STAGE</a>
-  <a href="/concorsi" data-t="CONCORSI">CONCORSI</a>
-  <a href="/eventi" data-t="EVENTI">EVENTI</a>
-  <a href="/dopo-il-diploma" data-t="DOPO IL DIPLOMA">DOPO IL DIPLOMA</a>
-</nav>
-
-<div class="fascia"><img src="media/logo-scuola.png" alt="Logo Arte Bianca Neive, IISS Piera Cillario Ferrero"></div>
-
-<header class="testata-pag">
-  <p class="kicker">- I nostri fiori all’occhiello -</p>
-  <h1>STAGE</h1>
+<header class="testa">
+  <div class="cont">
+    <a class="marchio" href="/" aria-label="Arte Bianca di Neive, pagina iniziale"><img src="media/logo-scuola.png" alt="" width="42" height="42"><span>Arte Bianca <i>di Neive</i></span></a>
+    <nav class="voci" aria-label="Menu principale">
+    <a href="/">Home</a>
+    <a href="/stage" aria-current="page">Stage</a>
+    <a href="/concorsi">Concorsi</a>
+    <a href="/eventi">Eventi</a>
+    <a href="/dopo-il-diploma">Dopo il diploma</a>
+    </nav>
+    <a class="tasto prenota-testa" href="/#orientamento">Orientamento</a>
+    <button class="apri-menu" type="button" aria-expanded="false" aria-controls="menu-pieno">Menu <i></i></button>
+  </div>
 </header>
-
-<div class="fascia-media eroe"><img src="media/stage-hero-tartufi.jpg" alt="Tartufi al cacao su un vassoio scuro" srcset="media/ridotte/stage-hero-tartufi-480.jpg 480w, media/ridotte/stage-hero-tartufi-800.jpg 800w, media/ridotte/stage-hero-tartufi-1200.jpg 1200w, media/ridotte/stage-hero-tartufi-1600.jpg 1600w, media/ridotte/stage-hero-tartufi-2000.jpg 2000w, media/stage-hero-tartufi.jpg 2398w" sizes="100vw"></div>
-
-<section class="col due m" style="--m:40;--a:442;--b:653;--al:start">
-  <div>
-    <h2 class="t-sez" style="--tl:56">Oltre 300<br>convenzioni attivate</h2>
-    <div class="riga m" style="--w:138;--m:20"></div>
-    <div class="testo m" style="--m:46">
-      <p>Gli stage si svolgono in laboratori artigianali di pasticceria e panetteria, caffetterie, ristoranti, resort, alberghi e aziende dolciarie.</p>
-      <p>Ad oggi collaboriamo con oltre 300 realtà in provincia di Cuneo, Asti, Torino, in Liguria, Valle d’Aosta e Milano.</p>
-      <p class="stacco">I periodi di stage sono differenziati in base alla classe frequentata, così da garantire un’esperienza formativa progressiva e sempre più strutturata.</p>
-      <p>- Classi <b>seconde</b>: stage estivo facoltativo</p>
-      <p>- Classi <b>terze</b>: 3 settimane prima di Pasqua</p>
-      <p>(con sospensione lezioni) + periodo estivo</p>
-      <p>- Classi <b>quarte</b>: periodo estivo</p>
+<div class="menu-pieno" id="menu-pieno" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="chiudi" type="button">Chiudi <i></i></button>
+  <nav aria-label="Menu principale">
+    <a href="/"><small>01</small>Home</a>
+    <a href="/stage" aria-current="page"><small>02</small>Stage</a>
+    <a href="/concorsi"><small>03</small>Concorsi</a>
+    <a href="/eventi"><small>04</small>Eventi</a>
+    <a href="/dopo-il-diploma"><small>05</small>Dopo il diploma</a>
+  </nav>
+  <a class="tasto" href="/#orientamento">Orientamento 2027-28 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <p class="recapiti">Via Rocca 10, Neive · tel. 0173/67168<br>artebiancaneive@cillarioferrero.it</p>
+</div>
+<main>
+<section class="eroe pagina">
+  <div class="cont">
+    <p class="occhiello">I nostri fiori all’occhiello</p>
+    <h1 class="eroe-titolo">Stage</h1>
+    <div class="eroe-piede">
+      <nav class="sommario" aria-label="In questa pagina"><a href="#convenzioni">Oltre 300 convenzioni</a><a href="#estero">Mobilità all’estero</a><a href="#apprendistato">Apprendistato duale</a></nav>
     </div>
   </div>
-  <div class="mosaico">
-    <div class="riquadro r1"><img src="media/stage-crociera.jpg" alt="Una nave da crociera in porto" srcset="media/ridotte/stage-crociera-480.jpg 480w, media/ridotte/stage-crociera-800.jpg 800w, media/ridotte/stage-crociera-1200.jpg 1200w, media/ridotte/stage-crociera-1600.jpg 1600w, media/ridotte/stage-crociera-2000.jpg 2000w, media/stage-crociera.jpg 2400w" sizes="(max-width: 899px) 95vw, 50vw" loading="lazy" decoding="async"></div>
-    <div class="fila f2">
-      <div class="riquadro logo"><img src="media/stage-logo-clubmed.png" alt="Logo Club Med" loading="lazy" decoding="async"></div>
-      <div class="riquadro"><img src="media/stage-chef.jpg" alt="Una brigata di cuochi e pasticceri in cucina" srcset="media/ridotte/stage-chef-480.jpg 480w, media/ridotte/stage-chef-800.jpg 800w, media/ridotte/stage-chef-1200.jpg 1200w, media/ridotte/stage-chef-1600.jpg 1600w, media/stage-chef.jpg 1920w" sizes="(max-width: 899px) 50vw, 25vw" loading="lazy" decoding="async"></div>
+  <div class="eroe-media"><img src="media/stage-hero-tartufi.jpg" alt="Tartufi al cacao su un vassoio scuro" srcset="media/ridotte/stage-hero-tartufi-800.jpg 800w, media/ridotte/stage-hero-tartufi-1200.jpg 1200w, media/ridotte/stage-hero-tartufi-1600.jpg 1600w, media/ridotte/stage-hero-tartufi-2000.jpg 2000w, media/stage-hero-tartufi.jpg 2398w" sizes="100vw"></div>
+</section>
+
+<section class="sez" id="convenzioni">
+  <div class="cont">
+    <div class="trecento">
+      <div>
+        <h2><span class="numero-gigante" aria-hidden="true">300<small>+</small></span><span class="numero-cosa">Oltre 300 convenzioni attivate</span></h2>
+        <div class="loghi" data-r>
+          <img src="media/stage-logo-clubmed.png" alt="Logo Club Med" loading="lazy" decoding="async">
+          <img src="media/stage-selmi.jpg" alt="Logo Selmi" srcset="media/ridotte/stage-selmi-480.jpg 480w, media/stage-selmi.jpg 1280w" sizes="160px" loading="lazy" decoding="async">
+          <img src="media/stage-logo-ferrero.png" alt="Logo Ferrero" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div>
+        <div class="testo" data-r>
+          <p class="attacco">Gli stage si svolgono in laboratori artigianali di pasticceria e panetteria, caffetterie, ristoranti, resort, alberghi e aziende dolciarie.</p>
+          <p>Ad oggi collaboriamo con oltre 300 realtà in provincia di Cuneo, Asti, Torino, in Liguria, Valle d’Aosta e Milano.</p>
+          <p>I periodi di stage sono differenziati in base alla classe frequentata, così da garantire un’esperienza formativa progressiva e sempre più strutturata.</p>
+        </div>
+        <ol class="classi">
+          <li data-r><span class="cl">Seconde</span><p>stage estivo facoltativo</p></li>
+          <li data-r><span class="cl">Terze</span><p>3 settimane prima di Pasqua (con sospensione lezioni) + periodo estivo</p></li>
+          <li data-r><span class="cl">Quarte</span><p>periodo estivo</p></li>
+        </ol>
+      </div>
     </div>
-    <div class="fila f3">
-      <div class="riquadro"><img src="media/stage-selmi.jpg" alt="Logo Selmi" srcset="media/ridotte/stage-selmi-480.jpg 480w, media/ridotte/stage-selmi-800.jpg 800w, media/stage-selmi.jpg 1280w" sizes="(max-width: 899px) 30vw, 15vw" loading="lazy" decoding="async"></div>
-      <div class="riquadro"><img src="media/stage-hotel.jpg" alt="Un grande albergo con piscina" srcset="media/ridotte/stage-hotel-480.jpg 480w, media/ridotte/stage-hotel-800.jpg 800w, media/ridotte/stage-hotel-1200.jpg 1200w, media/ridotte/stage-hotel-1600.jpg 1600w, media/stage-hotel.jpg 1920w" sizes="(max-width: 899px) 35vw, 20vw" loading="lazy" decoding="async"></div>
-      <div class="riquadro logo"><img src="media/stage-logo-ferrero.png" alt="Logo Ferrero" loading="lazy" decoding="async"></div>
+    <div class="foto-stage">
+      <figure class="cornice alta" data-parallasse data-r="foto"><img src="media/stage-crociera.jpg" alt="Una nave da crociera in porto" srcset="media/ridotte/stage-crociera-480.jpg 480w, media/ridotte/stage-crociera-800.jpg 800w, media/ridotte/stage-crociera-1200.jpg 1200w, media/ridotte/stage-crociera-1600.jpg 1600w, media/ridotte/stage-crociera-2000.jpg 2000w" sizes="(max-width: 899px) 92vw, 55vw" loading="lazy" decoding="async"></figure>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-chef.jpg" alt="Una brigata di cuochi e pasticceri in cucina" srcset="media/ridotte/stage-chef-480.jpg 480w, media/ridotte/stage-chef-800.jpg 800w, media/ridotte/stage-chef-1200.jpg 1200w" sizes="(max-width: 899px) 46vw, 36vw" loading="lazy" decoding="async"></figure>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-hotel.jpg" alt="Un grande albergo con piscina" srcset="media/ridotte/stage-hotel-480.jpg 480w, media/ridotte/stage-hotel-800.jpg 800w, media/ridotte/stage-hotel-1200.jpg 1200w" sizes="(max-width: 899px) 46vw, 36vw" loading="lazy" decoding="async"></figure>
     </div>
   </div>
 </section>
 
-<section class="col m" style="--m:45">
-  <h2 class="t-sez">Mobilità all’estero</h2>
-  <p class="t-sotto m" style="--m:14">I.I.S.S. Piera Cillario Ferrero</p>
-  <div class="riga m" style="--w:180;--m:18"></div>
-  <div class="testo m" style="--m:46">
-    <p>La nostra scuola è accreditata <b>Erasmus+</b>, da sola e insieme ad APRO Formazione, e ogni anno manda studenti, docenti e personale in Europa per tirocini, corsi e scambi.</p>
-    <p class="stacco"><b>Per gli studenti delle classi quarte</b> nel corso dell’a.s. ci saranno le selezioni per:</p>
-    <p>– <b>tirocini all’estero</b> della durata di un mese a giugno 2027, finanziati dal progetto Erasmus+ della nostra scuola</p>
-    <p>– <b>5 tirocini all’estero</b> della durata di un mese a <b>Valencia</b> (Spagna), finanziati da Erasmus+ in collaborazione con APRO Formazione (partenza a settembre 2027)</p>
-    <p class="stacco"><b>Per gli studenti delle classi quinte</b>, dopo il diploma, ci sarà la possibilità di partecipare alle selezioni per:</p>
-    <p>– <b>tirocini di 3 mesi</b> fra luglio e dicembre 2027, finanziati dal progetto Erasmus+ della nostra scuola</p>
-    <p>– <b>tirocini di 3 o 6 mesi</b> (partenze da settembre 2027), finanziati da un progetto Erasmus+ di APRO Formazione (bandi ad aprile 2027; la selezione è aperta a tutte le scuole del territorio)</p>
-    <p class="stacco"><b>Si precisa che questi progetti non prevedono spese a carico delle famiglie.</b></p>
-    <p>È a carico delle famiglie unicamente il tragitto tra casa e aeroporto di partenza in Italia.</p>
-  </div>
-  <div class="foto-estero m" style="--m:47">
-    <div class="sx">
-      <div class="riquadro"><img src="media/stage-estero-laboratorio.jpg" alt="Studentesse in un laboratorio di pasticceria all'estero" style="object-position:29% 100%" srcset="media/ridotte/stage-estero-laboratorio-480.jpg 480w, media/ridotte/stage-estero-laboratorio-800.jpg 800w, media/ridotte/stage-estero-laboratorio-1200.jpg 1200w, media/stage-estero-laboratorio.jpg 1600w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
-      <div class="riquadro"><img src="media/stage-estero-griffins.jpg" alt="La vetrina di una bakery irlandese" style="object-position:50% 100%" srcset="media/ridotte/stage-estero-griffins-480.jpg 480w, media/ridotte/stage-estero-griffins-800.jpg 800w, media/stage-estero-griffins.jpg 1280w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
+<section class="sez bianca" id="estero">
+  <div class="cont">
+    <header class="intesta affiancata">
+      <div>
+        <h2 class="titolo-sez">Mobilità <em>all’estero</em></h2>
+        <p class="sottotitolo">I.I.S.S. Piera Cillario Ferrero</p>
+      </div>
+      <p class="attacco">La nostra scuola è accreditata <b>Erasmus+</b>, da sola e insieme ad APRO Formazione, e ogni anno manda studenti, docenti e personale in Europa per tirocini, corsi e scambi.</p>
+    </header>
+
+    <div class="due-colonne-estero">
+      <div class="riquadro-chiaro sfondo" data-r>
+        <h3>Per gli studenti delle classi quarte</h3>
+        <p class="grigio">nel corso dell’a.s. ci saranno le selezioni per:</p>
+        <ul>
+          <li><b>tirocini all’estero</b> della durata di un mese a giugno 2027, finanziati dal progetto Erasmus+ della nostra scuola</li>
+          <li><b>5 tirocini all’estero</b> della durata di un mese a <b>Valencia</b> (Spagna), finanziati da Erasmus+ in collaborazione con APRO Formazione (partenza a settembre 2027)</li>
+        </ul>
+      </div>
+      <div class="riquadro-chiaro sfondo" data-r>
+        <h3>Per gli studenti delle classi quinte</h3>
+        <p class="grigio">dopo il diploma, ci sarà la possibilità di partecipare alle selezioni per:</p>
+        <ul>
+          <li><b>tirocini di 3 mesi</b> fra luglio e dicembre 2027, finanziati dal progetto Erasmus+ della nostra scuola</li>
+          <li><b>tirocini di 3 o 6 mesi</b> (partenze da settembre 2027), finanziati da un progetto Erasmus+ di APRO Formazione (bandi ad aprile 2027; la selezione è aperta a tutte le scuole del territorio)</li>
+        </ul>
+      </div>
     </div>
-    <div class="riquadro dx"><img src="media/stage-estero-parigi.jpg" alt="Un gruppo di studenti davanti alla Torre Eiffel" style="object-position:0 20%" srcset="media/ridotte/stage-estero-parigi-480.jpg 480w, media/ridotte/stage-estero-parigi-800.jpg 800w, media/stage-estero-parigi.jpg 1227w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
-  </div>
-  <div class="testo m" style="--m:46">
-    <p><b>Ci sono poi gli scambi e le altre esperienze:</b></p>
-    <p>– con la <b>Francia</b>, nell’ambito del progetto <b>Trans’Alp</b> promosso dall’USR Piemonte (bandi di candidatura proposti alle classi seconde e terze che studiano francese): un mese in Francia, ospiti di una famiglia, e poi un mese a casa propria con lo studente francese. Dal 19 ottobre al 13 novembre 2026, per esempio, una studentessa francese del progetto è stata ospite a Neive. Le spese per le famiglie sono contenute, perché l’ospitalità è reciproca: restano a carico il viaggio e alcune visite</p>
-    <p>– una <b>mobilità di un mese</b> per 1 o 2 studenti con il progetto Erasmus+ della nostra scuola</p>
-    <p class="stacco">Viene inoltre proposto agli studenti delle classi terze la possibilità di trascorrere <b>6 mesi/un anno</b> all'estero con <b>Intercultura</b> (normalmente durante il quarto anno).</p>
-    <p>In questo caso le spese sono interamente a carico delle famiglie, ma è possibile candidarsi ad alcune borse di studio.</p>
-    <p class="stacco">Per informazioni sui progetti all’estero si può scrivere a progettiestero@cillarioferrero.it</p>
-    <p class="stacco">Nell’a.s. 2024/25 le mobilità degli studenti sono state <b>147</b>, nel 2025/26 <b>132</b>. Fra queste, dal 14 al 27 settembre 2025 <b>15 studenti dell’Arte Bianca</b> hanno seguito un <b>corso di pasticceria</b> allo Zealand Business College di <b>Roskilde</b>, in Danimarca. Dal 17 al 30 maggio 2026, con il progetto «Professioni senza confini», <b>18 studenti dell’Arte Bianca</b> sono stati a <b>Parigi</b>, dove il 21 maggio hanno seguito una <b>master class di pasticceria all’École Ducasse</b>, e <b>7</b> a <b>Malta</b> per un corso di inglese. A settembre 2026, invece, <b>4 studenti dell’Arte Bianca</b> hanno svolto un <b>tirocinio di un mese in Croazia</b> con APRO Formazione.</p>
-  </div>
-  <div class="foto-estero bassa m" style="--m:47">
-    <div class="sx">
-      <div class="riquadro"><img src="media/stage-estero-roskilde-laboratorio.jpg" alt="Gli studenti dell'Arte Bianca nel laboratorio di pasticceria dello Zealand Business College di Roskilde, in Danimarca" style="object-position:50% 50%" srcset="media/ridotte/stage-estero-roskilde-laboratorio-480.jpg 480w, media/ridotte/stage-estero-roskilde-laboratorio-800.jpg 800w, media/ridotte/stage-estero-roskilde-laboratorio-1200.jpg 1200w, media/ridotte/stage-estero-roskilde-laboratorio-1600.jpg 1600w, media/ridotte/stage-estero-roskilde-laboratorio-2000.jpg 2000w, media/stage-estero-roskilde-laboratorio.jpg 2048w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
-      <div class="riquadro"><img src="media/stage-estero-parigi-ducasse.jpg" alt="Gli studenti dell'Arte Bianca davanti all'École Ducasse di Parigi" style="object-position:50% 50%" srcset="media/ridotte/stage-estero-parigi-ducasse-480.jpg 480w, media/ridotte/stage-estero-parigi-ducasse-800.jpg 800w, media/ridotte/stage-estero-parigi-ducasse-1200.jpg 1200w, media/stage-estero-parigi-ducasse.jpg 1350w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
+    <div class="gratis" data-r>
+      <b>Si precisa che questi progetti non prevedono spese a carico delle famiglie.</b>
+      <p>È a carico delle famiglie unicamente il tragitto tra casa e aeroporto di partenza in Italia.</p>
     </div>
-    <div class="riquadro dx"><img src="media/stage-estero-roskilde-torte.jpg" alt="Due studentesse dell'Arte Bianca decorano le torte nel laboratorio di Roskilde" style="object-position:50% 50%" srcset="media/ridotte/stage-estero-roskilde-torte-480.jpg 480w, media/ridotte/stage-estero-roskilde-torte-800.jpg 800w, media/ridotte/stage-estero-roskilde-torte-1200.jpg 1200w, media/ridotte/stage-estero-roskilde-torte-1600.jpg 1600w, media/stage-estero-roskilde-torte.jpg 2000w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
-  </div>
-  <div class="testo m" style="--m:46">
-    <p>Qui sotto sono riepilogate le <b>132 mobilità</b> degli studenti di tutta la scuola nell’a.s. 2025/26</p>
-  </div>
-  <div class="tabella-scorre m" style="--m:46">
-    <table class="tab-stage maiuscolo" style="--w:1166">
-      <colgroup><col style="width:36.2%"><col style="width:17%"><col></colgroup>
-      <thead><tr><th>Destinazione</th><th>N. studenti</th><th>Progetto</th></tr></thead>
-      <tbody>
-        <tr><td>Irlanda</td><td>11</td><td>Tirocinio di un mese (settembre 2025), progetto Erasmus+ «ImaginEU» della nostra scuola</td></tr>
-        <tr><td>Austria</td><td>4</td><td>Tirocinio di un mese (settembre 2025), progetto Erasmus+ «ImaginEU» della nostra scuola</td></tr>
-        <tr><td>Roskilde (Danimarca)</td><td>15</td><td>Corso di pasticceria di due settimane (settembre 2025), progetto PNRR Erasmus+</td></tr>
-        <tr><td>Spagna</td><td>6</td><td>Tirocinio di un mese (settembre 2025), Erasmus+ in collaborazione con APRO Formazione</td></tr>
-        <tr><td>Francia</td><td>6</td><td>Un mese (settembre 2025), progetto Trans’Alp</td></tr>
-        <tr><td>Spagna</td><td>4</td><td>Tirocinio di 3 mesi dopo il diploma (settembre 2025), progetto Erasmus+ «ImaginEU» della nostra scuola</td></tr>
-        <tr><td>Valencia (Spagna), Parigi (Francia) e St. Julian’s (Malta)</td><td>75</td><td>Due settimane (febbraio e maggio 2026), progetto PNRR STEM e Multilinguismo</td></tr>
-        <tr><td>Danimarca</td><td>6</td><td>Due settimane (aprile-maggio 2026), progetto Erasmus+ della nostra scuola</td></tr>
-        <tr><td>Vienna (Austria)</td><td>5</td><td>Studenti dei corsi serali, Erasmus+ per l’istruzione degli adulti</td></tr>
-      </tbody>
-    </table>
+
+    <div class="foto-estero">
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-estero-laboratorio.jpg" alt="Studentesse in un laboratorio di pasticceria all'estero" style="object-position:29% 100%" srcset="media/ridotte/stage-estero-laboratorio-480.jpg 480w, media/ridotte/stage-estero-laboratorio-800.jpg 800w, media/ridotte/stage-estero-laboratorio-1200.jpg 1200w, media/stage-estero-laboratorio.jpg 1600w" sizes="(max-width: 899px) 92vw, 30vw" loading="lazy" decoding="async"></figure>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-estero-griffins.jpg" alt="La vetrina di una bakery irlandese" style="object-position:50% 100%" srcset="media/ridotte/stage-estero-griffins-480.jpg 480w, media/ridotte/stage-estero-griffins-800.jpg 800w, media/stage-estero-griffins.jpg 1280w" sizes="(max-width: 899px) 46vw, 30vw" loading="lazy" decoding="async"></figure>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-estero-parigi.jpg" alt="Un gruppo di studenti davanti alla Torre Eiffel" style="object-position:0 20%" srcset="media/ridotte/stage-estero-parigi-480.jpg 480w, media/ridotte/stage-estero-parigi-800.jpg 800w, media/stage-estero-parigi.jpg 1227w" sizes="(max-width: 899px) 46vw, 30vw" loading="lazy" decoding="async"></figure>
+    </div>
+
+    <div class="griglia-2 alto">
+      <h3 class="titolo-medio" data-r>Ci sono poi gli scambi e le altre esperienze</h3>
+      <div class="testo" data-r>
+        <p>– con la <b>Francia</b>, nell’ambito del progetto <b>Trans’Alp</b> promosso dall’USR Piemonte (bandi di candidatura proposti alle classi seconde e terze che studiano francese): un mese in Francia, ospiti di una famiglia, e poi un mese a casa propria con lo studente francese. Dal 19 ottobre al 13 novembre 2026, per esempio, una studentessa francese del progetto è stata ospite a Neive. Le spese per le famiglie sono contenute, perché l’ospitalità è reciproca: restano a carico il viaggio e alcune visite</p>
+        <p>– una <b>mobilità di un mese</b> per 1 o 2 studenti con il progetto Erasmus+ della nostra scuola</p>
+        <p>Viene inoltre proposto agli studenti delle classi terze la possibilità di trascorrere <b>6 mesi/un anno</b> all'estero con <b>Intercultura</b> (normalmente durante il quarto anno). In questo caso le spese sono interamente a carico delle famiglie, ma è possibile candidarsi ad alcune borse di studio.</p>
+        <p>Per informazioni sui progetti all’estero si può scrivere a <a href="mailto:progettiestero@cillarioferrero.it">progettiestero@cillarioferrero.it</a></p>
+      </div>
+    </div>
+
+    <div class="mobilita-numeri">
+      <div data-r><span class="gr cifre">147</span><span class="pi">mobilità degli studenti nell’a.s. 2024/25</span></div>
+      <div data-r><span class="gr cifre">132</span><span class="pi">mobilità degli studenti nell’a.s. 2025/26</span></div>
+    </div>
+
+    <div class="tabellone" data-r>
+      <p class="tabellone-titolo">Fra queste, le partenze degli studenti dell’Arte Bianca</p>
+      <div class="testa-t" aria-hidden="true"><span>Meta</span><span>Quando</span><span>Studenti</span><span>Che cosa</span></div>
+      <div class="partenza"><span class="meta">Roskilde<small>Danimarca</small></span><span class="quando-t">dal 14 al 27 settembre 2025</span><span class="quanti">15<small>studenti</small></span><span class="che">un <b>corso di pasticceria</b> allo Zealand Business College</span></div>
+      <div class="partenza"><span class="meta">Parigi<small>Francia</small></span><span class="quando-t">dal 17 al 30 maggio 2026</span><span class="quanti">18<small>studenti</small></span><span class="che">progetto «Professioni senza confini»: il 21 maggio una <b>master class di pasticceria all’École Ducasse</b></span></div>
+      <div class="partenza"><span class="meta">Malta<small>St. Julian’s</small></span><span class="quando-t">dal 17 al 30 maggio 2026</span><span class="quanti">7<small>studenti</small></span><span class="che">progetto «Professioni senza confini»: un <b>corso di inglese</b></span></div>
+      <div class="partenza"><span class="meta">Croazia</span><span class="quando-t">settembre 2026</span><span class="quanti">4<small>studenti</small></span><span class="che">un <b>tirocinio di un mese</b> con APRO Formazione</span></div>
+    </div>
+
+    <div class="foto-estero larga">
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-estero-roskilde-laboratorio.jpg" alt="Gli studenti dell'Arte Bianca nel laboratorio di pasticceria dello Zealand Business College di Roskilde, in Danimarca" srcset="media/ridotte/stage-estero-roskilde-laboratorio-480.jpg 480w, media/ridotte/stage-estero-roskilde-laboratorio-800.jpg 800w, media/ridotte/stage-estero-roskilde-laboratorio-1200.jpg 1200w, media/ridotte/stage-estero-roskilde-laboratorio-1600.jpg 1600w, media/stage-estero-roskilde-laboratorio.jpg 2048w" sizes="(max-width: 899px) 92vw, 42vw" loading="lazy" decoding="async"></figure>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-estero-parigi-ducasse.jpg" alt="Gli studenti dell'Arte Bianca davanti all'École Ducasse di Parigi" srcset="media/ridotte/stage-estero-parigi-ducasse-480.jpg 480w, media/ridotte/stage-estero-parigi-ducasse-800.jpg 800w, media/ridotte/stage-estero-parigi-ducasse-1200.jpg 1200w" sizes="(max-width: 899px) 46vw, 28vw" loading="lazy" decoding="async"></figure>
+      <figure class="cornice" data-parallasse data-r="foto"><img src="media/stage-estero-roskilde-torte.jpg" alt="Due studentesse dell'Arte Bianca decorano le torte nel laboratorio di Roskilde" srcset="media/ridotte/stage-estero-roskilde-torte-480.jpg 480w, media/ridotte/stage-estero-roskilde-torte-800.jpg 800w, media/ridotte/stage-estero-roskilde-torte-1200.jpg 1200w" sizes="(max-width: 899px) 46vw, 28vw" loading="lazy" decoding="async"></figure>
+    </div>
+
+    <p class="attacco" data-r>Qui sotto sono riepilogate le <b>132 mobilità</b> degli studenti di tutta la scuola nell’a.s. 2025/26</p>
+    <div class="tabella" data-r>
+      <table>
+        <thead><tr><th>Destinazione</th><th>N. studenti</th><th>Progetto</th></tr></thead>
+        <tbody>
+          <tr><td class="dove">Irlanda</td><td class="n">11</td><td>Tirocinio di un mese (settembre 2025), progetto Erasmus+ «ImaginEU» della nostra scuola</td></tr>
+          <tr><td class="dove">Austria</td><td class="n">4</td><td>Tirocinio di un mese (settembre 2025), progetto Erasmus+ «ImaginEU» della nostra scuola</td></tr>
+          <tr><td class="dove">Roskilde (Danimarca)</td><td class="n">15</td><td>Corso di pasticceria di due settimane (settembre 2025), progetto PNRR Erasmus+</td></tr>
+          <tr><td class="dove">Spagna</td><td class="n">6</td><td>Tirocinio di un mese (settembre 2025), Erasmus+ in collaborazione con APRO Formazione</td></tr>
+          <tr><td class="dove">Francia</td><td class="n">6</td><td>Un mese (settembre 2025), progetto Trans’Alp</td></tr>
+          <tr><td class="dove">Spagna</td><td class="n">4</td><td>Tirocinio di 3 mesi dopo il diploma (settembre 2025), progetto Erasmus+ «ImaginEU» della nostra scuola</td></tr>
+          <tr><td class="dove">Valencia (Spagna), Parigi (Francia) e St. Julian’s (Malta)</td><td class="n">75</td><td>Due settimane (febbraio e maggio 2026), progetto PNRR STEM e Multilinguismo</td></tr>
+          <tr><td class="dove">Danimarca</td><td class="n">6</td><td>Due settimane (aprile-maggio 2026), progetto Erasmus+ della nostra scuola</td></tr>
+          <tr><td class="dove">Vienna (Austria)</td><td class="n">5</td><td>Studenti dei corsi serali, Erasmus+ per l’istruzione degli adulti</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
-<div class="fascia-media m" style="--m:50;aspect-ratio:1414/749"><video data-src="media/video-cioccolato-colato.mp4" data-poster="media/copertina-cioccolato-colato.jpg" muted loop playsinline style="object-position:50% 4%" aria-label="Cioccolato fuso che cola da un mestolo"></video></div>
+<div class="fascia"><video data-src="media/video-cioccolato-colato.mp4" poster="media/copertina-cioccolato-colato.jpg" muted loop playsinline style="object-position:50% 4%" aria-label="Cioccolato fuso che cola da un mestolo"></video></div>
 
-<section class="col due m" style="--m:42;--a:630;--b:452;--al:start">
-  <div>
-    <h2 class="t-sez">Apprendistato duale</h2>
-    <p class="t-sotto m" style="--m:13">I.I.S.S. Piera Cillario Ferrero</p>
-    <div class="riga m" style="--w:166;--m:18"></div>
-    <img class="m" style="--m:21;width:100%;height:auto" src="media/stage-loghi-apprendistato.png" alt="Loghi di Coesione Italia 21-27, Unione europea, Repubblica Italiana e Regione Piemonte" loading="lazy" decoding="async" width="747" height="67">
-    <div class="testo m" style="--m:46">
-      <p>L’Istituto Cillario Ferrero di Alba rientra nel catalogo dell’Offerta formativa della Regione Piemonte per <b>l’apprendistato duale di primo livello</b> per il conseguimento del Diploma di istruzione secondaria di secondo grado.</p>
-      <p>Il contratto di apprendistato di primo livello - come disciplinato dall’articolo 43 del decreto legislativo n. 81/2015 e dal D.M. 12 ottobre 2015 - è rivolto ai soggetti che hanno compiuto i 15 anni di età, sino al compimento dei 25 anni, iscritti all’interno di un percorso scolastico.</p>
-      <p>La finalità del contratto è il <b>conseguimento di un titolo di studio della formazione secondaria di secondo grado</b>, tramite un percorso “duale” che si realizza in parte presso l’istituzione scolastica che eroga la “formazione esterna” e in parte presso un’impresa che eroga la “formazione interna”.</p>
-      <p>L’obiettivo di questo approccio è quello di ridurre il disallineamento tra le competenze richieste dal mercato del lavoro e quelle in uscita dal percorso scolastico, per fornire una risposta efficace alla difficoltà delle imprese di reperire nel mercato del lavoro profili professionali specializzati, aumentando i livelli di occupazione giovanile.</p>
-      <p>Indicazioni di dettaglio possono essere reperite consultando il <b>sito della Regione Piemonte</b> al seguente <a href="https://www.regione.piemonte.it/web/temi/istruzione-formazione-lavoro/formazione-professionale/apprendistato/apprendistato-duale-primo-livello" target="_blank" rel="noopener"><b>link</b></a>.</p>
-      <p>Negli anni l’istituto ha proposto e portato a compimento vari percorsi riguardanti gli indirizzi di studio, coinvolgendo le tre sedi di Alba, Neive e Cortemilia.</p>
-      <p>I percorsi relativi all'Arte Bianca, completati o ancora in fase di attuazione, sono sintetizzati nella seguente tabella:</p>
+<section class="sez" id="apprendistato">
+  <div class="cont">
+    <header class="intesta">
+      <h2 class="titolo-sez">Apprendistato <em>duale</em></h2>
+      <p class="sottotitolo">I.I.S.S. Piera Cillario Ferrero</p>
+    </header>
+    <p class="loghi-app" data-r><img src="media/stage-loghi-apprendistato.png" alt="Loghi di Coesione Italia 21-27, Unione europea, Repubblica Italiana e Regione Piemonte" loading="lazy" decoding="async" width="747" height="67"></p>
+    <div class="griglia-2 alto">
+      <div class="testo" data-r>
+        <p class="attacco">L’Istituto Cillario Ferrero di Alba rientra nel catalogo dell’Offerta formativa della Regione Piemonte per <b>l’apprendistato duale di primo livello</b> per il conseguimento del Diploma di istruzione secondaria di secondo grado.</p>
+        <p>Il contratto di apprendistato di primo livello - come disciplinato dall’articolo 43 del decreto legislativo n. 81/2015 e dal D.M. 12 ottobre 2015 - è rivolto ai soggetti che hanno compiuto i 15 anni di età, sino al compimento dei 25 anni, iscritti all’interno di un percorso scolastico.</p>
+        <p>La finalità del contratto è il <b>conseguimento di un titolo di studio della formazione secondaria di secondo grado</b>, tramite un percorso “duale” che si realizza in parte presso l’istituzione scolastica che eroga la “formazione esterna” e in parte presso un’impresa che eroga la “formazione interna”.</p>
+      </div>
+      <div class="testo" data-r>
+        <p>L’obiettivo di questo approccio è quello di ridurre il disallineamento tra le competenze richieste dal mercato del lavoro e quelle in uscita dal percorso scolastico, per fornire una risposta efficace alla difficoltà delle imprese di reperire nel mercato del lavoro profili professionali specializzati, aumentando i livelli di occupazione giovanile.</p>
+        <p>Indicazioni di dettaglio possono essere reperite consultando il <b>sito della Regione Piemonte</b> al seguente <a href="https://www.regione.piemonte.it/web/temi/istruzione-formazione-lavoro/formazione-professionale/apprendistato/apprendistato-duale-primo-livello" target="_blank" rel="noopener">link</a>.</p>
+        <p>Negli anni l’istituto ha proposto e portato a compimento vari percorsi riguardanti gli indirizzi di studio, coinvolgendo le tre sedi di Alba, Neive e Cortemilia.</p>
+        <figure class="cornice apprendista" data-parallasse data-r="foto"><img src="media/stage-apprendista.jpg" alt="Una ragazza sorridente al computer in un ambiente di lavoro" srcset="media/ridotte/stage-apprendista-480.jpg 480w, media/ridotte/stage-apprendista-800.jpg 800w, media/ridotte/stage-apprendista-1200.jpg 1200w, media/stage-apprendista.jpg 1600w" sizes="(max-width: 899px) 92vw, 44vw" loading="lazy" decoding="async"></figure>
+      </div>
+    </div>
+    <p class="attacco tabella-sopra" data-r>I percorsi relativi all'Arte Bianca, completati o ancora in fase di attuazione, sono sintetizzati nella seguente tabella:</p>
+    <div class="tabella app" data-r>
+      <table>
+        <thead><tr><th>Anno scolastico</th><th>Tipo percorso</th><th>N° allievi</th><th>Azienda</th></tr></thead>
+        <tbody>
+          <tr><td class="anno">2023 - 25</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Pasticceria “La Preferita” - Asti</td></tr>
+          <tr><td class="anno">2023 - 25</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Pasticceria “I dolci dell’isola” - Isolabella</td></tr>
+          <tr><td class="anno">2023 - 25</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Ristorante “all’enoteca” - Canale</td></tr>
+          <tr><td class="anno">2023 - 25</td><td class="tipo">Biennale</td><td class="n">2</td><td class="az">Panetteria FuocoFarina - Alba</td></tr>
+          <tr><td class="anno">2023 - 25</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Panetteria “D&amp;D” - Narzole</td></tr>
+          <tr><td class="anno">2024 - 25</td><td class="tipo">Annuale</td><td class="n">1</td><td class="az">Pasticceria “Mighetto” - Asti</td></tr>
+          <tr><td class="anno">2024 - 25</td><td class="tipo">Annuale</td><td class="n">3</td><td class="az">FERRERO INDUSTRIALE ITALIA S.R.L. (reparto UPS)</td></tr>
+          <tr><td class="anno">2024 - 26</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Pasticceria “Sorelle Balbo” - Canelli</td></tr>
+          <tr><td class="anno">2024 - 26</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Caffè Posta - Bra</td></tr>
+          <tr><td class="anno">2024 - 26</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Panetteria Giacosa - Alba</td></tr>
+          <tr><td class="anno">2024 - 26</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Panetteria Montaldo Alba</td></tr>
+          <tr><td class="anno">2024 - 26</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Ristorante L’Antinè - Barbaresco</td></tr>
+          <tr><td class="anno">2024 - 26</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">Bar ristorante Naevia - Neive</td></tr>
+          <tr><td class="anno">2024 - 26</td><td class="tipo">Biennale</td><td class="n">2</td><td class="az">Pasticceria Fratelli Boero - Monforte</td></tr>
+          <tr><td class="anno">2025 - 26</td><td class="tipo">Annuale</td><td class="n">1</td><td class="az">Ristorante “FRE” - Monforte d’Alba</td></tr>
+          <tr><td class="anno">2025 - 26</td><td class="tipo">Annuale</td><td class="n">1</td><td class="az">Pasticceria “GIAMP” - Bra</td></tr>
+          <tr><td class="anno">2025 - 26</td><td class="tipo">Annuale</td><td class="n">1</td><td class="az">Pasticceria “Ghitin” - Montà</td></tr>
+          <tr><td class="anno">2025 - 27</td><td class="tipo">Biennale</td><td class="n">1</td><td class="az">“Golosi di salute” (TCN Group) - Alba</td></tr>
+          <tr><td class="anno">2026 - 27</td><td class="tipo">In corso</td><td class="n">1</td><td class="az">Pasticceria “Giampaolo” - Alba</td></tr>
+          <tr><td class="anno">2026 - 27</td><td class="tipo">In corso</td><td class="n">1</td><td class="az">Pasticceria “La Preferita” - Asti</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <img class="macchia m" style="--m:363;aspect-ratio:452/435" src="media/stage-apprendista.jpg" alt="Una ragazza sorridente al computer in un ambiente di lavoro" srcset="media/ridotte/stage-apprendista-480.jpg 480w, media/ridotte/stage-apprendista-800.jpg 800w, media/ridotte/stage-apprendista-1200.jpg 1200w, media/stage-apprendista.jpg 1600w" sizes="(max-width: 899px) 95vw, 35vw" loading="lazy" decoding="async">
 </section>
-
-<section class="col m" style="--m:45">
-  <div class="tabella-scorre">
-    <table class="tab-stage" style="--w:1166;--rh:46.9">
-      <colgroup><col style="width:19.7%"><col style="width:19.7%"><col style="width:19.7%"><col></colgroup>
-      <thead><tr><th>Anno scolastico</th><th>Tipo percorso</th><th>N° allievi</th><th>Azienda</th></tr></thead>
-      <tbody>
-        <tr><td>2023 - 25</td><td>Biennale</td><td>1</td><td>Pasticceria “La Preferita” - Asti</td></tr>
-        <tr><td>2023 - 25</td><td>Biennale</td><td>1</td><td>Pasticceria “I dolci dell’isola” - Isolabella</td></tr>
-        <tr><td>2023 - 25</td><td>Biennale</td><td>1</td><td>Ristorante “all’enoteca” - Canale</td></tr>
-        <tr><td>2023 - 25</td><td>Biennale</td><td>2</td><td>Panetteria FuocoFarina - Alba</td></tr>
-        <tr><td>2023 - 25</td><td>Biennale</td><td>1</td><td>Panetteria “D&amp;D” - Narzole</td></tr>
-        <tr><td>2024 - 25</td><td>Annuale</td><td>1</td><td>Pasticceria “Mighetto” - Asti</td></tr>
-        <tr><td>2024 - 25</td><td>Annuale</td><td>3</td><td>FERRERO INDUSTRIALE ITALIA S.R.L. (reparto UPS)</td></tr>
-        <tr><td>2024 - 26</td><td>Biennale</td><td>1</td><td>Pasticceria “Sorelle Balbo” - Canelli</td></tr>
-        <tr><td>2024 - 26</td><td>Biennale</td><td>1</td><td>Caffè Posta - Bra</td></tr>
-        <tr><td>2024 - 26</td><td>Biennale</td><td>1</td><td>Panetteria Giacosa - Alba</td></tr>
-        <tr><td>2024 - 26</td><td>Biennale</td><td>1</td><td>Panetteria Montaldo Alba</td></tr>
-        <tr><td>2024 - 26</td><td>Biennale</td><td>1</td><td>Ristorante L’Antinè - Barbaresco</td></tr>
-        <tr><td>2024 - 26</td><td>Biennale</td><td>1</td><td>Bar ristorante Naevia - Neive</td></tr>
-        <tr><td>2024 - 26</td><td>Biennale</td><td>2</td><td>Pasticceria Fratelli Boero - Monforte</td></tr>
-        <tr><td>2025 - 26</td><td>Annuale</td><td>1</td><td>Ristorante “FRE” - Monforte d’Alba</td></tr>
-        <tr><td>2025 - 26</td><td>Annuale</td><td>1</td><td>Pasticceria “GIAMP” - Bra</td></tr>
-        <tr><td>2025 - 26</td><td>Annuale</td><td>1</td><td>Pasticceria “Ghitin” - Montà</td></tr>
-        <tr><td>2025 - 27</td><td>Biennale</td><td>1</td><td>“Golosi di salute” (TCN Group) - Alba</td></tr>
-        <tr><td>2026 - 27</td><td>In corso</td><td>1</td><td>Pasticceria “Giampaolo” - Alba</td></tr>
-        <tr><td>2026 - 27</td><td>In corso</td><td>1</td><td>Pasticceria “La Preferita” - Asti</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<a class="torna" href="#inizio">Torna su <svg viewBox="0 0 9 16" aria-hidden="true"><path d="M4.5 15.5V1M1 4.5l3.5-3.5 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
-
-<section class="contatti">
-  <h2>Contatti</h2>
-  <div class="riga"></div>
-  <p class="righe">Sede dell'IISS Piera Cillario Ferrero tel: 0173/441944 / Indirizzo: Via Balbo, 8 - Alba<br>Sede associata di Neive tel: 0173/67168 / Indirizzo: Via Rocca, 10<br>Sito istituzionale <a href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a><br>E-mail: artebiancaneive@cillarioferrero.it</p>
-</section>
-
-<footer class="piede">
-  <div class="col">
-    <p class="indirizzo">Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</p>
-    <div class="social">
-      <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener" aria-label="Facebook"><img class="fb" src="media/icona-facebook.png" alt="" loading="lazy" decoding="async"></a>
-      <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ig" src="media/icona-instagram.png" alt="" loading="lazy" decoding="async"></a>
+</main>
+<footer class="piede" id="contatti">
+  <div class="cont">
+    <p class="occhiello">Contatti</p>
+    <div class="piede-griglia">
+      <div>
+        <h3>Sede associata di Neive</h3>
+        <p>Via Rocca, 10 - Neive<br>tel. <a class="r" href="tel:+3917367168">0173/67168</a><br>E-mail: <a class="r" href="mailto:artebiancaneive@cillarioferrero.it">artebiancaneive@cillarioferrero.it</a></p>
+      </div>
+      <div>
+        <h3>Sede dell'IISS Piera Cillario Ferrero</h3>
+        <p>Via Balbo, 8 - Alba<br>tel. <a class="r" href="tel:+390173441944">0173/441944</a><br>Sito istituzionale <a class="r" href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a></p>
+      </div>
+      <div>
+        <h3>Seguici</h3>
+        <div class="social">
+          <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg> Facebook</a>
+          <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg> Instagram</a>
+        </div>
+      </div>
     </div>
+    <p class="firma" aria-hidden="true">Arte Bianca <em>di Neive</em></p>
+    <div class="piede-fondo"><span>Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</span><a href="#inizio">Torna su ↑</a></div>
   </div>
 </footer>
-
-<script src="script.js"></script>
+<script src="sito.js?v=1794962121"></script>
 </body>
 </html>

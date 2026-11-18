@@ -22,133 +22,153 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stile.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,0..100;1,9..144,300..800,0..100&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stile.css?v=1794962121">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body id="inizio">
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <clipPath id="forma-macchia" clipPathUnits="objectBoundingBox">
-    <path d="M0.9475 0.3481C0.8592 0.1611 0.6811 0.0244 0.4914 0.0044C0.3366 -0.0195 0.2347 0.0561 0.1515 0.1655C0.0683 0.2748 0.0241 0.4142 0.0062 0.5547C-0.0032 0.6290 -0.0051 0.7077 0.0237 0.7757C0.0604 0.8620 0.1404 0.9169 0.2219 0.9510C0.4411 1.0428 0.7101 1.0072 0.8807 0.8314C0.9341 0.7764 0.9778 0.7075 0.9934 0.6293C1.0124 0.5344 0.9883 0.4345 0.9475 0.3481Z"/>
-  </clipPath>
-</svg>
-
-<nav class="menu" aria-label="Menu principale">
-  <a href="/" data-t="HOME">HOME</a>
-  <a href="/stage" data-t="STAGE">STAGE</a>
-  <a href="/concorsi" data-t="CONCORSI">CONCORSI</a>
-  <a href="/eventi" data-t="EVENTI">EVENTI</a>
-  <a href="/dopo-il-diploma" class="attivo" aria-current="page" data-t="DOPO IL DIPLOMA">DOPO IL DIPLOMA</a>
-</nav>
-
-<div class="fascia"><img src="media/logo-scuola.png" alt="Logo Arte Bianca Neive, IISS Piera Cillario Ferrero"></div>
-
-<header class="testata-pag senza-kicker" style="--tmob:8.4vw">
-  <h1>DOPO IL DIPLOMA?</h1>
+<header class="testa">
+  <div class="cont">
+    <a class="marchio" href="/" aria-label="Arte Bianca di Neive, pagina iniziale"><img src="media/logo-scuola.png" alt="" width="42" height="42"><span>Arte Bianca <i>di Neive</i></span></a>
+    <nav class="voci" aria-label="Menu principale">
+    <a href="/">Home</a>
+    <a href="/stage">Stage</a>
+    <a href="/concorsi">Concorsi</a>
+    <a href="/eventi">Eventi</a>
+    <a href="/dopo-il-diploma" aria-current="page">Dopo il diploma</a>
+    </nav>
+    <a class="tasto prenota-testa" href="/#orientamento">Orientamento</a>
+    <button class="apri-menu" type="button" aria-expanded="false" aria-controls="menu-pieno">Menu <i></i></button>
+  </div>
 </header>
-
-<div class="fascia-media eroe"><img src="media/dopo-hero-cioccolatini.jpg" alt="Cioccolatini assortiti su una colata di cioccolato" srcset="media/ridotte/dopo-hero-cioccolatini-480.jpg 480w, media/ridotte/dopo-hero-cioccolatini-800.jpg 800w, media/ridotte/dopo-hero-cioccolatini-1200.jpg 1200w, media/ridotte/dopo-hero-cioccolatini-1600.jpg 1600w, media/ridotte/dopo-hero-cioccolatini-2000.jpg 2000w, media/dopo-hero-cioccolatini.jpg 2400w" sizes="100vw"></div>
-
-<section class="col due m" style="--m:37;--a:450;--b:583;--al:start">
-  <div>
-    <h2 class="t-sez" style="--tl:74">Profilo professionale</h2>
-    <div class="testo m" style="--m:36">
-      <p>A conclusione del percorso quinquennale, il diplomato in “Enogastronomia e ospitalità alberghiera - Arte Bianca e Pasticceria” possiede specifiche competenze tecnico-pratiche, organizzative e gestionali nell’intero ciclo di produzione, erogazione e commercializzazione dei prodotti e dei servizi della filiera ed è in grado di intervenire nella valorizzazione, produzione, trasformazione, conservazione e presentazione dei prodotti enogastronomici dolciari e da forno secondo gli aspetti culturali, artistici e del Made in Italy in relazione al territorio. È inoltre in grado di controllare la qualità del prodotto sotto il profilo organolettico, igienico e nutrizionale, applicando le normative di sicurezza e tracciabilità, di adeguare le produzioni alla domanda del mercato valorizzando le tradizioni locali e le innovazioni del settore e di collaborare ai processi produttivi artigianali e industriali contribuendo allo sviluppo e alla promozione delle eccellenze territoriali.</p>
+<div class="menu-pieno" id="menu-pieno" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="chiudi" type="button">Chiudi <i></i></button>
+  <nav aria-label="Menu principale">
+    <a href="/"><small>01</small>Home</a>
+    <a href="/stage"><small>02</small>Stage</a>
+    <a href="/concorsi"><small>03</small>Concorsi</a>
+    <a href="/eventi"><small>04</small>Eventi</a>
+    <a href="/dopo-il-diploma" aria-current="page"><small>05</small>Dopo il diploma</a>
+  </nav>
+  <a class="tasto" href="/#orientamento">Orientamento 2027-28 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <p class="recapiti">Via Rocca 10, Neive · tel. 0173/67168<br>artebiancaneive@cillarioferrero.it</p>
+</div>
+<main>
+<section class="eroe pagina">
+  <div class="cont">
+    <h1 class="eroe-titolo dopo">Dopo il <em>diploma?</em></h1>
+    <div class="eroe-piede">
+      <nav class="sommario" aria-label="In questa pagina"><a href="#profilo">Profilo professionale</a><a href="#strade">Università e ITS</a><a href="#strade">Lavoro</a><a href="#sbocchi">Sbocchi professionali</a><a href="#ex-allievi">Gli ex allievi si raccontano</a></nav>
     </div>
   </div>
-  <div class="riquadro m" style="--m:3;aspect-ratio:583/632"><img src="media/dopo-profilo.jpg" alt="Un pasticcere spatola il cioccolato fuso" style="object-position:5% 50%" srcset="media/ridotte/dopo-profilo-480.jpg 480w, media/ridotte/dopo-profilo-800.jpg 800w, media/ridotte/dopo-profilo-1200.jpg 1200w, media/ridotte/dopo-profilo-1600.jpg 1600w, media/ridotte/dopo-profilo-2000.jpg 2000w, media/dopo-profilo.jpg 2400w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
+  <div class="eroe-media"><img src="media/dopo-hero-cioccolatini.jpg" alt="Cioccolatini assortiti su una colata di cioccolato" srcset="media/ridotte/dopo-hero-cioccolatini-800.jpg 800w, media/ridotte/dopo-hero-cioccolatini-1200.jpg 1200w, media/ridotte/dopo-hero-cioccolatini-1600.jpg 1600w, media/ridotte/dopo-hero-cioccolatini-2000.jpg 2000w, media/dopo-hero-cioccolatini.jpg 2400w" sizes="100vw"></div>
 </section>
 
-<div class="col divisore m" style="--m:24"></div>
-
-<section class="col due m" style="--m:25;--a:450;--b:583">
-  <div>
-    <h2 class="t-sez" style="--tl:74">Università e ITS</h2>
-    <div class="testo m" style="--m:37">
-      <p>Il titolo permette l’accesso a tutte le facoltà universitarie, offrendo allo studente la possibilità di proseguire gli studi in base alle proprie aspirazioni e obiettivi professionali.</p>
-      <p>Consente inoltre l’iscrizione ai percorsi ITS (Istituti Tecnici Superiori), scuole post-diploma che propongono una formazione tecnica avanzata in collaborazione con il mondo del lavoro, attive anche nei settori agroalimentare e turistico.</p>
+<section class="sez" id="profilo">
+  <div class="cont">
+    <div class="griglia-2 alto">
+      <div>
+        <header class="intesta">
+          <h2 class="titolo-sez">Profilo <em>professionale</em></h2>
+        </header>
+        <div class="testo profilo-testo" data-r>
+          <p>A conclusione del percorso quinquennale, il diplomato in “Enogastronomia e ospitalità alberghiera - Arte Bianca e Pasticceria” possiede specifiche competenze tecnico-pratiche, organizzative e gestionali nell’intero ciclo di produzione, erogazione e commercializzazione dei prodotti e dei servizi della filiera ed è in grado di intervenire nella valorizzazione, produzione, trasformazione, conservazione e presentazione dei prodotti enogastronomici dolciari e da forno secondo gli aspetti culturali, artistici e del Made in Italy in relazione al territorio. È inoltre in grado di controllare la qualità del prodotto sotto il profilo organolettico, igienico e nutrizionale, applicando le normative di sicurezza e tracciabilità, di adeguare le produzioni alla domanda del mercato valorizzando le tradizioni locali e le innovazioni del settore e di collaborare ai processi produttivi artigianali e industriali contribuendo allo sviluppo e alla promozione delle eccellenze territoriali.</p>
+        </div>
+      </div>
+      <figure class="cornice verticale profilo-foto" data-parallasse data-r="foto"><img src="media/dopo-profilo.jpg" alt="Un pasticcere spatola il cioccolato fuso" style="object-position:5% 50%" srcset="media/ridotte/dopo-profilo-480.jpg 480w, media/ridotte/dopo-profilo-800.jpg 800w, media/ridotte/dopo-profilo-1200.jpg 1200w, media/ridotte/dopo-profilo-1600.jpg 1600w" sizes="(max-width: 899px) 92vw, 45vw" loading="lazy" decoding="async"></figure>
     </div>
   </div>
-  <div class="riquadro" style="aspect-ratio:583/632"><img src="media/dopo-universita.jpg" alt="Mani che alzano diplomi arrotolati con il nastro rosso" srcset="media/ridotte/dopo-universita-480.jpg 480w, media/ridotte/dopo-universita-800.jpg 800w, media/ridotte/dopo-universita-1200.jpg 1200w, media/ridotte/dopo-universita-1600.jpg 1600w, media/ridotte/dopo-universita-2000.jpg 2000w, media/dopo-universita.jpg 2400w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
 </section>
 
-<div class="col divisore m" style="--m:25"></div>
-
-<section class="col due m" style="--m:26;--a:450;--b:582">
-  <div>
-    <h2 class="t-sez" style="--tl:74">Lavoro</h2>
-    <div class="testo m" style="--m:37">
-      <p>Il diploma consente l’inserimento qualificato nel settore della produzione dolciaria e dei prodotti da forno, sia in laboratori artigianali come pasticcerie e panifici, sia in realtà industriali dedicate alla sperimentazione e allo sviluppo di nuovi prodotti alimentari, oltre che nei settori della ristorazione e delle strutture ricettive. Le competenze acquisite rendono i diplomati figure professionali apprezzate e richieste, capaci di inserirsi rapidamente nel mondo del lavoro e di contribuire alla qualità e all’innovazione del settore.</p>
+<section class="sez bianca" id="strade">
+  <div class="cont">
+    <div class="bivio bivio-due" aria-hidden="true">
+      <svg class="solo-largo" viewBox="0 0 1200 250">
+        <path class="ramo disegna" style="stroke:var(--cotto);stroke-width:6" d="M600 130 C 600 200, 296 170, 296 250"/>
+        <path class="ramo disegna" style="stroke:var(--cotto);stroke-width:6;--ritardo:.15s" d="M600 130 C 600 200, 904 170, 904 250"/>
+        <circle cx="600" cy="68" r="66" fill="var(--cacao)"/>
+        <text class="t-grande" x="600" y="78" text-anchor="middle" font-size="28" fill="var(--su-scuro)">Diploma</text>
+      </svg>
+      <svg class="solo-telefono" viewBox="0 0 360 170">
+        <path class="ramo disegna" style="stroke:var(--cotto);stroke-width:5" d="M180 110 V 170"/>
+        <circle cx="180" cy="58" r="54" fill="var(--cacao)"/>
+        <text class="t-grande" x="180" y="66" text-anchor="middle" font-size="23" fill="var(--su-scuro)">Diploma</text>
+      </svg>
+    </div>
+    <div class="strade">
+      <article class="strada" data-r>
+        <figure class="cornice"><img src="media/dopo-universita.jpg" alt="Mani che alzano diplomi arrotolati con il nastro rosso" srcset="media/ridotte/dopo-universita-480.jpg 480w, media/ridotte/dopo-universita-800.jpg 800w, media/ridotte/dopo-universita-1200.jpg 1200w, media/ridotte/dopo-universita-1600.jpg 1600w" sizes="(max-width: 899px) 92vw, 46vw" loading="lazy" decoding="async"></figure>
+        <div class="dentro"><h2 class="h3">Università e ITS</h2><div class="testo">
+          <p>Il titolo permette l’accesso a tutte le facoltà universitarie, offrendo allo studente la possibilità di proseguire gli studi in base alle proprie aspirazioni e obiettivi professionali.</p>
+          <p>Consente inoltre l’iscrizione ai percorsi ITS (Istituti Tecnici Superiori), scuole post-diploma che propongono una formazione tecnica avanzata in collaborazione con il mondo del lavoro, attive anche nei settori agroalimentare e turistico.</p>
+        </div></div>
+      </article>
+      <article class="strada" data-r>
+        <figure class="cornice"><img src="media/dopo-lavoro.jpg" alt="Pasticceri che decorano dessert al piatto" style="object-position:50% 0" srcset="media/ridotte/dopo-lavoro-480.jpg 480w, media/ridotte/dopo-lavoro-800.jpg 800w, media/ridotte/dopo-lavoro-1200.jpg 1200w, media/ridotte/dopo-lavoro-1600.jpg 1600w" sizes="(max-width: 899px) 92vw, 46vw" loading="lazy" decoding="async"></figure>
+        <div class="dentro"><h2 class="h3">Lavoro</h2><div class="testo">
+          <p>Il diploma consente l’inserimento qualificato nel settore della produzione dolciaria e dei prodotti da forno, sia in laboratori artigianali come pasticcerie e panifici, sia in realtà industriali dedicate alla sperimentazione e allo sviluppo di nuovi prodotti alimentari, oltre che nei settori della ristorazione e delle strutture ricettive. Le competenze acquisite rendono i diplomati figure professionali apprezzate e richieste, capaci di inserirsi rapidamente nel mondo del lavoro e di contribuire alla qualità e all’innovazione del settore.</p>
+        </div></div>
+      </article>
     </div>
   </div>
-  <div class="riquadro" style="aspect-ratio:582/595"><img src="media/dopo-lavoro.jpg" alt="Pasticceri che decorano dessert al piatto" style="object-position:50% 0" srcset="media/ridotte/dopo-lavoro-480.jpg 480w, media/ridotte/dopo-lavoro-800.jpg 800w, media/ridotte/dopo-lavoro-1200.jpg 1200w, media/ridotte/dopo-lavoro-1600.jpg 1600w, media/ridotte/dopo-lavoro-2000.jpg 2000w, media/dopo-lavoro.jpg 2400w" sizes="(max-width: 899px) 95vw, 45vw" loading="lazy" decoding="async"></div>
 </section>
 
-<section class="col centro m" style="--m:39">
-  <h2 class="t-sez" style="--tl:74">Sbocchi professionali</h2>
-  <div class="riga m" style="--w:237;--m:10"></div>
-  <div class="riquadro w m" style="--m:51;--w:1146;aspect-ratio:1146/664;margin-left:calc(1 * var(--u))"><div class="ss" data-ss="sbocchi-professionali" role="img" aria-label="Sbocchi professionali: panificatore, pasticcere, cake designer e altri"></div></div>
+<section class="sez scura" id="sbocchi">
+  <div class="cont">
+    <header class="intesta">
+      <h2 class="titolo-sez">Sbocchi <em>professionali</em></h2>
+    </header>
+    <div class="sfilata" data-r><div class="sfilata-foto"><img data-nome="Pasticcere" src="media/slideshow/sbocchi-professionali/01.jpg?v=1790437244" srcset="media/slideshow-telefono/sbocchi-professionali/01.jpg?v=1790497873 1348w, media/slideshow/sbocchi-professionali/01.jpg?v=1790437244 1920w" sizes="(max-width: 899px) 92vw, 80vw" width="1920" height="925" alt="Sbocchi professionali: Pasticcere" loading="lazy" decoding="async"><img data-nome="Panificatore" src="media/slideshow/sbocchi-professionali/02.jpg?v=1790437244" srcset="media/slideshow-telefono/sbocchi-professionali/02.jpg?v=1790497873 1236w, media/slideshow/sbocchi-professionali/02.jpg?v=1790437244 1900w" sizes="(max-width: 899px) 92vw, 80vw" width="1900" height="995" alt="Sbocchi professionali: Panificatore" loading="lazy" decoding="async"><img data-nome="Maître chocolatier" src="media/slideshow/sbocchi-professionali/03.jpg?v=1790437244" srcset="media/slideshow-telefono/sbocchi-professionali/03.jpg?v=1790497873 1150w, media/slideshow/sbocchi-professionali/03.jpg?v=1790437244 2000w" sizes="(max-width: 899px) 92vw, 80vw" width="2000" height="1322" alt="Sbocchi professionali: Maître chocolatier" loading="lazy" decoding="async"><img data-nome="Cake designer" src="media/slideshow/sbocchi-professionali/04.jpg?v=1790437244" srcset="media/slideshow-telefono/sbocchi-professionali/04.jpg?v=1790497873 1200w, media/slideshow/sbocchi-professionali/04.jpg?v=1790437244 1200w" sizes="(max-width: 899px) 92vw, 80vw" width="1200" height="800" alt="Sbocchi professionali: Cake designer" loading="lazy" decoding="async"><img data-nome="Banqueting manager" src="media/slideshow/sbocchi-professionali/05.jpg?v=1790437244" srcset="media/slideshow-telefono/sbocchi-professionali/05.jpg?v=1790497873 1202w, media/slideshow/sbocchi-professionali/05.jpg?v=1790437244 1202w" sizes="(max-width: 899px) 92vw, 80vw" width="1202" height="721" alt="Sbocchi professionali: Banqueting manager" loading="lazy" decoding="async"><img data-nome="Industria dolciaria" src="media/slideshow/sbocchi-professionali/06.jpg?v=1790437244" srcset="media/slideshow-telefono/sbocchi-professionali/06.jpg?v=1790497873 1152w, media/slideshow/sbocchi-professionali/06.jpg?v=1790437244 2002w" sizes="(max-width: 899px) 92vw, 80vw" width="2002" height="1126" alt="Sbocchi professionali: Industria dolciaria" loading="lazy" decoding="async"><img data-nome="Ricerca e sviluppo" src="media/slideshow/sbocchi-professionali/07.jpg?v=1790437244" srcset="media/slideshow-telefono/sbocchi-professionali/07.jpg?v=1790497874 1152w, media/slideshow/sbocchi-professionali/07.jpg?v=1790437244 2000w" sizes="(max-width: 899px) 92vw, 80vw" width="2000" height="1126" alt="Sbocchi professionali: Ricerca e sviluppo" loading="lazy" decoding="async"><div class="sfilata-sotto"><p class="sfilata-nome" aria-hidden="true">Pasticcere</p><div class="sfilata-barra" aria-hidden="true"><i></i></div></div></div><ul class="nascosto"><li>Pasticcere</li><li>Panificatore</li><li>Maître chocolatier</li><li>Cake designer</li><li>Banqueting manager</li><li>Industria dolciaria</li><li>Ricerca e sviluppo</li></ul></div>
+  </div>
 </section>
 
-<section class="col due m" style="--m:50;--a:570;--b:563;--al:start">
-  <div>
-    <h2 class="t-sez" style="--tl:56">Gli ex allievi si raccontano</h2>
-    <p class="t-sotto serif m" style="--m:22">Preziose testimonianze di alcuni allievi che hanno<br>frequentato l'Arte Bianca</p>
-    <div class="riga m" style="--w:158;--m:22"></div>
-    <div class="testo w m" style="--w:450;--m:47">
-      <p>Le testimonianze dirette dei nostri ex allievi sono il racconto più autentico del valore della formazione all’Arte Bianca. Attraverso le loro voci emergono esperienze genuine, storie di crescita personale e professionale che mostrano quanto il percorso vissuto a scuola possa aprire strade concrete e ricche di soddisfazioni.</p>
+<section class="sez" id="ex-allievi">
+  <div class="cont">
+    <div class="griglia-2 ex-testa">
+      <div>
+        <header class="intesta">
+          <h2 class="titolo-sez">Gli ex allievi <em>si raccontano</em></h2>
+          <p class="sottotitolo">Preziose testimonianze di alcuni allievi che hanno frequentato l'Arte Bianca</p>
+        </header>
+        <div class="testo" data-r><p class="attacco">Le testimonianze dirette dei nostri ex allievi sono il racconto più autentico del valore della formazione all’Arte Bianca. Attraverso le loro voci emergono esperienze genuine, storie di crescita personale e professionale che mostrano quanto il percorso vissuto a scuola possa aprire strade concrete e ricche di soddisfazioni.</p></div>
+      </div>
+      <figure class="cornice verticale" data-parallasse data-r="foto"><img src="media/dopo-ex-allieva.jpg" alt="Un'ex allieva sorridente con un vassoio di frutta" srcset="media/ridotte/dopo-ex-allieva-480.jpg 480w, media/ridotte/dopo-ex-allieva-800.jpg 800w, media/dopo-ex-allieva.jpg 1080w" sizes="(max-width: 899px) 92vw, 40vw" loading="lazy" decoding="async"></figure>
+    </div>
+    <div class="testimonianze">
+      <div data-r><div class="yt" data-id="3kn1bsIpmLI" role="button" tabindex="0" aria-label="Guarda la testimonianza di Sara Lovo"><img class="cop" src="media/dopo-video-lovo.jpg" alt="" srcset="media/ridotte/dopo-video-lovo-480.jpg 480w, media/dopo-video-lovo.jpg 640w" sizes="(max-width: 899px) 92vw, 30vw" loading="lazy" decoding="async"><span class="gioca" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z"/></svg></span></div><span class="nome">Sara Lovo</span></div>
+      <div data-r><div class="yt" data-id="RsgDjg12Ak8" role="button" tabindex="0" aria-label="Guarda la testimonianza di Sara Maranzana"><img class="cop" src="media/dopo-video-maranzana.jpg" alt="" srcset="media/ridotte/dopo-video-maranzana-480.jpg 480w, media/dopo-video-maranzana.jpg 848w" sizes="(max-width: 899px) 92vw, 30vw" loading="lazy" decoding="async"><span class="gioca" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z"/></svg></span></div><span class="nome">Sara Maranzana</span></div>
+      <div data-r><div class="yt" data-id="auRFP1kuYqQ" role="button" tabindex="0" aria-label="Guarda la testimonianza di Alberto Salsi"><img class="cop" src="media/dopo-video-salsi.jpg" alt="" srcset="media/ridotte/dopo-video-salsi-480.jpg 480w, media/ridotte/dopo-video-salsi-800.jpg 800w, media/ridotte/dopo-video-salsi-1200.jpg 1200w" sizes="(max-width: 899px) 92vw, 30vw" loading="lazy" decoding="async"><span class="gioca" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z"/></svg></span></div><span class="nome">Alberto Salsi</span></div>
+      <div data-r><div class="yt" data-id="Ry2lwOZYSNQ" role="button" tabindex="0" aria-label="Guarda la testimonianza di Serena Lincetto"><img class="cop" src="media/dopo-video-lincetto.jpg" alt="" srcset="media/ridotte/dopo-video-lincetto-480.jpg 480w, media/ridotte/dopo-video-lincetto-800.jpg 800w, media/ridotte/dopo-video-lincetto-1200.jpg 1200w" sizes="(max-width: 899px) 92vw, 30vw" loading="lazy" decoding="async"><span class="gioca" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z"/></svg></span></div><span class="nome">Serena Lincetto</span></div>
+      <div data-r><div class="yt" data-id="bqvZLnoTef8" role="button" tabindex="0" aria-label="Guarda la testimonianza di Enrico Drocco"><img class="cop" src="media/dopo-video-drocco.jpg" alt="" srcset="media/ridotte/dopo-video-drocco-480.jpg 480w, media/ridotte/dopo-video-drocco-800.jpg 800w, media/ridotte/dopo-video-drocco-1200.jpg 1200w" sizes="(max-width: 899px) 92vw, 30vw" loading="lazy" decoding="async"><span class="gioca" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z"/></svg></span></div><span class="nome">Enrico Drocco</span></div>
+      <div data-r><div class="yt" data-id="DUNyyFz0jus" role="button" tabindex="0" aria-label="Guarda la testimonianza di Nicola Borra"><img class="cop" src="media/dopo-video-borra.jpg" alt="" srcset="media/ridotte/dopo-video-borra-480.jpg 480w, media/dopo-video-borra.jpg 848w" sizes="(max-width: 899px) 92vw, 30vw" loading="lazy" decoding="async"><span class="gioca" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3.5v17L20 12z"/></svg></span></div><span class="nome">Nicola Borra</span></div>
     </div>
   </div>
-  <img class="macchia" style="aspect-ratio:563/561" src="media/dopo-ex-allieva.jpg" alt="Un'ex allieva sorridente con un vassoio di frutta" srcset="media/ridotte/dopo-ex-allieva-480.jpg 480w, media/ridotte/dopo-ex-allieva-800.jpg 800w, media/dopo-ex-allieva.jpg 1080w" sizes="(max-width: 899px) 95vw, 40vw" loading="lazy" decoding="async">
 </section>
-
-<section class="col ex-allievi m" style="--m:13">
-  <div class="scheda-video">
-    <div class="anteprima" data-id="3kn1bsIpmLI" role="button" tabindex="0" aria-label="Guarda la testimonianza di Sara Lovo"><img src="media/dopo-video-lovo.jpg" alt="" srcset="media/ridotte/dopo-video-lovo-480.jpg 480w, media/dopo-video-lovo.jpg 640w" sizes="(max-width: 899px) 85vw, 40vw" loading="lazy" decoding="async"><svg class="tasto" viewBox="0 0 45 45" aria-hidden="true"><circle cx="22.5" cy="22.5" r="22.5"/><path d="M18 14.5v16l13-8z"/></svg></div>
-    <span class="nome">Sara Lovo</span>
-  </div>
-  <div class="scheda-video">
-    <div class="anteprima" data-id="RsgDjg12Ak8" role="button" tabindex="0" aria-label="Guarda la testimonianza di Sara Maranzana"><img src="media/dopo-video-maranzana.jpg" alt="" srcset="media/ridotte/dopo-video-maranzana-480.jpg 480w, media/dopo-video-maranzana.jpg 848w" sizes="(max-width: 899px) 85vw, 40vw" loading="lazy" decoding="async"><svg class="tasto" viewBox="0 0 45 45" aria-hidden="true"><circle cx="22.5" cy="22.5" r="22.5"/><path d="M18 14.5v16l13-8z"/></svg></div>
-    <span class="nome">Sara Maranzana</span>
-  </div>
-  <div class="scheda-video">
-    <div class="anteprima" data-id="auRFP1kuYqQ" role="button" tabindex="0" aria-label="Guarda la testimonianza di Alberto Salsi"><img src="media/dopo-video-salsi.jpg" alt="" srcset="media/ridotte/dopo-video-salsi-480.jpg 480w, media/ridotte/dopo-video-salsi-800.jpg 800w, media/ridotte/dopo-video-salsi-1200.jpg 1200w, media/ridotte/dopo-video-salsi-1600.jpg 1600w, media/dopo-video-salsi.jpg 1920w" sizes="(max-width: 899px) 85vw, 40vw" loading="lazy" decoding="async"><svg class="tasto" viewBox="0 0 45 45" aria-hidden="true"><circle cx="22.5" cy="22.5" r="22.5"/><path d="M18 14.5v16l13-8z"/></svg></div>
-    <span class="nome">Alberto Salsi</span>
-  </div>
-  <div class="scheda-video">
-    <div class="anteprima" data-id="Ry2lwOZYSNQ" role="button" tabindex="0" aria-label="Guarda la testimonianza di Serena Lincetto"><img src="media/dopo-video-lincetto.jpg" alt="" srcset="media/ridotte/dopo-video-lincetto-480.jpg 480w, media/ridotte/dopo-video-lincetto-800.jpg 800w, media/ridotte/dopo-video-lincetto-1200.jpg 1200w, media/ridotte/dopo-video-lincetto-1600.jpg 1600w, media/dopo-video-lincetto.jpg 1920w" sizes="(max-width: 899px) 85vw, 40vw" loading="lazy" decoding="async"><svg class="tasto" viewBox="0 0 45 45" aria-hidden="true"><circle cx="22.5" cy="22.5" r="22.5"/><path d="M18 14.5v16l13-8z"/></svg></div>
-    <span class="nome">Serena Lincetto</span>
-  </div>
-  <div class="scheda-video">
-    <div class="anteprima" data-id="bqvZLnoTef8" role="button" tabindex="0" aria-label="Guarda la testimonianza di Enrico Drocco"><img src="media/dopo-video-drocco.jpg" alt="" srcset="media/ridotte/dopo-video-drocco-480.jpg 480w, media/ridotte/dopo-video-drocco-800.jpg 800w, media/ridotte/dopo-video-drocco-1200.jpg 1200w, media/ridotte/dopo-video-drocco-1600.jpg 1600w, media/dopo-video-drocco.jpg 1920w" sizes="(max-width: 899px) 85vw, 40vw" loading="lazy" decoding="async"><svg class="tasto" viewBox="0 0 45 45" aria-hidden="true"><circle cx="22.5" cy="22.5" r="22.5"/><path d="M18 14.5v16l13-8z"/></svg></div>
-    <span class="nome">Enrico Drocco</span>
-  </div>
-  <div class="scheda-video">
-    <div class="anteprima" data-id="DUNyyFz0jus" role="button" tabindex="0" aria-label="Guarda la testimonianza di Nicola Borra"><img src="media/dopo-video-borra.jpg" alt="" srcset="media/ridotte/dopo-video-borra-480.jpg 480w, media/dopo-video-borra.jpg 848w" sizes="(max-width: 899px) 85vw, 40vw" loading="lazy" decoding="async"><svg class="tasto" viewBox="0 0 45 45" aria-hidden="true"><circle cx="22.5" cy="22.5" r="22.5"/><path d="M18 14.5v16l13-8z"/></svg></div>
-    <span class="nome">Nicola Borra</span>
-  </div>
-</section>
-
-<a class="torna" href="#inizio">Torna su <svg viewBox="0 0 9 16" aria-hidden="true"><path d="M4.5 15.5V1M1 4.5l3.5-3.5 3.5 3.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></a>
-
-<section class="contatti">
-  <h2>Contatti</h2>
-  <div class="riga"></div>
-  <p class="righe">Sede dell'IISS Piera Cillario Ferrero tel: 0173/441944 / Indirizzo: Via Balbo, 8 - Alba<br>Sede associata di Neive tel: 0173/67168 / Indirizzo: Via Rocca, 10<br>Sito istituzionale <a href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a><br>E-mail: artebiancaneive@cillarioferrero.it</p>
-</section>
-
-<footer class="piede">
-  <div class="col">
-    <p class="indirizzo">Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</p>
-    <div class="social">
-      <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener" aria-label="Facebook"><img class="fb" src="media/icona-facebook.png" alt="" loading="lazy" decoding="async"></a>
-      <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener" aria-label="Instagram"><img class="ig" src="media/icona-instagram.png" alt="" loading="lazy" decoding="async"></a>
+</main>
+<footer class="piede" id="contatti">
+  <div class="cont">
+    <p class="occhiello">Contatti</p>
+    <div class="piede-griglia">
+      <div>
+        <h3>Sede associata di Neive</h3>
+        <p>Via Rocca, 10 - Neive<br>tel. <a class="r" href="tel:+3917367168">0173/67168</a><br>E-mail: <a class="r" href="mailto:artebiancaneive@cillarioferrero.it">artebiancaneive@cillarioferrero.it</a></p>
+      </div>
+      <div>
+        <h3>Sede dell'IISS Piera Cillario Ferrero</h3>
+        <p>Via Balbo, 8 - Alba<br>tel. <a class="r" href="tel:+390173441944">0173/441944</a><br>Sito istituzionale <a class="r" href="https://www.cillarioferrero.edu.it/" target="_blank" rel="noopener">www.cillarioferrero.edu.it</a></p>
+      </div>
+      <div>
+        <h3>Seguici</h3>
+        <div class="social">
+          <a href="https://www.facebook.com/p/IISS-Arte-Bianca-Neive-100063560233751/?locale=it_IT" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg> Facebook</a>
+          <a href="https://www.instagram.com/iissartebiancadineive/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg> Instagram</a>
+        </div>
+      </div>
     </div>
+    <p class="firma" aria-hidden="true">Arte Bianca <em>di Neive</em></p>
+    <div class="piede-fondo"><span>Istituto professionale statale Arte Bianca - Via Rocca 10, Neive</span><a href="#inizio">Torna su ↑</a></div>
   </div>
 </footer>
-
-<script src="slideshow-dati.js"></script>
-<script src="slideshow.js"></script>
-<script src="script.js"></script>
+<script src="sito.js?v=1794962121"></script>
 </body>
 </html>
