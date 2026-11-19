@@ -762,11 +762,11 @@ h2.h3{ font-size:clamp(30px, 2.8vw, 44px); margin-bottom:16px; }
 .eroe-sfondo::after{ content:""; position:absolute; inset:0;
   background:linear-gradient(180deg, rgba(28,18,13,.7) 0%, rgba(28,18,13,.42) 26%, rgba(28,18,13,.12) 42%, rgba(28,18,13,0) 52%, rgba(28,18,13,0) 74%, rgba(28,18,13,.72) 100%); }
 .eroe.con-video > .cont{ justify-content:flex-start; }
-/* titolo sfasato come nella prima apertura: «Arte Bianca» a sinistra, «di Neive» sotto a destra */
-.con-video .eroe-titolo{ font-size:clamp(56px, min(11vw, 19svh), 190px); margin-bottom:auto; padding-bottom:24px; }
+/* titolo grande e sfasato come nella prima apertura: «Arte Bianca» da sinistra, «di Neive» sotto fino al bordo destro */
+.con-video .eroe-titolo{ font-size:clamp(56px, min(14.6vw, 26svh), 238px); margin-bottom:auto; padding-bottom:24px; }
 .con-video .eroe-titolo .r1,.con-video .eroe-titolo .r2{ white-space:nowrap; }
-@media (min-width:900px){ .con-video .eroe-titolo{ width:fit-content; } }  /* al computer «di Neive» finisce dove finisce «Arte Bianca» */
+@media (min-width:900px) and (max-height:700px){ .con-video .eroe-titolo{ font-size:clamp(56px, min(14.6vw, 23svh), 238px); } }  /* schermi bassi: l'apertura resta alta come lo schermo */
 @media (max-width:899px){
-  .con-video .eroe-titolo{ font-size:clamp(52px, 17vw, 100px); }
+  .con-video .eroe-titolo{ font-size:clamp(52px, 18vw, 110px); }
   .eroe-sfondo::after{ background:linear-gradient(180deg, rgba(28,18,13,.75) 0%, rgba(28,18,13,.45) 30%, rgba(28,18,13,.1) 44%, rgba(28,18,13,0) 52%, rgba(28,18,13,.3) 64%, rgba(28,18,13,.85) 80%, rgba(28,18,13,.92) 100%); }
 }
